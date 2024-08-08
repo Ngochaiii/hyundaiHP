@@ -1,7 +1,7 @@
 <?php
 
 Route::group(['middleware' => 'frontend'], function() {
-    Route::get('/', ['as' => 'home.index', 'uses' => 'Frontend\FrontendController@index']);
+    Route::get('/', ['as' => 'home.index', 'uses' => 'Fe_Hyundai\HompageController@index']);
     Route::get('/marketing/activation/{key}', ['as' => 'marketing.activation', 'uses' => 'Frontend\MarketingController@activation']);
     Route::get('/construction/activation/{key}', ['as' => 'construction.activation', 'uses' => 'Frontend\ConstructionController@activation']);
     Route::get('/member/activation/{key}', ['as' => 'member.activation', 'uses' => 'Frontend\MemberController@activation']);
@@ -26,7 +26,7 @@ Route::group(['middleware' => 'frontend'], function() {
     /* Dự án */
     Route::get('/du-an/{alias}', ['as' => 'project.detail', 'uses' => 'Frontend\ProjectController@detail']);
     /* Tin tuc */
-    Route::get('/tin-tuc', ['as' => 'news.index', 'uses' => 'Frontend\NewsController@index']);
+    Route::get('/tin-tuc', ['as' => 'news.index', 'uses' => 'Fe_Hyundai\BlogCobntroller@index']);
     Route::get('/danh-muc-tin/{alias}', ['as' => 'news_category.index', 'uses' => 'Frontend\NewsController@index']);
     Route::get('/tin-tuc/{alias}', ['as' => 'news.detail', 'uses' => 'Frontend\NewsController@detail']);
     /* Video */
