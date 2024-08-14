@@ -20,7 +20,7 @@ class Product extends Model {
     }
 
     public function product_attributes() {
-        return $this->hasMany('App\ProductAttribute', 'product_id');
+        return $this->hasMany('App\Models\ProductAttribute', 'product_id');
     }
 
     public function getPostSchedule() {

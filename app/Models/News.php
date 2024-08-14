@@ -13,11 +13,11 @@ class News extends Model {
     ];
 
     public function categories() {
-        return $this->belongsToMany('App\Category', 'news_category', 'news_id', 'category_id');
+        return $this->belongsToMany('App\Models\Category', 'news_category', 'news_id', 'category_id');
     }
 
     public function newsCategories() {
-        return $this->hasMany('App\NewsCategory');
+        return $this->hasMany('App\Models\NewsCategory');
     }
 
     public function getPostSchedule() {

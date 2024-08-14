@@ -11,7 +11,7 @@ class Role extends Model
         'name', 'route'
     ];
     public function routes() {
-        return $this->hasMany('App\Route');
+        return $this->hasMany('App\Models\Route');
     }
 
     public function route() {

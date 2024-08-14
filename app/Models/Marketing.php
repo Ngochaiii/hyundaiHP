@@ -21,9 +21,9 @@ class Marketing extends Authenticatable {
     }
 
     public function orders() {
-        return $this->hasMany('\App\Order', 'ref', 'ref')->where('status',2);
+        return $this->hasMany('\App\Models\Order', 'ref', 'ref')->where('status',2);
     }
     public function rank(){
-        return $this->belongsTo('\App\Rank');
+        return $this->belongsTo('\App\Models\Rank');
     }
 }

@@ -21,7 +21,7 @@ class Gallery extends Model {
     }
 
     public function attributes() {
-        return $this->belongsToMany('\App\Attribute', 'gallery_attribute', 'gallery_id', 'attribute_id')->withPivot('value');
+        return $this->belongsToMany('\App\Models\Attribute', 'gallery_attribute', 'gallery_id', 'attribute_id')->withPivot('value');
     }
 
     public function getPostSchedule() {
@@ -29,13 +29,13 @@ class Gallery extends Model {
     }
 
     public function user() {
-        return $this->belongsTo('App\User', 'created_by');
+        return $this->belongsTo('App\Models\User', 'created_by');
     }
     public function construction() {
-        return $this->belongsTo('App\Construction', 'created_by');
+        return $this->belongsTo('App\Models\Construction', 'created_by');
     }
      public function project() {
-        $data = $this->belongsTo('\App\Project', 'project_id', 'id');
+        $data = $this->belongsTo('\App\Models\Project', 'project_id', 'id');
         return $data;
     }
     public function url() {

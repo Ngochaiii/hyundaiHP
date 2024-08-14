@@ -20,7 +20,7 @@ class ProductRepository extends AbstractRepository {
             'title' => 'required|unique:product',
             'alias' => 'required',
             'category_id' => 'required',
-            'images' => 'required',
+            // 'images' => 'required',
             'keywords' => 'required'
         ];
     }

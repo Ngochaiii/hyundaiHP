@@ -20,7 +20,6 @@ class ProductController extends Controller {
         $this->productRepo = $productRepo;
         $this->categoryRepo = $categoryRepo;
         $this->attributeRepo = $attributeRepo;
-
     }
 
     public function index() {
@@ -49,6 +48,7 @@ class ProductController extends Controller {
      */
     public function store(Request $request) {
         $input = $request->all();
+        // dd($input);
         $validator = \Validator::make($input, $this->productRepo->validateCreate());
         if ($validator->fails()) {
             return redirect()->back()->withErrors($validator)->withInput();
@@ -61,6 +61,7 @@ class ProductController extends Controller {
         $input['post_schedule'] = isset($input['post_schedule']) ? $input['post_schedule_submit'] : date('Y-m-d H:i:s');
         $product = $this->productRepo->create($input);
         //Thêm vào lịch sử đăng bài
+        dd($input);
 
         //Thêm danh mục sản phẩm
         $product->categories()->attach($input['category_id']);

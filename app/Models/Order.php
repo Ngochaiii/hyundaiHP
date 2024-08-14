@@ -14,15 +14,15 @@ class Order extends Model {
     }
 
     public function products() {
-        return $this->belongsToMany('App\Product', 'order_detail', 'order_id', 'product_id')->withPivot('order_id', 'product_id', 'quantity', 'sub_total');
+        return $this->belongsToMany('App\Models\Product', 'order_detail', 'order_id', 'product_id')->withPivot('order_id', 'product_id', 'quantity', 'sub_total');
     }
 
     public function detail() {
-        return $this->hasMany('App\OrderDetail');
+        return $this->hasMany('App\Models\OrderDetail');
     }
 
     public function member() {
-        return $this->belongsTo('App\Member');
+        return $this->belongsTo('App\Models\Member');
     }
     public function total_format(){
         return number_format($this->total);

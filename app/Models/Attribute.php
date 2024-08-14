@@ -19,11 +19,11 @@ class Attribute extends Model {
     public $timestamps = false;
 
     public function products() {
-        return $this->belongsToMany('\App\Product', 'product_attribute', 'attribute_id', 'product_id');
+        return $this->belongsToMany('\App\Models\Product', 'product_attribute', 'attribute_id', 'product_id');
     }
 
     public function galleries() {
-        return $this->belongsToMany('\App\Gallery', 'gallery_attribute', 'attribute_id', 'gallery_id');
+        return $this->belongsToMany('\App\Models\Gallery', 'gallery_attribute', 'attribute_id', 'gallery_id');
     }
 
 }
