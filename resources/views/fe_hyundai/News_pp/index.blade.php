@@ -2,706 +2,206 @@
 
 @section('content')
 
-<div class="container">
-    <div class="row mt-3">
-        <div class="col-xl-8">
-            <div class="card">
-                <div class="card-body pb-0">
-                    <div class="row align-items-center">
-                        <div class="col-md-3">
-                            <div class="text-center border-end">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                                    class="img-fluid avatar-xxl rounded-circle" alt>
-                                <h4 class="text-primary font-size-20 mt-3 mb-2">Jansh Wells</h4>
-                                <h5 class="text-muted font-size-13 mb-0">Web Designer</h5>
-                            </div>
-                        </div>
-                        <div class="col-md-9">
-                            <div class="ms-3">
-                                <div>
-                                    <h4 class="card-title mb-2">Biography</h4>
-                                    <p class="mb-0 text-muted">Hi I'm Jansh,has been the industry's standard
-                                        dummy text To an English person alteration text.</p>
-                                </div>
-                                <div class="row my-4">
-                                    <div class="col-md-12">
-                                        <div>
-                                            <p class="text-muted mb-2 fw-medium"><i
-                                                    class="mdi mdi-email-outline me-2"></i><a
-                                                    href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                    data-cfemail="cc86ada2bfa4bba9a0a0bf8cbcbea3aea5afe2afa3a1">[email&#160;protected]</a>
-                                            </p>
-                                            <p class="text-muted fw-medium mb-0"><i
-                                                    class="mdi mdi-phone-in-talk-outline me-2"></i>418-955-4703
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <ul class="nav nav-tabs nav-tabs-custom border-bottom-0 mt-3 nav-justfied"
-                                    role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link px-4 "
-                                            href="https://bootdey.com/snippets/view/profile-projects"
-                                            target="__blank">
-                                            <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
-                                            <span class="d-none d-sm-block">Projects</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link px-4 active" data-bs-toggle="tab" href="#tasks-tab"
-                                            role="tab" aria-selected="false" tabindex="-1">
-                                            <span class="d-block d-sm-none"><i class="mdi mdi-menu-open"></i></span>
-                                            <span class="d-none d-sm-block">Tasks</span>
-                                        </a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link px-4 "
-                                            href="https://bootdey.com/snippets/view/profile-with-team-section"
-                                            target="__blank">
-                                            <span class="d-block d-sm-none"><i
-                                                    class="mdi mdi-account-group-outline"></i></span>
-                                            <span class="d-none d-sm-block">Team</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="tab-content p-4">
-                    <div class="tab-pane active show" id="tasks-tab" role="tabpanel">
-                        <h4 class="card-title mb-4">Tasks</h4>
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="task-list-box" id="landing-task">
-                                    <div id="task-item-1">
-                                        <div class="card task-box rounded-3">
-                                            <div class="card-body">
-                                                <div class="row align-items-center">
-                                                    <div class="col-xl-6 col-sm-5">
-                                                        <div class="checklist form-check font-size-15">
-                                                            <input type="checkbox" class="form-check-input"
-                                                                id="customCheck1">
-                                                            <label class="form-check-label ms-1 task-title"
-                                                                for="customCheck1">Create a New
-                                                                Landing</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-6 col-sm-7">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-xl-5 col-md-6 col-sm-5">
-                                                                <div class="avatar-group mt-3 mt-xl-0 task-assigne">
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-inline-block"
-                                                                            data-bs-toggle="tooltip"
-                                                                            value="member-2" data-bs-placement="top"
-                                                                            aria-label="Mark Powell"
-                                                                            data-bs-original-title="Mark Powell">
-                                                                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png"
-                                                                                alt
-                                                                                class="rounded-circle avatar-sm">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-inline-block"
-                                                                            data-bs-toggle="tooltip"
-                                                                            value="member-4" data-bs-placement="top"
-                                                                            aria-label="Craig Hall"
-                                                                            data-bs-original-title="Craig Hall">
-                                                                            <img src="https://bootdey.com/img/Content/avatar/avatar4.png"
-                                                                                alt
-                                                                                class="rounded-circle avatar-sm">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-block" data-bs-toggle="tooltip"
-                                                                            value="member-11"
-                                                                            data-bs-placement="top"
-                                                                            data-bs-original-title="Sarah Kerns">
-                                                                            <div class="avatar-sm">
-                                                                                <div
-                                                                                    class="avatar-title rounded-circle bg-info">
-                                                                                    S
-                                                                                </div>
-                                                                            </div>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-7 col-md-6 col-sm-7">
-                                                                <div
-                                                                    class="d-flex flex-wrap gap-3 mt-3 mt-xl-0 justify-content-md-end">
-                                                                    <div>
-                                                                        <span
-                                                                            class="badge rounded-pill badge-soft-warning font-size-11 task-status">Progress</span>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#"
-                                                                            class="mb-0 text-muted fw-medium"><i
-                                                                                class="mdi mdi-checkbox-marked-circle-outline me-1"></i>4/8
-                                                                        </a>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#"
-                                                                            class="mb-0 text-muted fw-medium"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target=".bs-example-new-task"><i
-                                                                                class="mdi mdi-square-edit-outline font-size-16 align-middle"
-                                                                                onclick="editTask('task-item-1')"></i></a>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#" class="delete-item"
-                                                                            onclick="deleteProjects('task-item-1')">
-                                                                            <i
-                                                                                class="mdi mdi-trash-can-outline align-middle font-size-16 text-danger"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="task-list-box" id="design-task">
-                                    <div id="task-item-2">
-                                        <div class="card task-box rounded-3">
-                                            <div class="card-body">
-                                                <div class="row align-items-center">
-                                                    <div class="col-xl-6 col-sm-5">
-                                                        <div class="checklist form-check font-size-15">
-                                                            <input type="checkbox" class="form-check-input"
-                                                                id="customCheck2">
-                                                            <label class="form-check-label ms-1 task-title"
-                                                                for="customCheck2">Create a Layout
-                                                                Design</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-6 col-sm-7">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-xl-5 col-md-6 col-sm-5">
-                                                                <div class="avatar-group mt-3 mt-xl-0 task-assigne">
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-inline-block" value="member-3"
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-bs-placement="top"
-                                                                            aria-label="Terrell Soto"
-                                                                            data-bs-original-title="Terrell Soto">
-                                                                            <img src="https://bootdey.com/img/Content/avatar/avatar3.png"
-                                                                                alt
-                                                                                class="rounded-circle avatar-sm">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-inline-block" value="member-2"
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-bs-placement="top"
-                                                                            aria-label="Ruhi Shah"
-                                                                            data-bs-original-title="Ruhi Shah">
-                                                                            <img src="https://bootdey.com/img/Content/avatar/avatar2.png"
-                                                                                alt
-                                                                                class="rounded-circle avatar-sm">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-inline-block" value="member-1"
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-bs-placement="top"
-                                                                            aria-label="Ruhi Shah"
-                                                                            data-bs-original-title="Ruhi Shah">
-                                                                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                                                                                alt
-                                                                                class="rounded-circle avatar-sm">
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-7 col-md-6 col-sm-7">
-                                                                <div
-                                                                    class="d-flex flex-wrap gap-3 mt-3 mt-xl-0 justify-content-md-end">
-                                                                    <div>
-                                                                        <span
-                                                                            class="badge rounded-pill badge-soft-warning font-size-11 task-status">Progress</span>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#"
-                                                                            class="mb-0 text-muted fw-medium"><i
-                                                                                class="mdi mdi-checkbox-marked-circle-outline me-1"></i>8/12
-                                                                        </a>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#"
-                                                                            class="mb-0 text-muted fw-medium"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target=".bs-example-new-task"><i
-                                                                                class="mdi mdi-square-edit-outline font-size-16 align-middle"
-                                                                                onclick="editTask('task-item-2')"></i></a>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#" class="delete-item"
-                                                                            onclick="deleteProjects('task-item-2')">
-                                                                            <i
-                                                                                class="mdi mdi-trash-can-outline font-size-16 text-danger align-middle"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="task-list-box" id="blog-task">
-                                    <div id="task-item-3">
-                                        <div class="card task-box rounded-3">
-                                            <div class="card-body">
-                                                <div class="row align-items-center">
-                                                    <div class="col-xl-6 col-sm-5">
-                                                        <div class="checklist form-check font-size-15">
-                                                            <input type="checkbox" class="form-check-input"
-                                                                id="customCheck3">
-                                                            <label class="form-check-label ms-1 task-title"
-                                                                for="customCheck3">Create a Blog Template
-                                                                UI</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-6 col-sm-7">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-xl-5 col-md-6 col-sm-5">
-                                                                <div class="avatar-group mt-3 mt-xl-0 task-assigne">
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-inline-block"
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-bs-placement="top" value="member-6"
-                                                                            aria-label="Scott Edward"
-                                                                            data-bs-original-title="Scott Edward">
-                                                                            <img src="https://bootdey.com/img/Content/avatar/avatar6.png"
-                                                                                alt
-                                                                                class="rounded-circle avatar-sm">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-block" data-bs-toggle="tooltip"
-                                                                            value="member-12"
-                                                                            data-bs-placement="top"
-                                                                            data-bs-original-title="Denny Silva">
-                                                                            <div class="avatar-sm">
-                                                                                <div
-                                                                                    class="avatar-title rounded-circle bg-primary">
-                                                                                    D
-                                                                                </div>
-                                                                            </div>
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-inline-block"
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-bs-placement="top"
-                                                                            value="member-10"
-                                                                            aria-label="Betty Cooney"
-                                                                            data-bs-original-title="Betty Cooney">
-                                                                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png"
-                                                                                alt
-                                                                                class="rounded-circle avatar-sm">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-inline-block"
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-bs-placement="top" value="member-5"
-                                                                            aria-label="Michael Jackson"
-                                                                            data-bs-original-title="Michael Jackson">
-                                                                            <img src="https://bootdey.com/img/Content/avatar/avatar5.png"
-                                                                                alt
-                                                                                class="rounded-circle avatar-sm">
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-7 col-md-6 col-sm-7">
-                                                                <div
-                                                                    class="d-flex flex-wrap gap-3 mt-3 mt-xl-0 justify-content-md-end">
-                                                                    <div>
-                                                                        <span
-                                                                            class="badge rounded-pill badge-soft-danger font-size-11 task-status">Pending</span>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#"
-                                                                            class="mb-0 text-muted fw-medium"><i
-                                                                                class="mdi mdi-checkbox-marked-circle-outline me-1"></i>0/6
-                                                                        </a>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#"
-                                                                            class="mb-0 text-muted fw-medium"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target=".bs-example-new-task"><i
-                                                                                class="mdi mdi-square-edit-outline font-size-16 align-middle"
-                                                                                onclick="editTask('task-item-3')"></i></a>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#" class="delete-item"
-                                                                            onclick="deleteProjects('task-item-3')">
-                                                                            <i
-                                                                                class="mdi mdi-trash-can-outline font-size-16 align-middle text-danger"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="task-list-box" id="comp-task">
-                                    <div id="task-item-4">
-                                        <div class="card task-box rounded-3">
-                                            <div class="card-body">
-                                                <div class="row align-items-center">
-                                                    <div class="col-xl-6 col-sm-5">
-                                                        <div class="checklist form-check font-size-15">
-                                                            <input type="checkbox" class="form-check-input"
-                                                                id="customChat" checked>
-                                                            <label class="form-check-label ms-1 task-title"
-                                                                for="customChat">Chat App Pages</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-6 col-sm-7">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-xl-5 col-md-6 col-sm-5">
-                                                                <div class="avatar-group mt-3 mt-xl-0 task-assigne">
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-inline-block"
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-bs-placement="top" value="member-3"
-                                                                            aria-label="Annmarie Paul"
-                                                                            data-bs-original-title="Annmarie Paul">
-                                                                            <img src="https://bootdey.com/img/Content/avatar/avatar3.png"
-                                                                                alt
-                                                                                class="rounded-circle avatar-sm">
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-7 col-md-6 col-sm-7">
-                                                                <div
-                                                                    class="d-flex flex-wrap gap-3 mt-3 mt-xl-0 justify-content-md-end">
-                                                                    <div>
-                                                                        <span
-                                                                            class="badge rounded-pill badge-soft-success font-size-11 task-status">Completed</span>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#"
-                                                                            class="mb-0 text-muted fw-medium"><i
-                                                                                class="mdi mdi-checkbox-marked-circle-outline me-1"></i>3/3
-                                                                        </a>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#"
-                                                                            class="mb-0 text-muted fw-medium"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target=".bs-example-new-task"><i
-                                                                                class="mdi mdi-square-edit-outline font-size-16 align-middle"
-                                                                                onclick="editTask('task-item-4')"></i></a>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#" class="delete-item"
-                                                                            onclick="deleteProjects('task-item-4')">
-                                                                            <i
-                                                                                class="mdi mdi-trash-can-outline font-size-16 align-middle text-danger"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="task-list-box" id="app-task">
-                                    <div id="task-item-5">
-                                        <div class="card task-box rounded-3">
-                                            <div class="card-body">
-                                                <div class="row align-items-center">
-                                                    <div class="col-xl-6 col-sm-5">
-                                                        <div class="checklist form-check font-size-15">
-                                                            <input type="checkbox" class="form-check-input"
-                                                                id="customComponents">
-                                                            <label class="form-check-label ms-1 task-title"
-                                                                for="customComponents">Components
-                                                                Pages</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-6 col-sm-7">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-xl-5 col-md-6 col-sm-5">
-                                                                <div class="avatar-group mt-3 mt-xl-0 task-assigne">
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-inline-block"
-                                                                            data-bs-toggle="tooltip"
-                                                                            value="member-7" data-bs-placement="top"
-                                                                            aria-label="Eric Williams"
-                                                                            data-bs-original-title="Eric Williams">
-                                                                            <img src="https://bootdey.com/img/Content/avatar/avatar7.png"
-                                                                                alt
-                                                                                class="rounded-circle avatar-sm">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-inline-block"
-                                                                            data-bs-toggle="tooltip"
-                                                                            value="member-9" data-bs-placement="top"
-                                                                            aria-label="Richard Millar"
-                                                                            data-bs-original-title="Richard Millar">
-                                                                            <img src="https://bootdey.com/img/Content/avatar/avatar8.png"
-                                                                                alt
-                                                                                class="rounded-circle avatar-sm">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-inline-block"
-                                                                            data-bs-toggle="tooltip"
-                                                                            value="member-8" data-bs-placement="top"
-                                                                            aria-label="Tama Turner"
-                                                                            data-bs-original-title="Tama Turner">
-                                                                            <img src="https://bootdey.com/img/Content/avatar/avatar8.png"
-                                                                                alt
-                                                                                class="rounded-circle avatar-sm">
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-7 col-md-6 col-sm-7">
-                                                                <div
-                                                                    class="d-flex flex-wrap gap-3 mt-3 mt-xl-0 justify-content-md-end">
-                                                                    <div>
-                                                                        <span
-                                                                            class="badge rounded-pill badge-soft-danger font-size-11 task-status">Pending</span>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#"
-                                                                            class="mb-0 text-muted fw-medium"><i
-                                                                                class="mdi mdi-checkbox-marked-circle-outline me-1"></i>7/17
-                                                                        </a>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#"
-                                                                            class="mb-0 text-muted fw-medium"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target=".bs-example-new-task"><i
-                                                                                class="mdi mdi-square-edit-outline font-size-16 align-middle"
-                                                                                onclick="editTask('task-item-5')"></i></a>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#" class="delete-item"
-                                                                            onclick="deleteProjects('task-item-5')">
-                                                                            <i
-                                                                                class="mdi mdi-trash-can-outline font-size-16 align-middle text-danger"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="task-list-box" id="gallery-task">
-                                    <div id="task-item-6">
-                                        <div class="card task-box rounded-3">
-                                            <div class="card-body">
-                                                <div class="row align-items-center">
-                                                    <div class="col-xl-6 col-sm-5">
-                                                        <div class="checklist form-check font-size-15">
-                                                            <input type="checkbox" class="form-check-input"
-                                                                id="customGallry" checked>
-                                                            <label class="form-check-label ms-1 task-title"
-                                                                for="customGallry">Create a Gallery
-                                                                Pages</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-xl-6 col-sm-7">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-xl-5 col-md-6 col-sm-5">
-                                                                <div class="avatar-group mt-3 mt-xl-0 task-assigne">
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-inline-block"
-                                                                            data-bs-toggle="tooltip"
-                                                                            value="member-5" data-bs-placement="top"
-                                                                            aria-label="John Walker"
-                                                                            data-bs-original-title="John Walker">
-                                                                            <img src="https://bootdey.com/img/Content/avatar/avatar5.png"
-                                                                                alt
-                                                                                class="rounded-circle avatar-sm">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="avatar-group-item">
-                                                                        <a href="javascript: void(0);"
-                                                                            class="d-inline-block"
-                                                                            data-bs-toggle="tooltip"
-                                                                            data-bs-placement="top" value="member-4"
-                                                                            aria-label="Willie Garcia"
-                                                                            data-bs-original-title="Willie Garcia">
-                                                                            <img src="https://bootdey.com/img/Content/avatar/avatar4.png"
-                                                                                alt
-                                                                                class="rounded-circle avatar-sm">
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-xl-7 col-md-6 col-sm-7">
-                                                                <div
-                                                                    class="d-flex flex-wrap gap-3 mt-3 mt-xl-0 justify-content-md-end">
-                                                                    <div>
-                                                                        <span
-                                                                            class="badge rounded-pill badge-soft-success font-size-11 task-status">Completed</span>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#"
-                                                                            class="mb-0 text-muted fw-medium"><i
-                                                                                class="mdi mdi-checkbox-marked-circle-outline me-1"></i>5/5
-                                                                        </a>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#"
-                                                                            class="mb-0 text-muted fw-medium"
-                                                                            data-bs-toggle="modal"
-                                                                            data-bs-target=".bs-example-new-task"><i
-                                                                                class="mdi mdi-square-edit-outline font-size-16 align-middle"
-                                                                                onclick="editTask('task-item-6')"></i></a>
-                                                                    </div>
-                                                                    <div>
-                                                                        <a href="#" class="delete-item"
-                                                                            onclick="deleteProjects('task-item-6')">
-                                                                            <i
-                                                                                class="mdi mdi-trash-can-outline font-size-16 align-middle text-danger"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!-- blog section -->
+<section class="blog-section-four layout-radius">
+    <div class="boxcar-container">
+        <div class="boxcar-title wow fadeInUp">
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><span>Cars for Sale</span></li>
+            </ul>
+            <h2>Blog List</h2>
         </div>
-        <div class="col-xl-4">
-            <div class="card">
-                <div class="card-body">
-                    <div class="pb-2">
-                        <h4 class="card-title mb-3">About</h4>
-                        <p>Hi I'm Jansh, has been the industry's standard dummy text To an English
-                            person, it will seem like
-                            simplified.</p>
-                        <ul class="ps-3 mb-0">
-                            <li>it will seem like simplified.</li>
-                            <li>To achieve this, it would be necessary to have uniform pronunciation</li>
-                        </ul>
-
-                    </div>
-                    <hr>
-                    <div class="pt-2">
-                        <h4 class="card-title mb-4">My Skill</h4>
-                        <div class="d-flex gap-2 flex-wrap">
-                            <span class="badge badge-soft-secondary p-2">HTML</span>
-                            <span class="badge badge-soft-secondary p-2">Bootstrap</span>
-                            <span class="badge badge-soft-secondary p-2">Scss</span>
-                            <span class="badge badge-soft-secondary p-2">Javascript</span>
-                            <span class="badge badge-soft-secondary p-2">React</span>
-                            <span class="badge badge-soft-secondary p-2">Angular</span>
+        <div class="row">
+           <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12">
+                <div class="inner-column-two">
+                    <!-- blog-block -->
+                    <div class="blog-block-four">
+                        <div class="inner-box wow fadeInUp">
+                            <div class="image-box">
+                                <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/blog4-7.jpg')}}')}}" alt=""></a></figure>
+                                <span class="date">news</span>
+                            </div>
+                            <div class="content-box">
+                                <ul class="post-info">
+                                    <li>Ali Tufan</li>
+                                    <li>April 20, 2023</li>
+                                </ul>
+                                <h6 class="title"><a href="#">The Best Used Cars For Affordable Insurance Policies</a></h6>
+                                <div class="text">In the market for an SUV but now sure which one to go for? Cargiant has weighed up two great options against each other, to help you buy the right car for you.</div>
+                                <a href="#" class="btn-two">Read More<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <g clip-path="url(#clip0_659_14687)">
+                                    <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#050B20"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_659_14687">
+                                        <rect width="14" height="14" fill="white"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div>
-                        <h4 class="card-title mb-4">Personal Details</h4>
-                        <div class="table-responsive">
-                            <table class="table table-bordered mb-0">
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">Name</th>
-                                        <td>Jansh Wells</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Location</th>
-                                        <td>California, United States</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Language</th>
-                                        <td>English</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">Website</th>
-                                        <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
-                                                data-cfemail="94f5f6f7a5a6d4e4e6fbf6fdf7baf7fbf9">[email&#160;protected]</a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                    <!-- blog-block -->
+                    <div class="blog-block-four">
+                        <div class="inner-box wow fadeInUp">
+                            <div class="image-box">
+                                <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/blog4-8.jpg')}}')}}" alt=""></a></figure>
+                                <span class="date">news</span>
+                            </div>
+                            <div class="content-box">
+                                <ul class="post-info">
+                                    <li>Ali Tufan</li>
+                                    <li>April 20, 2023</li>
+                                </ul>
+                                <h6 class="title"><a href="#">Battle of the SUVs - Kia Sportage vs Hyundai Tucson</a></h6>
+                                <div class="text">In the market for an SUV but now sure which one to go for? Cargiant has weighed up two great options against each other, to help you buy the right car for you.</div>
+                                <a href="#" class="btn-two">Read More<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <g clip-path="url(#clip0_659_14687)">
+                                    <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#050B20"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_659_14687">
+                                        <rect width="14" height="14" fill="white"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg></a>
+                            </div>
                         </div>
                     </div>
+                    <!-- blog-block -->
+                    <div class="blog-block-four">
+                        <div class="inner-box wow fadeInUp">
+                            <div class="image-box">
+                                <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/blog4-9.jpg')}}')}}" alt=""></a></figure>
+                                <span class="date">news</span>
+                            </div>
+                            <div class="content-box">
+                                <ul class="post-info">
+                                    <li>Ali Tufan</li>
+                                    <li>April 20, 2023</li>
+                                </ul>
+                                <h6 class="title"><a href="#">Golf vs Polo: A Comparison of Two Volkswagen Classics</a></h6>
+                                <div class="text">In the market for an SUV but now sure which one to go for? Cargiant has weighed up two great options against each other, to help you buy the right car for you.</div>
+                                <a href="#" class="btn-two">Read More<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                    <g clip-path="url(#clip0_659_14687)">
+                                    <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#050B20"></path>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_659_14687">
+                                        <rect width="14" height="14" fill="white"></rect>
+                                    </clipPath>
+                                    </defs>
+                                </svg></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination-sec">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.57983 5.99989C2.57983 5.7849 2.66192 5.56987 2.82573 5.4059L7.98559 0.24617C8.31382 -0.0820565 8.84598 -0.0820565 9.17408 0.24617C9.50217 0.574263 9.50217 1.10632 9.17408 1.43457L4.60841 5.99989L9.17376 10.5654C9.50185 10.8935 9.50185 11.4256 9.17376 11.7537C8.84566 12.0821 8.31366 12.0821 7.98544 11.7537L2.82555 6.59404C2.66176 6.42999 2.57983 6.21495 2.57983 5.99989Z" fill="#050B20"></path>
+                            </svg> </span>
+                                  <span class="sr-only">Previous</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">4</a></li>
+                              <li class="page-item"><a class="page-link" href="#">5</a></li>
+                              <li class="page-item"><a class="page-link" href="#">...</a></li>
+                              <li class="page-item"><a class="page-link" href="#">20</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2880_6407)">
+                                <path d="M9.42017 6.00011C9.42017 6.2151 9.33808 6.43013 9.17427 6.5941L4.01441 11.7538C3.68618 12.0821 3.15402 12.0821 2.82592 11.7538C2.49783 11.4257 2.49783 10.8937 2.82592 10.5654L7.39159 6.00011L2.82624 1.43461C2.49815 1.10652 2.49815 0.574382 2.82624 0.246315C3.15434 -0.0820709 3.68634 -0.0820709 4.01457 0.246315L9.17446 5.40596C9.33824 5.57001 9.42017 5.78505 9.42017 6.00011Z" fill="#050B20"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_2880_6407">
+                                <rect width="12" height="12" fill="white" transform="translate(12 12) rotate(-180)"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg> </span>
+                                  <span class="sr-only">Next</span>
+                                </a>
+                              </li>
+                            </ul>
+                            <div class="text">Showing results 1-30 of 1,415</div>
+                          </nav>
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div>
-                        <h4 class="card-title mb-4">Work Experince</h4>
-                        <ul class="list-unstyled work-activity mb-0">
-                            <li class="work-item" data-date="2020-21">
-                                <h6 class="lh-base mb-0">ABCD Company</h6>
-                                <p class="font-size-13 mb-2">Web Designer</p>
-                                <p>To achieve this, it would be necessary to have uniform grammar, and more
-                                    common words.</p>
-                            </li>
-                            <li class="work-item" data-date="2019-20">
-                                <h6 class="lh-base mb-0">XYZ Company</h6>
-                                <p class="font-size-13 mb-2">Graphic Designer</p>
-                                <p class="mb-0">It will be as simple as occidental in fact, it will be
-                                    Occidental person, it will seem like simplified.</p>
-                            </li>
+           </div>
+           <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12">
+                <div class="sider-bar">
+                    <!-- categories-sec -->
+                    <div class="categories-sec">
+                        <h6 class="widget-title">Categories</h6>
+                        <ul class="categories-list">
+                            <li><a href="#">Accessories  (1,456)</a></li>
+                            <li><a href="#">Body Kit  (1,456)</a></li>
+                            <li><a href="#">Interior  (1,456)</a></li>
+                            <li><a href="#">Exterior  (1,456)</a></li>
+                            <li><a href="#">Sound  (1,456)</a></li>
+                            <li><a href="#">Fuel Systems  (1,456)</a></li>
+                            <li><a href="#">Wheels  (1,456)</a></li>
+                            <li><a href="#">Oil &amp; Filters  (1,456)</a></li>
+                        </ul>
+                    </div>
+                    <!-- recent-post-sec -->
+                    <div class="recent-post-sec">
+                        <h6 class="widget-title">Recent Posts</h6>
+                        <!-- pos-block -->
+                        <div class="pos-block">
+                            <div class="inner-box">
+                                <img src="{{asset('Fe_Hyundai/assets/images/post1-1.jpg')}}">
+                                <div class="content-box">
+                                    <h6 class="title"><a href="#">Battle of the SUVs - Kia Sportage vs Hyundai Tuc...</a></h6>
+                                    <span>December 2, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pos-block -->
+                        <div class="pos-block">
+                            <div class="inner-box">
+                                <img src="{{asset('Fe_Hyundai/assets/images/post1-2.jpg')}}">
+                                <div class="content-box">
+                                    <h6 class="title"><a href="#">The Best Car Boot Sales In London</a></h6>
+                                    <span>December 2, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- pos-block -->
+                        <div class="pos-block">
+                            <div class="inner-box">
+                                <img src="{{asset('Fe_Hyundai/assets/images/post1-3.jpg')}}">
+                                <div class="content-box">
+                                    <h6 class="title"><a href="#">What is Engine <br>Remapping?</a></h6>
+                                    <span>December 2, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tag-section -->
+                    <div class="tag-sec">
+                        <h6 class="widget-title">Tags</h6>
+                        <ul class="tag-list">
+                            <li><a href="#">Sound</a></li>
+                            <li><a href="#">Interior</a></li>
+                            <li><a href="#">Exterior</a></li>
+                            <li><a href="#">Fuel System</a></li>
+                            <li><a href="#">Wheels</a></li>
                         </ul>
                     </div>
                 </div>
-            </div>
+           </div>
         </div>
     </div>
-</div>
+</section>
+<!-- End blog-section -->
 @endsection
 @push('css')
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">

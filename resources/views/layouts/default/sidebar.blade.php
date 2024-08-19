@@ -24,30 +24,30 @@
         <div class="inner-container">
             <!-- Main box -->
             <div class="c-box">
-                <div class="logo-inner">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="logo-inner">
+                        <div class="layout-search">
+                            <div class="right-box">
+                                <div class="mobile-navigation">
+                                    <a href="#nav-mobile" title="" style="color: black">
+                                        <!-- <i class="fa fa-bars"></i> -->
+                                        <svg width="22" height="11" viewbox="0 0 22 11" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="44" height="6" fill="black"></rect>
+                                            <rect y="9" width="44" height="4" fill="black"></rect>
+                                        </svg>
 
-                    <div class="layout-search">
-                        <div class="right-box">
-                            <div class="mobile-navigation">
-                                <a href="#nav-mobile" title="" style="color: black">
-                                    <!-- <i class="fa fa-bars"></i> -->
-                                    <svg width="22" height="11" viewbox="0 0 22 11" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="44" height="6" fill="black"></rect>
-                                        <rect y="9" width="44" height="4" fill="black"></rect>
-                                    </svg>
-
-                                </a>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <!--Nav Box-->
                 <div class="nav-out-bar">
                     <nav class="nav main-menu">
                         <ul class="navigation" id="navbar">
-                            <li class="current-dropdown current"><span>Trang chủ </li>
+                            <li class="current-dropdown current"><span> <a href="{{route('home.index')}}" >Trang chủ </a></span></li>
                             <li class="current-dropdown"><span>Sản Phẩm <i class="fa-solid fa-angle-down"></i></span>
                                 <div class="mega-menu">
                                     <div class="mega-column">
@@ -102,11 +102,15 @@
                             <li class="current-dropdown"><span>Dịch Vụ <i class="fa-solid fa-angle-down"></i></span>
                                 <ul class="dropdown">
                                     <li><a href="inventory-page-single.html" title="">Ứng Dụng Hyundai Me</a></li>
-                                    <li><a href="inventory-page-single-v2.html" title="">Trương Trình Dịch Vụ </a></li>
+                                    <li><a href="inventory-page-single-v2.html" title="">Trương Trình Dịch Vụ </a>
+                                    </li>
                                     <li><a href="inventory-page-single-v3.html" title="">Bảo Hành</a></li>
-                                    <li><a href="inventory-page-single-v4.html" title="">Phụ Tùng Chính Hiệu</a></li>
-                                    <li><a href="inventory-page-single-v5.html" title="">Đặt Lịch Hẹn Sửa Chữa</a></li>
-                                    <li><a href="inventory-page-single-v5.html" title="">Dịch Vụ Và Cứu Hộ </a></li>
+                                    <li><a href="inventory-page-single-v4.html" title="">Phụ Tùng Chính Hiệu</a>
+                                    </li>
+                                    <li><a href="inventory-page-single-v5.html" title="">Đặt Lịch Hẹn Sửa Chữa</a>
+                                    </li>
+                                    <li><a href="inventory-page-single-v5.html" title="">Dịch Vụ Và Cứu Hộ </a>
+                                    </li>
                                 </ul>
                             </li>
                             <li class="current-dropdown"><span>Tin Tức <i class="fa-solid fa-angle-down"></i></span>
@@ -150,7 +154,7 @@
 
                                 </ul>
                             </li>
-                            <li class="current-dropdown right-one"><span>Đăng Ký Lái Thử</li>
+                            <li class="current-dropdown right-one"><span> <a href="{{route('marketing.activation')}}">Đăng Ký Lái Thử</a></li>
                         </ul>
                     </nav>
                     <!-- Main Menu End-->

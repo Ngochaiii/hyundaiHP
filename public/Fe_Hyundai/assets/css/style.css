@@ -96,6 +96,9 @@ License: copyright commercial
 }
 
 /* code mới  */
+a{
+    text-decoration:none !important;
+}
 .quickcontact {
     padding: 10px 0;
     color: #999;
@@ -118,6 +121,34 @@ License: copyright commercial
         margin-top : -85px;
     }
 }
+
+  #slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+  }
+
+  .slide-wrapper {
+    width: 2912px;
+    -webkit-animation: slide 14s ease infinite;
+  }
+
+  .slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+
+
+  @-webkit-keyframes slide {
+    20% {margin-left: 0px;}
+    30% {margin-left: -728px;}
+    50% {margin-left: -728px;}
+    60% {margin-left: -1456px;}
+    80% {margin-left: -1456px;}
+  }
+
 /* hêt code mới  */
 /*
  * typography.scss
@@ -1799,8 +1830,8 @@ Main Header
 
 .boxcar-header .c-box .nav-out-bar {
     position: relative;
-    margin-left: 230px;
-    margin-right: auto;
+    /* margin-left: 230px;
+    margin-right: auto; */
 }
 
 .main-menu {
@@ -1997,9 +2028,15 @@ Main Header
     color: #383838 !important;
     font-size: 20px !important;
     text-transform: unset !important;
-    font-weight: 600 !important;
+    font-weight: 800 !important;
 }
-
+.main-menu .navigation>li>span>a {
+    color: #383838 !important;
+    font-size: 20px !important;
+    text-transform: unset !important;
+    font-weight: 800 !important;
+    text-decoration: none;
+}
 
 .header-style-v1.style-two {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -2085,10 +2122,6 @@ Main Header
     margin-top: -2px;
 }
 
-.header-style-v1 .header-inner .c-box .nav-out-bar {
-    margin-right: 31px;
-    /* Medium Large devices */
-}
 
 @media (max-width: 1399px) {
     .header-style-v1 .header-inner .c-box .nav-out-bar {
@@ -2167,6 +2200,8 @@ Main Header
     -webkit-transition: all 220ms linear 0ms;
     transition: all 220ms linear 0ms;
     text-transform: capitalize;
+    text-decoration: none;
+    padding: 5px;
 }
 
 .header-style-v1 .header-inner .c-box .nav-out-bar .nav .navigation .current-dropdown .dropdown li a:hover {
@@ -29185,7 +29220,7 @@ Chat Widget
 
 .layout-radius {
     border-radius: 80px;
-    margin-top: -80px;
+    margin-top: 20px;
     margin-bottom: -80px;
     background-color: #fff;
 }

@@ -1,269 +1,608 @@
 @extends('layouts.index')
 
 @section('content')
-<!-- Section Filter Search -->
-<section class="filter-search-section">
-    <div class="cus-container10">
-        <div class="filter-search-tab">
-            <div class="nav nav-tabs search-nav-tab" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">
-                    All
-                </button>
-                <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new" type="button" role="tab" aria-controls="new" aria-selected="false">
-                    New
-                </button>
-              
-                <button class="nav-link" id="used-tab" data-bs-toggle="tab" data-bs-target="#used" type="button" role="tab" aria-controls="used" aria-selected="false">
-                    Used
-                </button>
-               
-            </div>
-            <div class="tab-content wow fadeInUp" data-wow-delay="200ms" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="all-tab">
-                    <form class="form-filter-search">
-                        <div class="form_boxes">
-                            <label for="">Select Makes</label>
-
-                            <div class="drop-menu">
-                                <div class="select">
-                                    <span>Audi</span>
-                                    
-                                </div>
-                                <input type="hidden" name="gender">
-                                <ul class="dropdown" style="display: none;">
-                                    <li>Audi</li>
-                                    <li>Honda</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="form_boxes">
-                            <label for="">Select Models</label>
-
-                            <div class="drop-menu">
-                                <div class="select">
-                                    <span>Q7</span>
-                                   
-                                </div>
-                                <input type="hidden" name="gender">
-                                <ul class="dropdown" style="display: none;">
-                                    <li>Q7</li>
-                                    <li>Q8</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="form_boxes">
-                            <label for="">Select Year</label>
-                            <div class="drop-menu">
-                                <div class="select">
-                                    <span>2023</span>
-                                </div>
-                                <input type="hidden" name="gender">
-                                <ul class="dropdown" style="display: none;">
-                                    <li>2023</li>
-                                    <li>2024</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="form_boxes">
-                            <label for="">Select Price</label>
-                            <div class="drop-menu">
-                                <input type="text" placeholder="$499 to $956">
-                            </div>
-                        </div>
-                        
-                        <div class="form-submit">
-                            <button type="submit" class="theme-btn"><i class="flaticon-search"></i>Search 9451 Cars</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="tab-pane fade show" id="new" role="tabpanel" aria-labelledby="new-tab">
-                    <form class="form-filter-search">
-                        <div class="form_boxes">
-                            <label for="">Select Makes</label>
-
-                            <div class="drop-menu">
-                                <div class="select">
-                                    <span>Audi</span>
-                                    
-                                </div>
-                                <input type="hidden" name="gender">
-                                <ul class="dropdown" style="display: none;">
-                                    <li>Audi</li>
-                                    <li>Honda</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="form_boxes">
-                            <label for="">Select Models</label>
-
-                            <div class="drop-menu">
-                                <div class="select">
-                                    <span>Q7</span>
-                                   
-                                </div>
-                                <input type="hidden" name="gender">
-                                <ul class="dropdown" style="display: none;">
-                                    <li>Q7</li>
-                                    <li>Q8</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="form_boxes">
-                            <label for="">Select Year</label>
-                            <div class="drop-menu">
-                                <div class="select">
-                                    <span>2023</span>
-                                </div>
-                                <input type="hidden" name="gender">
-                                <ul class="dropdown" style="display: none;">
-                                    <li>2023</li>
-                                    <li>2024</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="form_boxes">
-                            <label for="">Select Price</label>
-                            <div class="drop-menu">
-                                <input type="text" placeholder="$499 to $956">
-                            </div>
-                        </div>
-                        
-                        <div class="form-submit">
-                            <button type="submit" class="theme-btn"><i class="flaticon-search"></i>Search 9451 Cars</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="tab-pane fade show" id="used" role="tabpanel" aria-labelledby="used-tab">
-                    <form class="form-filter-search">
-                        <div class="form_boxes">
-                            <label for="">Select Makes</label>
-
-                            <div class="drop-menu">
-                                <div class="select">
-                                    <span>Audi</span>
-                                    
-                                </div>
-                                <input type="hidden" name="gender">
-                                <ul class="dropdown" style="display: none;">
-                                    <li>Audi</li>
-                                    <li>Honda</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="form_boxes">
-                            <label for="">Select Models</label>
-
-                            <div class="drop-menu">
-                                <div class="select">
-                                    <span>Q7</span>
-                                   
-                                </div>
-                                <input type="hidden" name="gender">
-                                <ul class="dropdown" style="display: none;">
-                                    <li>Q7</li>
-                                    <li>Q8</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="form_boxes">
-                            <label for="">Select Year</label>
-                            <div class="drop-menu">
-                                <div class="select">
-                                    <span>2023</span>
-                                </div>
-                                <input type="hidden" name="gender">
-                                <ul class="dropdown" style="display: none;">
-                                    <li>2023</li>
-                                    <li>2024</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="form_boxes">
-                            <label for="">Select Price</label>
-                            <div class="drop-menu">
-                                <input type="text" placeholder="$499 to $956">
-                            </div>
-                        </div>
-                        
-                        <div class="form-submit">
-                            <button type="submit" class="theme-btn"><i class="flaticon-search"></i>Search 9451 Cars</button>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Section Filter Search -->
 <!-- boxcar-team-section-three -->
-<section class="boxcar-team-section-three">
+<section class="cars-section-four v1 layout-radius">
     <div class="boxcar-container">
-        <div class="boxcar-title">
-            <h2>Browse by Type</h2>
-            <a href="#" class="btn-title">Show All Brands<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><g clip-path="url(#clip0_601_3199)"><path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#050B20"></path></g><defs><clipPath id="clip0_601_3199"><rect width="14" height="14" fill="white"></rect></clipPath></defs></svg></a>
+        <div class="boxcar-title-three wow fadeInUp">
+            <ul class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><span>danh sách các xe </span></li>
+            </ul>
+            <h2>Những mẫu xe </h2>
         </div>
-        <div class="right-box">
-            <!-- team-block-three -->
-            <div class="team-block-three">
+        <div class="text-box">
+            <div class="text">Showing 1 to 16 of 1559 vehicles</div>
+            <form>
+                <div class="form_boxes v3">
+                    <small>Sort by</small>
+                    <div class="drop-menu">
+                        <div class="select">
+                            <span>Any Makes</span>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <input type="hidden" name="gender">
+                        <ul class="dropdown" style="display: none;">
+                            <li>Audi</li>
+                            <li>Honda</li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row wow fadeInUp">
+            <!-- car-block-four -->
+            <div class="car-block-four col-xl-3 col-lg-4 col-md-6 col-sm-6">
                 <div class="inner-box">
-                    <div class=" image-box">
-                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/team3-1.jpg')}}" alt=""></a></figure>
-                        <div class="content-box">
-                            <span>23 Cars</span>
-                            <h6 class="title">SUV</h6>
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/shop3-1.jpg')}}" alt=""></a></figure>
+                        <span>Low Mileage</span>
+                        <a class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_601_1274)">
+                                <path d="M9.39062 12C9.15156 12 8.91671 11.9312 8.71128 11.8009L6.11794 10.1543C6.04701 10.1091 5.95296 10.1096 5.88256 10.1543L3.28869 11.8009C2.8048 12.1082 2.13755 12.0368 1.72722 11.6454C1.47556 11.4047 1.33685 11.079 1.33685 10.728V1.2704C1.33738 0.570053 1.90743 0 2.60778 0H9.39272C10.0931 0 10.6631 0.570053 10.6631 1.2704V10.728C10.6631 11.4294 10.0925 12 9.39062 12ZM6.00025 9.06935C6.24193 9.06935 6.47783 9.13765 6.68169 9.26743L9.27503 10.9135C9.31233 10.9371 9.35069 10.9487 9.39114 10.9487C9.48046 10.9487 9.61286 10.8788 9.61286 10.728V1.2704C9.61233 1.14956 9.51356 1.05079 9.39272 1.05079H2.60778C2.48642 1.05079 2.38817 1.14956 2.38817 1.2704V10.728C2.38817 10.7911 2.41023 10.8436 2.45384 10.8851C2.52582 10.9539 2.63563 10.9708 2.72599 10.9135L5.31934 9.2669C5.52267 9.13765 5.75857 9.06935 6.00025 9.06935Z" fill="black"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_1274">
+                                <rect width="12" height="12" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content-box">
+                        <h6 class="title"><a href="#">Range Rover, Defender 110</a></h6>
+                        <div class="text">2023 C300e AMG Line Night Ed Premiu...</div>
+                        <ul>
+                            <li><i class="flaticon-gasoline-pump"></i>72,925 miles</li>
+                            <li><i class="flaticon-speedometer"></i>Petrol</li>
+                            <li><i class="flaticon-gearbox"></i>Automatic</li>
+                        </ul>
+                        <div class="btn-box">
+                            <span>$789</span>
+                            <small>$399</small>
+                            <a href="#" class="details">View Details<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <g clip-path="url(#clip0_601_4346)">
+                                <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#405FF2"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_4346">
+                                <rect width="14" height="14" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- team-block-three -->
-            <div class="team-block-three">
+            <!-- car-block-four -->
+            <div class="car-block-four col-xl-3 col-lg-4 col-md-6 col-sm-6">
                 <div class="inner-box">
-                    <div class=" image-box">
-                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/team3-2.jpg')}}" alt=""></a></figure>
-                        <div class="content-box">
-                            <span>23 Cars</span>
-                            <h6 class="title">SUV</h6>
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/shop3-2.jpg')}}" alt=""></a></figure>
+                        <a class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_601_1274)">
+                                <path d="M9.39062 12C9.15156 12 8.91671 11.9312 8.71128 11.8009L6.11794 10.1543C6.04701 10.1091 5.95296 10.1096 5.88256 10.1543L3.28869 11.8009C2.8048 12.1082 2.13755 12.0368 1.72722 11.6454C1.47556 11.4047 1.33685 11.079 1.33685 10.728V1.2704C1.33738 0.570053 1.90743 0 2.60778 0H9.39272C10.0931 0 10.6631 0.570053 10.6631 1.2704V10.728C10.6631 11.4294 10.0925 12 9.39062 12ZM6.00025 9.06935C6.24193 9.06935 6.47783 9.13765 6.68169 9.26743L9.27503 10.9135C9.31233 10.9371 9.35069 10.9487 9.39114 10.9487C9.48046 10.9487 9.61286 10.8788 9.61286 10.728V1.2704C9.61233 1.14956 9.51356 1.05079 9.39272 1.05079H2.60778C2.48642 1.05079 2.38817 1.14956 2.38817 1.2704V10.728C2.38817 10.7911 2.41023 10.8436 2.45384 10.8851C2.52582 10.9539 2.63563 10.9708 2.72599 10.9135L5.31934 9.2669C5.52267 9.13765 5.75857 9.06935 6.00025 9.06935Z" fill="black"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_1274">
+                                <rect width="12" height="12" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content-box">
+                        <h6 class="title"><a href="#">Mercedes-Benz, C Class</a></h6>
+                        <div class="text">2023 C300e AMG Line Night Ed Premiu...</div>
+                        <ul>
+                            <li><i class="flaticon-gasoline-pump"></i>72,925 miles</li>
+                            <li><i class="flaticon-speedometer"></i>Petrol</li>
+                            <li><i class="flaticon-gearbox"></i>Automatic</li>
+                        </ul>
+                        <div class="btn-box">
+                            <span>$789</span>
+                            <small>$399</small>
+                            <a href="#" class="details">View Details<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <g clip-path="url(#clip0_601_4346)">
+                                <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#405FF2"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_4346">
+                                <rect width="14" height="14" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- team-block-three -->
-            <div class="team-block-three">
+            <!-- car-block-four -->
+            <div class="car-block-four col-xl-3 col-lg-4 col-md-6 col-sm-6">
                 <div class="inner-box">
-                    <div class=" image-box">
-                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/team3-3.jpg')}}" alt=""></a></figure>
-                        <div class="content-box">
-                            <span>23 Cars</span>
-                            <h6 class="title">SUV</h6>
+                    <div class="image-box two">
+                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/shop3-3.jpg')}}" alt=""></a></figure>
+                        <span>Great Price</span>
+                        <a class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_601_1274)">
+                                <path d="M9.39062 12C9.15156 12 8.91671 11.9312 8.71128 11.8009L6.11794 10.1543C6.04701 10.1091 5.95296 10.1096 5.88256 10.1543L3.28869 11.8009C2.8048 12.1082 2.13755 12.0368 1.72722 11.6454C1.47556 11.4047 1.33685 11.079 1.33685 10.728V1.2704C1.33738 0.570053 1.90743 0 2.60778 0H9.39272C10.0931 0 10.6631 0.570053 10.6631 1.2704V10.728C10.6631 11.4294 10.0925 12 9.39062 12ZM6.00025 9.06935C6.24193 9.06935 6.47783 9.13765 6.68169 9.26743L9.27503 10.9135C9.31233 10.9371 9.35069 10.9487 9.39114 10.9487C9.48046 10.9487 9.61286 10.8788 9.61286 10.728V1.2704C9.61233 1.14956 9.51356 1.05079 9.39272 1.05079H2.60778C2.48642 1.05079 2.38817 1.14956 2.38817 1.2704V10.728C2.38817 10.7911 2.41023 10.8436 2.45384 10.8851C2.52582 10.9539 2.63563 10.9708 2.72599 10.9135L5.31934 9.2669C5.52267 9.13765 5.75857 9.06935 6.00025 9.06935Z" fill="black"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_1274">
+                                <rect width="12" height="12" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content-box">
+                        <h6 class="title"><a href="#">New Range Rover, Evoque</a></h6>
+                        <div class="text">2023 C300e AMG Line Night Ed Premiu...</div>
+                        <ul>
+                            <li><i class="flaticon-gasoline-pump"></i>72,925 miles</li>
+                            <li><i class="flaticon-speedometer"></i>Petrol</li>
+                            <li><i class="flaticon-gearbox"></i>Automatic</li>
+                        </ul>
+                        <div class="btn-box">
+                            <span>$789</span>
+                            <small>$399</small>
+                            <a href="#" class="details">View Details<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <g clip-path="url(#clip0_601_4346)">
+                                <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#405FF2"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_4346">
+                                <rect width="14" height="14" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- team-block-three -->
-            <div class="team-block-three">
+            <!-- car-block-four -->
+            <div class="car-block-four col-xl-3 col-lg-4 col-md-6 col-sm-6">
                 <div class="inner-box">
-                    <div class=" image-box">
-                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/team3-4.jpg')}}" alt=""></a></figure>
-                        <div class="content-box">
-                            <span>23 Cars</span>
-                            <h6 class="title">SUV</h6>
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/shop3-4.jpg')}}" alt=""></a></figure>
+                        <a class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_601_1274)">
+                                <path d="M9.39062 12C9.15156 12 8.91671 11.9312 8.71128 11.8009L6.11794 10.1543C6.04701 10.1091 5.95296 10.1096 5.88256 10.1543L3.28869 11.8009C2.8048 12.1082 2.13755 12.0368 1.72722 11.6454C1.47556 11.4047 1.33685 11.079 1.33685 10.728V1.2704C1.33738 0.570053 1.90743 0 2.60778 0H9.39272C10.0931 0 10.6631 0.570053 10.6631 1.2704V10.728C10.6631 11.4294 10.0925 12 9.39062 12ZM6.00025 9.06935C6.24193 9.06935 6.47783 9.13765 6.68169 9.26743L9.27503 10.9135C9.31233 10.9371 9.35069 10.9487 9.39114 10.9487C9.48046 10.9487 9.61286 10.8788 9.61286 10.728V1.2704C9.61233 1.14956 9.51356 1.05079 9.39272 1.05079H2.60778C2.48642 1.05079 2.38817 1.14956 2.38817 1.2704V10.728C2.38817 10.7911 2.41023 10.8436 2.45384 10.8851C2.52582 10.9539 2.63563 10.9708 2.72599 10.9135L5.31934 9.2669C5.52267 9.13765 5.75857 9.06935 6.00025 9.06935Z" fill="black"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_1274">
+                                <rect width="12" height="12" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content-box">
+                        <h6 class="title"><a href="#">Audi, Q5</a></h6>
+                        <div class="text">2023 C300e AMG Line Night Ed Premiu...</div>
+                        <ul>
+                            <li><i class="flaticon-gasoline-pump"></i>72,925 miles</li>
+                            <li><i class="flaticon-speedometer"></i>Petrol</li>
+                            <li><i class="flaticon-gearbox"></i>Automatic</li>
+                        </ul>
+                        <div class="btn-box">
+                            <span>$789</span>
+                            <small>$399</small>
+                            <a href="#" class="details">View Details<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <g clip-path="url(#clip0_601_4346)">
+                                <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#405FF2"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_4346">
+                                <rect width="14" height="14" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- team-block-three -->
-            <div class="team-block-three">
+            <!-- car-block-four -->
+            <div class="car-block-four col-xl-3 col-lg-4 col-md-6 col-sm-6">
                 <div class="inner-box">
-                    <div class=" image-box">
-                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/team3-5.jpg')}}" alt=""></a></figure>
-                        <div class="content-box">
-                            <span>23 Cars</span>
-                            <h6 class="title">SUV</h6>
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/shop12-1.jpg')}}" alt=""></a></figure>
+                        <a class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_601_1274)">
+                                <path d="M9.39062 12C9.15156 12 8.91671 11.9312 8.71128 11.8009L6.11794 10.1543C6.04701 10.1091 5.95296 10.1096 5.88256 10.1543L3.28869 11.8009C2.8048 12.1082 2.13755 12.0368 1.72722 11.6454C1.47556 11.4047 1.33685 11.079 1.33685 10.728V1.2704C1.33738 0.570053 1.90743 0 2.60778 0H9.39272C10.0931 0 10.6631 0.570053 10.6631 1.2704V10.728C10.6631 11.4294 10.0925 12 9.39062 12ZM6.00025 9.06935C6.24193 9.06935 6.47783 9.13765 6.68169 9.26743L9.27503 10.9135C9.31233 10.9371 9.35069 10.9487 9.39114 10.9487C9.48046 10.9487 9.61286 10.8788 9.61286 10.728V1.2704C9.61233 1.14956 9.51356 1.05079 9.39272 1.05079H2.60778C2.48642 1.05079 2.38817 1.14956 2.38817 1.2704V10.728C2.38817 10.7911 2.41023 10.8436 2.45384 10.8851C2.52582 10.9539 2.63563 10.9708 2.72599 10.9135L5.31934 9.2669C5.52267 9.13765 5.75857 9.06935 6.00025 9.06935Z" fill="black"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_1274">
+                                <rect width="12" height="12" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content-box">
+                        <h6 class="title"><a href="#">Volkswagen, Tiguan</a></h6>
+                        <div class="text">2023 C300e AMG Line Night Ed Premiu...</div>
+                        <ul>
+                            <li><i class="flaticon-gasoline-pump"></i>72,925 miles</li>
+                            <li><i class="flaticon-speedometer"></i>Petrol</li>
+                            <li><i class="flaticon-gearbox"></i>Automatic</li>
+                        </ul>
+                        <div class="btn-box">
+                            <span>$789</span>
+                            <small>$399</small>
+                            <a href="#" class="details">View Details<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <g clip-path="url(#clip0_601_4346)">
+                                <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#405FF2"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_4346">
+                                <rect width="14" height="14" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- car-block-four -->
+            <div class="car-block-four col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="inner-box">
+                    <div class="image-box two">
+                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/shop12-8.jpg')}}" alt=""></a></figure>
+                        <a class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_601_1274)">
+                                <path d="M9.39062 12C9.15156 12 8.91671 11.9312 8.71128 11.8009L6.11794 10.1543C6.04701 10.1091 5.95296 10.1096 5.88256 10.1543L3.28869 11.8009C2.8048 12.1082 2.13755 12.0368 1.72722 11.6454C1.47556 11.4047 1.33685 11.079 1.33685 10.728V1.2704C1.33738 0.570053 1.90743 0 2.60778 0H9.39272C10.0931 0 10.6631 0.570053 10.6631 1.2704V10.728C10.6631 11.4294 10.0925 12 9.39062 12ZM6.00025 9.06935C6.24193 9.06935 6.47783 9.13765 6.68169 9.26743L9.27503 10.9135C9.31233 10.9371 9.35069 10.9487 9.39114 10.9487C9.48046 10.9487 9.61286 10.8788 9.61286 10.728V1.2704C9.61233 1.14956 9.51356 1.05079 9.39272 1.05079H2.60778C2.48642 1.05079 2.38817 1.14956 2.38817 1.2704V10.728C2.38817 10.7911 2.41023 10.8436 2.45384 10.8851C2.52582 10.9539 2.63563 10.9708 2.72599 10.9135L5.31934 9.2669C5.52267 9.13765 5.75857 9.06935 6.00025 9.06935Z" fill="black"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_1274">
+                                <rect width="12" height="12" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content-box">
+                        <h6 class="title"><a href="#">Honda, Accord</a></h6>
+                        <div class="text">2023 C300e AMG Line Night Ed Premiu...</div>
+                        <ul>
+                            <li><i class="flaticon-gasoline-pump"></i>72,925 miles</li>
+                            <li><i class="flaticon-speedometer"></i>Petrol</li>
+                            <li><i class="flaticon-gearbox"></i>Automatic</li>
+                        </ul>
+                        <div class="btn-box">
+                            <span>$789</span>
+                            <small>$399</small>
+                            <a href="#" class="details">View Details<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <g clip-path="url(#clip0_601_4346)">
+                                <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#405FF2"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_4346">
+                                <rect width="14" height="14" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- car-block-four -->
+            <div class="car-block-four col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/shop12-3.jpg')}}" alt=""></a></figure>
+                        <a class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_601_1274)">
+                                <path d="M9.39062 12C9.15156 12 8.91671 11.9312 8.71128 11.8009L6.11794 10.1543C6.04701 10.1091 5.95296 10.1096 5.88256 10.1543L3.28869 11.8009C2.8048 12.1082 2.13755 12.0368 1.72722 11.6454C1.47556 11.4047 1.33685 11.079 1.33685 10.728V1.2704C1.33738 0.570053 1.90743 0 2.60778 0H9.39272C10.0931 0 10.6631 0.570053 10.6631 1.2704V10.728C10.6631 11.4294 10.0925 12 9.39062 12ZM6.00025 9.06935C6.24193 9.06935 6.47783 9.13765 6.68169 9.26743L9.27503 10.9135C9.31233 10.9371 9.35069 10.9487 9.39114 10.9487C9.48046 10.9487 9.61286 10.8788 9.61286 10.728V1.2704C9.61233 1.14956 9.51356 1.05079 9.39272 1.05079H2.60778C2.48642 1.05079 2.38817 1.14956 2.38817 1.2704V10.728C2.38817 10.7911 2.41023 10.8436 2.45384 10.8851C2.52582 10.9539 2.63563 10.9708 2.72599 10.9135L5.31934 9.2669C5.52267 9.13765 5.75857 9.06935 6.00025 9.06935Z" fill="black"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_1274">
+                                <rect width="12" height="12" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content-box">
+                        <h6 class="title"><a href="#">Volkswagen, CC</a></h6>
+                        <div class="text">2023 C300e AMG Line Night Ed Premiu...</div>
+                        <ul>
+                            <li><i class="flaticon-gasoline-pump"></i>72,925 miles</li>
+                            <li><i class="flaticon-speedometer"></i>Petrol</li>
+                            <li><i class="flaticon-gearbox"></i>Automatic</li>
+                        </ul>
+                        <div class="btn-box">
+                            <span>$789</span>
+                            <small>$399</small>
+                            <a href="#" class="details">View Details<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <g clip-path="url(#clip0_601_4346)">
+                                <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#405FF2"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_4346">
+                                <rect width="14" height="14" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- car-block-four -->
+            <div class="car-block-four col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/shop3-6.jpg')}}" alt=""></a></figure>
+                        <a class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_601_1274)">
+                                <path d="M9.39062 12C9.15156 12 8.91671 11.9312 8.71128 11.8009L6.11794 10.1543C6.04701 10.1091 5.95296 10.1096 5.88256 10.1543L3.28869 11.8009C2.8048 12.1082 2.13755 12.0368 1.72722 11.6454C1.47556 11.4047 1.33685 11.079 1.33685 10.728V1.2704C1.33738 0.570053 1.90743 0 2.60778 0H9.39272C10.0931 0 10.6631 0.570053 10.6631 1.2704V10.728C10.6631 11.4294 10.0925 12 9.39062 12ZM6.00025 9.06935C6.24193 9.06935 6.47783 9.13765 6.68169 9.26743L9.27503 10.9135C9.31233 10.9371 9.35069 10.9487 9.39114 10.9487C9.48046 10.9487 9.61286 10.8788 9.61286 10.728V1.2704C9.61233 1.14956 9.51356 1.05079 9.39272 1.05079H2.60778C2.48642 1.05079 2.38817 1.14956 2.38817 1.2704V10.728C2.38817 10.7911 2.41023 10.8436 2.45384 10.8851C2.52582 10.9539 2.63563 10.9708 2.72599 10.9135L5.31934 9.2669C5.52267 9.13765 5.75857 9.06935 6.00025 9.06935Z" fill="black"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_1274">
+                                <rect width="12" height="12" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content-box">
+                        <h6 class="title"><a href="#">Hyundai, Exter</a></h6>
+                        <div class="text">2023 C300e AMG Line Night Ed Premiu...</div>
+                        <ul>
+                            <li><i class="flaticon-gasoline-pump"></i>72,925 miles</li>
+                            <li><i class="flaticon-speedometer"></i>Petrol</li>
+                            <li><i class="flaticon-gearbox"></i>Automatic</li>
+                        </ul>
+                        <div class="btn-box">
+                            <span>$789</span>
+                            <small>$399</small>
+                            <a href="#" class="details">View Details<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <g clip-path="url(#clip0_601_4346)">
+                                <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#405FF2"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_4346">
+                                <rect width="14" height="14" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- car-block-four -->
+            <div class="car-block-four col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/shop12-4.jpg')}}" alt=""></a></figure>
+                        <a class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_601_1274)">
+                                <path d="M9.39062 12C9.15156 12 8.91671 11.9312 8.71128 11.8009L6.11794 10.1543C6.04701 10.1091 5.95296 10.1096 5.88256 10.1543L3.28869 11.8009C2.8048 12.1082 2.13755 12.0368 1.72722 11.6454C1.47556 11.4047 1.33685 11.079 1.33685 10.728V1.2704C1.33738 0.570053 1.90743 0 2.60778 0H9.39272C10.0931 0 10.6631 0.570053 10.6631 1.2704V10.728C10.6631 11.4294 10.0925 12 9.39062 12ZM6.00025 9.06935C6.24193 9.06935 6.47783 9.13765 6.68169 9.26743L9.27503 10.9135C9.31233 10.9371 9.35069 10.9487 9.39114 10.9487C9.48046 10.9487 9.61286 10.8788 9.61286 10.728V1.2704C9.61233 1.14956 9.51356 1.05079 9.39272 1.05079H2.60778C2.48642 1.05079 2.38817 1.14956 2.38817 1.2704V10.728C2.38817 10.7911 2.41023 10.8436 2.45384 10.8851C2.52582 10.9539 2.63563 10.9708 2.72599 10.9135L5.31934 9.2669C5.52267 9.13765 5.75857 9.06935 6.00025 9.06935Z" fill="black"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_1274">
+                                <rect width="12" height="12" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content-box">
+                        <h6 class="title"><a href="#">BMW X1</a></h6>
+                        <div class="text">2023 C300e AMG Line Night Ed Premiu...</div>
+                        <ul>
+                            <li><i class="flaticon-gasoline-pump"></i>72,925 miles</li>
+                            <li><i class="flaticon-speedometer"></i>Petrol</li>
+                            <li><i class="flaticon-gearbox"></i>Automatic</li>
+                        </ul>
+                        <div class="btn-box">
+                            <span>$789</span>
+                            <small>$399</small>
+                            <a href="#" class="details">View Details<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <g clip-path="url(#clip0_601_4346)">
+                                <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#405FF2"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_4346">
+                                <rect width="14" height="14" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- car-block-four -->
+            <div class="car-block-four col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="inner-box">
+                    <div class="image-box two">
+                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/shop12-5.jpg')}}" alt=""></a></figure>
+                        <a class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_601_1274)">
+                                <path d="M9.39062 12C9.15156 12 8.91671 11.9312 8.71128 11.8009L6.11794 10.1543C6.04701 10.1091 5.95296 10.1096 5.88256 10.1543L3.28869 11.8009C2.8048 12.1082 2.13755 12.0368 1.72722 11.6454C1.47556 11.4047 1.33685 11.079 1.33685 10.728V1.2704C1.33738 0.570053 1.90743 0 2.60778 0H9.39272C10.0931 0 10.6631 0.570053 10.6631 1.2704V10.728C10.6631 11.4294 10.0925 12 9.39062 12ZM6.00025 9.06935C6.24193 9.06935 6.47783 9.13765 6.68169 9.26743L9.27503 10.9135C9.31233 10.9371 9.35069 10.9487 9.39114 10.9487C9.48046 10.9487 9.61286 10.8788 9.61286 10.728V1.2704C9.61233 1.14956 9.51356 1.05079 9.39272 1.05079H2.60778C2.48642 1.05079 2.38817 1.14956 2.38817 1.2704V10.728C2.38817 10.7911 2.41023 10.8436 2.45384 10.8851C2.52582 10.9539 2.63563 10.9708 2.72599 10.9135L5.31934 9.2669C5.52267 9.13765 5.75857 9.06935 6.00025 9.06935Z" fill="black"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_1274">
+                                <rect width="12" height="12" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content-box">
+                        <h6 class="title"><a href="#">Mercedes-Benz, GLA</a></h6>
+                        <div class="text">2023 C300e AMG Line Night Ed Premiu...</div>
+                        <ul>
+                            <li><i class="flaticon-gasoline-pump"></i>72,925 miles</li>
+                            <li><i class="flaticon-speedometer"></i>Petrol</li>
+                            <li><i class="flaticon-gearbox"></i>Automatic</li>
+                        </ul>
+                        <div class="btn-box">
+                            <span>$789</span>
+                            <small>$399</small>
+                            <a href="#" class="details">View Details<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <g clip-path="url(#clip0_601_4346)">
+                                <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#405FF2"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_4346">
+                                <rect width="14" height="14" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- car-block-four -->
+            <div class="car-block-four col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/shop12-6.jpg')}}" alt=""></a></figure>
+                        <a class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_601_1274)">
+                                <path d="M9.39062 12C9.15156 12 8.91671 11.9312 8.71128 11.8009L6.11794 10.1543C6.04701 10.1091 5.95296 10.1096 5.88256 10.1543L3.28869 11.8009C2.8048 12.1082 2.13755 12.0368 1.72722 11.6454C1.47556 11.4047 1.33685 11.079 1.33685 10.728V1.2704C1.33738 0.570053 1.90743 0 2.60778 0H9.39272C10.0931 0 10.6631 0.570053 10.6631 1.2704V10.728C10.6631 11.4294 10.0925 12 9.39062 12ZM6.00025 9.06935C6.24193 9.06935 6.47783 9.13765 6.68169 9.26743L9.27503 10.9135C9.31233 10.9371 9.35069 10.9487 9.39114 10.9487C9.48046 10.9487 9.61286 10.8788 9.61286 10.728V1.2704C9.61233 1.14956 9.51356 1.05079 9.39272 1.05079H2.60778C2.48642 1.05079 2.38817 1.14956 2.38817 1.2704V10.728C2.38817 10.7911 2.41023 10.8436 2.45384 10.8851C2.52582 10.9539 2.63563 10.9708 2.72599 10.9135L5.31934 9.2669C5.52267 9.13765 5.75857 9.06935 6.00025 9.06935Z" fill="black"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_1274">
+                                <rect width="12" height="12" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content-box">
+                        <h6 class="title"><a href="#">Mercedes-Benz, S Class</a></h6>
+                        <div class="text">2023 C300e AMG Line Night Ed Premiu...</div>
+                        <ul>
+                            <li><i class="flaticon-gasoline-pump"></i>72,925 miles</li>
+                            <li><i class="flaticon-speedometer"></i>Petrol</li>
+                            <li><i class="flaticon-gearbox"></i>Automatic</li>
+                        </ul>
+                        <div class="btn-box">
+                            <span>$789</span>
+                            <small>$399</small>
+                            <a href="#" class="details">View Details<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <g clip-path="url(#clip0_601_4346)">
+                                <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#405FF2"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_4346">
+                                <rect width="14" height="14" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- car-block-four -->
+            <div class="car-block-four col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/shop12-7.jpg')}}" alt=""></a></figure>
+                        <a class="icon-box">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                <g clip-path="url(#clip0_601_1274)">
+                                <path d="M9.39062 12C9.15156 12 8.91671 11.9312 8.71128 11.8009L6.11794 10.1543C6.04701 10.1091 5.95296 10.1096 5.88256 10.1543L3.28869 11.8009C2.8048 12.1082 2.13755 12.0368 1.72722 11.6454C1.47556 11.4047 1.33685 11.079 1.33685 10.728V1.2704C1.33738 0.570053 1.90743 0 2.60778 0H9.39272C10.0931 0 10.6631 0.570053 10.6631 1.2704V10.728C10.6631 11.4294 10.0925 12 9.39062 12ZM6.00025 9.06935C6.24193 9.06935 6.47783 9.13765 6.68169 9.26743L9.27503 10.9135C9.31233 10.9371 9.35069 10.9487 9.39114 10.9487C9.48046 10.9487 9.61286 10.8788 9.61286 10.728V1.2704C9.61233 1.14956 9.51356 1.05079 9.39272 1.05079H2.60778C2.48642 1.05079 2.38817 1.14956 2.38817 1.2704V10.728C2.38817 10.7911 2.41023 10.8436 2.45384 10.8851C2.52582 10.9539 2.63563 10.9708 2.72599 10.9135L5.31934 9.2669C5.52267 9.13765 5.75857 9.06935 6.00025 9.06935Z" fill="black"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_1274">
+                                <rect width="12" height="12" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="content-box">
+                        <h6 class="title"><a href="#">BMW 6 Series</a></h6>
+                        <div class="text">2023 C300e AMG Line Night Ed Premiu...</div>
+                        <ul>
+                            <li><i class="flaticon-gasoline-pump"></i>72,925 miles</li>
+                            <li><i class="flaticon-speedometer"></i>Petrol</li>
+                            <li><i class="flaticon-gearbox"></i>Automatic</li>
+                        </ul>
+                        <div class="btn-box">
+                            <span>$789</span>
+                            <small>$399</small>
+                            <a href="#" class="details">View Details<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <g clip-path="url(#clip0_601_4346)">
+                                <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#405FF2"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_601_4346">
+                                <rect width="14" height="14" fill="white"></rect>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination-sec">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                      <span aria-hidden="true">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.57983 5.99989C2.57983 5.7849 2.66192 5.56987 2.82573 5.4059L7.98559 0.24617C8.31382 -0.0820565 8.84598 -0.0820565 9.17408 0.24617C9.50217 0.574263 9.50217 1.10632 9.17408 1.43457L4.60841 5.99989L9.17376 10.5654C9.50185 10.8935 9.50185 11.4256 9.17376 11.7537C8.84566 12.0821 8.31366 12.0821 7.98544 11.7537L2.82555 6.59404C2.66176 6.42999 2.57983 6.21495 2.57983 5.99989Z" fill="#050B20"></path>
+                            </svg>
+                      </span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                  <li class="page-item"><a class="page-link" href="#">...</a></li>
+                  <li class="page-item"><a class="page-link" href="#">20</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                      <span aria-hidden="true">
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2880_6407)">
+                                <path d="M9.42017 6.00011C9.42017 6.2151 9.33808 6.43013 9.17427 6.5941L4.01441 11.7538C3.68618 12.0821 3.15402 12.0821 2.82592 11.7538C2.49783 11.4257 2.49783 10.8937 2.82592 10.5654L7.39159 6.00011L2.82624 1.43461C2.49815 1.10652 2.49815 0.574382 2.82624 0.246315C3.15434 -0.0820709 3.68634 -0.0820709 4.01457 0.246315L9.17446 5.40596C9.33824 5.57001 9.42017 5.78505 9.42017 6.00011Z" fill="#050B20"></path>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_2880_6407">
+                                <rect width="12" height="12" fill="white" transform="translate(12 12) rotate(-180)"></rect>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                      </span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </li>
+                </ul>
+                <div class="text">Showing results 1-30 of 1,415</div>
+              </nav>
         </div>
     </div>
 </section>
@@ -273,7 +612,7 @@
 <section class="why-choose-us-section-four">
     <div class="boxcar-container">
         <div class="boxcar-title text-center wow fadeInUp">
-            <h2 class="title">Why Choose Us?</h2>
+            <h2 class="title">Lý Do Nên Chọn Chúng Tôi?</h2>
         </div>
         <div class="row">
             <!-- choose-us-block -->
@@ -295,8 +634,8 @@
                         </svg>
                     </div>
                     <div class="content-box">
-                        <h6 class="title">Special Financing Offers</h6>
-                        <div class="text">Our stress-free finance department that can find financial solutions to save you money.</div>
+                        <h6 class="title">Ưu đãi tài chính đặc biệt</h6>
+                        <div class="text">Bộ phận tài chính của chúng tôi sẽ giúp bạn tìm kiếm các giải pháp tài chính tối ưu, giúp tiết kiệm chi phí một cách dễ dàng và không căng thẳng.</div>
                     </div>
                 </div>
             </div>
@@ -315,8 +654,8 @@
                         </svg>
                     </div>
                     <div class="content-box">
-                        <h6 class="title">Trusted Car Dealership</h6>
-                        <div class="text">Our stress-free finance department that can find financial solutions to save you money.</div>
+                        <h6 class="title">Đại lý ô tô đáng tin cậy</h6>
+                        <div class="text">Bộ phận tài chính của chúng tôi sẽ giúp bạn tìm kiếm các giải pháp tài chính tối ưu, giúp tiết kiệm chi phí một cách dễ dàng và không căng thẳng.</div>
                     </div>
                 </div>
             </div>
@@ -340,8 +679,8 @@
                         </svg>
                     </div>
                     <div class="content-box">
-                        <h6 class="title">Transparent Pricing</h6>
-                        <div class="text">Our stress-free finance department that can find financial solutions to save you money.</div>
+                        <h6 class="title">Giá cả minh bạch</h6>
+                        <div class="text">Bộ phận tài chính của chúng tôi sẽ giúp bạn tìm kiếm các giải pháp tài chính tối ưu, giúp tiết kiệm chi phí một cách dễ dàng và không căng thẳng</div>
                     </div>
                 </div>
             </div>
@@ -355,8 +694,8 @@
                         </svg>
                     </div>
                     <div class="content-box">
-                        <h6 class="title">Expert Car Service</h6>
-                        <div class="text">Our stress-free finance department that can find financial solutions to save you money.</div>
+                        <h6 class="title">Dịch vụ ô tô chuyên nghiệp</h6>
+                        <div class="text">Bộ phận tài chính của chúng tôi sẽ giúp bạn tìm kiếm các giải pháp tài chính tối ưu, giúp tiết kiệm chi phí một cách dễ dàng và không căng thẳng.</div>
                     </div>
                 </div>
             </div>
@@ -369,7 +708,7 @@
 <section class="cars-section-nine">
     <div class="boxcar-container">
         <div class="boxcar-title wow fadeInUp">
-            <h2>Featured Listings</h2>
+            <h2>Xe nổi bật</h2>
             <a href="#" class="btn-title">View All<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                 <g clip-path="url(#clip0_601_243)">
                 <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#050B20"></path>
@@ -385,9 +724,7 @@
         <nav class="wow fadeInUp" data-wow-delay="100ms">
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">New cars</button>
-                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Used Cars</button>
-                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">In Stock</button>
-            </div>
+         </div>
         </nav>
         <div class="tab-content wow fadeInUp" data-wow-delay="200ms" id="nav-tabContent">
             <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
@@ -431,7 +768,7 @@
                                             <path d="M7.38541 12.3125H8.61456M11.08 12.3125H12.3092M3.69791 12.3125H4.92706M7.38541 8.625H8.61456M11.08 8.625H12.3092M3.69791 8.625H4.92706M0.625 5.54166H15.3821M11.6946 3.69791V0.625002M4.3125 3.69791V0.625002M3.09044 15.375H12.9167C14.2783 15.375 15.3821 14.2712 15.3821 12.9095V4.31963C15.3821 2.958 14.2783 1.85416 12.9167 1.85416H3.09044C1.72881 1.85416 0.625 2.958 0.625 4.31963V12.9095C0.625 14.2712 1.72881 15.375 3.09044 15.375Z" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
                                             </g>
                                         </svg>
-                                            
+
                                         2023
                                     </li>
                                 </ul>
@@ -729,7 +1066,7 @@
                             </div>
                         </div>
                     </div>
-                   
+
                 </div>
             </div>
             <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
@@ -773,7 +1110,7 @@
                                             <path d="M7.38541 12.3125H8.61456M11.08 12.3125H12.3092M3.69791 12.3125H4.92706M7.38541 8.625H8.61456M11.08 8.625H12.3092M3.69791 8.625H4.92706M0.625 5.54166H15.3821M11.6946 3.69791V0.625002M4.3125 3.69791V0.625002M3.09044 15.375H12.9167C14.2783 15.375 15.3821 14.2712 15.3821 12.9095V4.31963C15.3821 2.958 14.2783 1.85416 12.9167 1.85416H3.09044C1.72881 1.85416 0.625 2.958 0.625 4.31963V12.9095C0.625 14.2712 1.72881 15.375 3.09044 15.375Z" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
                                             </g>
                                         </svg>
-                                            
+
                                         2023
                                     </li>
                                 </ul>
@@ -1114,7 +1451,7 @@
                                             <path d="M7.38541 12.3125H8.61456M11.08 12.3125H12.3092M3.69791 12.3125H4.92706M7.38541 8.625H8.61456M11.08 8.625H12.3092M3.69791 8.625H4.92706M0.625 5.54166H15.3821M11.6946 3.69791V0.625002M4.3125 3.69791V0.625002M3.09044 15.375H12.9167C14.2783 15.375 15.3821 14.2712 15.3821 12.9095V4.31963C15.3821 2.958 14.2783 1.85416 12.9167 1.85416H3.09044C1.72881 1.85416 0.625 2.958 0.625 4.31963V12.9095C0.625 14.2712 1.72881 15.375 3.09044 15.375Z" stroke="black" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
                                             </g>
                                         </svg>
-                                            
+
                                         2023
                                     </li>
                                 </ul>
@@ -1426,23 +1763,22 @@
             <!-- image-column -->
             <div class="image-column col-lg-6 col-md-6 col-sm-12">
                 <div class="image-box">
-                    <figure class="image"><img src="{{asset('Fe_Hyundai/assets/images/pricing7-1.')}}jpg" alt=""></figure>
-                    <figure class="image-2"><img src="{{asset('Fe_Hyundai/assets/images/pricing7-2.')}}jpg" alt=""></figure>
+                    <figure class="image"><img src="{{asset('Fe_Hyundai/assets/images/pricing7-1.jpg')}}" alt=""></figure>
+                    <figure class="image-2"><img src="{{asset('Fe_Hyundai/assets/images/pricing7-2.jpg')}}" alt=""></figure>
                 </div>
             </div>
             <div class="content-column col-lg-6 col-md-6 col-sm-12">
                 <div class="inner-column">
                    <div class="boxcar-title wow fadeInUp">
-                        <h2>Get A Fair Price For Your Car Sell To Us Today</h2>
-                        <div class="text">We are committed to providing our customers with exceptional service, 
-                        competitive pricing, and a wide range of.</div>
+                        <h2>Nhận giá tốt cho xe của bạn - Nhận ngay hôm nay</h2>
+                        <div class="text">Chúng tôi cam kết mang đến cho khách hàng dịch vụ xuất sắc, giá cả cạnh tranh và đa dạng các lựa chọn.</div>
                    </div>
                    <ul class="list-style-one wow fadeInUp" data-wow-delay="100ms">
-                        <li><i class="fa-solid fa-check"></i>We are the UK’s largest provider, with more patrols in more places</li>
-                        <li><i class="fa-solid fa-check"></i>You get 24/7 roadside assistance</li>
-                        <li><i class="fa-solid fa-check"></i>We fix 4 out of 5 cars at the roadside</li>
+                        <li><i class="fa-solid fa-check"></i>Chúng tôi là nhà cung cấp lớn nhất tại Hải Phòng,</li>
+                        <li><i class="fa-solid fa-check"></i>Bạn sẽ nhận được hỗ trợ cứu hộ 24/7 bên đường.</li>
+                        <li><i class="fa-solid fa-check"></i>Chúng tôi sửa chữa được 4 trong 5 xe ngay tại hiện trường.</li>
                    </ul>
-                   <a href="#" class="read-more wow fadeInUp" data-wow-delay="200ms">get started<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                   <a href="#" class="read-more wow fadeInUp" data-wow-delay="200ms">Liên hệ với chúng tôi<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                         <g clip-path="url(#clip0_634_2156)">
                         <path d="M13.6106 0H5.05509C4.84013 0 4.66619 0.173943 4.66619 0.388901C4.66619 0.603859 4.84013 0.777802 5.05509 0.777802H12.6719L0.113453 13.3362C-0.0384687 13.4881 -0.0384687 13.7342 0.113453 13.8861C0.189396 13.962 0.288927 14 0.388422 14C0.487917 14 0.587411 13.962 0.663391 13.8861L13.2218 1.3277V8.94447C13.2218 9.15943 13.3957 9.33337 13.6107 9.33337C13.8256 9.33337 13.9996 9.15943 13.9996 8.94447V0.388901C13.9995 0.173943 13.8256 0 13.6106 0Z" fill="white"></path>
                         </g>
@@ -1515,97 +1851,85 @@
     <div class="boxcar-container">
         <div class="right-box">
             <div class="boxcar-title">
-                <h2>What our customers say</h2>
-                <div class="text">Rated 4.7  / 5 based on 28,370 reviews Showing our 4 &amp; 5 star reviews</div>
+                <h2>Khách hàng nói gì về chúng tôi</h2>
+                <div class="text">Được đánh giá 4.7 / 5 dựa trên 28.370 đánh giá Hiển thị các đánh giá 4 và 5 sao của chúng tôi</div>
             </div>
             <div class="row stories-slider">
                 <!-- testimonial-block-four -->
                 <div class="testimonial-block-four col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <figure class="icon"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/comas.png" ')}}alt=""></a></figure>
-                        <h6 class="title">Great Work</h6>
-                        <div class="text"> “Amazing design, easy to customize and a design quality 
-                        superlative account on its cloud platform for 
-                        the optimized performance. And we didn’t on our original designs.”</div>
+                        <figure class="icon"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/comas.png')}}" alt=""></a></figure>
+                        <h6 class="title">Tốt</h6>
+                        <div class="text"> "Dịch vụ chăm sóc khách hàng tuyệt vời! Tôi đã có trải nghiệm mua xe suôn sẻ và nhanh chóng tại Hyundai Hải Phòng."</div>
                         <div class="auther-info">
-                            <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/test-auther')}}-1.jpg" alt=""></a></figure>
-                            <h6 class="name">Leslie Alexander</h6>
-                            <span>Nintendo</span>
+                            <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/test-auther-1.jpg')}}" alt=""></a></figure>
+                            <h6 class="name">Hoàng Thúy Vân</h6>
+                            <span>Hải Phòng</span>
                         </div>
                     </div>
                 </div>
                 <!-- testimonial-block-four -->
                 <div class="testimonial-block-four col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <figure class="icon"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/comas.png" ')}}alt=""></a></figure>
-                        <h6 class="title">Awesome Design</h6>
-                        <div class="text"> “Amazing design, easy to customize and a design quality 
-                        superlative account on its cloud platform for 
-                        the optimized performance. And we didn’t on our original designs.”</div>
+                        <figure class="icon"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/comas.png')}}"alt=""></a></figure>
+                        <h6 class="title">Tuyệt Vời</h6>
+                        <div class="text"> "Xe chất lượng, giá cả hợp lý. Tôi rất hài lòng với chiếc Hyundai mới mua từ đại lý này."</div>
                         <div class="auther-info">
-                            <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/test-auther')}}-2.jpg" alt=""></a></figure>
-                            <h6 class="name">Floyd Miles</h6>
-                            <span>Bank of America</span>
+                            <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/test-auther-2.jpg')}}" alt=""></a></figure>
+                            <h6 class="name">Mai Anh Khôi</h6>
+                            <span>Quảng Ninh</span>
                         </div>
                     </div>
                 </div>
                 <!-- testimonial-block-four -->
                 <div class="testimonial-block-four col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <figure class="icon"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/comas.png" ')}}alt=""></a></figure>
-                        <h6 class="title">Perfect Quality</h6>
-                        <div class="text"> “Amazing design, easy to customize and a design quality 
-                        superlative account on its cloud platform for 
-                        the optimized performance. And we didn’t on our original designs.”</div>
+                        <figure class="icon"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/comas.png')}}" alt=""></a></figure>
+                        <h6 class="title">Giá cả hợp lý</h6>
+                        <div class="text"> "Đội ngũ nhân viên nhiệt tình, tư vấn rõ ràng và hỗ trợ mọi thắc mắc của khách hàng. Hyundai Hải Phòng thực sự là một nơi đáng tin cậy."</div>
                         <div class="auther-info">
-                            <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/test-auther')}}-3.jpg" alt=""></a></figure>
-                            <h6 class="name">Dianne Russell</h6>
-                            <span>Facebook</span>
+                            <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/test-auther-3.jpg')}}" alt=""></a></figure>
+                            <h6 class="name">Trương Văn Thanh</h6>
+                            <span>Hải Phòng</span>
                         </div>
                     </div>
                 </div>
                 <!-- testimonial-block-four -->
                 <div class="testimonial-block-four col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <figure class="icon"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/comas.png" ')}}alt=""></a></figure>
-                        <h6 class="title">Great Work</h6>
-                        <div class="text"> “Amazing design, easy to customize and a design quality 
-                        superlative account on its cloud platform for 
-                        the optimized performance. And we didn’t on our original designs.”</div>
+                        <figure class="icon"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/comas.png')}}"alt=""></a></figure>
+                        <h6 class="title">Chất Lượng Cao</h6>
+                        <div class="text"> "Quy trình mua xe nhanh gọn, giá cả minh bạch. Tôi rất ấn tượng với dịch vụ của Hyundai Hải Phòng."</div>
                         <div class="auther-info">
-                            <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/test-auther')}}-1.jpg" alt=""></a></figure>
-                            <h6 class="name">Leslie Alexander</h6>
-                            <span>Nintendo</span>
+                            <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/test-auther-1.jpg')}}" alt=""></a></figure>
+                            <h6 class="name">Nguyễn Văn Sơn</h6>
+                            <span>Hải Phòng</span>
                         </div>
                     </div>
                 </div>
                 <!-- testimonial-block-four -->
                 <div class="testimonial-block-four col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <figure class="icon"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/comas.png" ')}}alt=""></a></figure>
-                        <h6 class="title">Awesome Design</h6>
-                        <div class="text"> “Amazing design, easy to customize and a design quality 
-                        superlative account on its cloud platform for 
-                        the optimized performance. And we didn’t on our original designs.”</div>
+                        <figure class="icon"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/comas.png')}}"alt=""></a></figure>
+                        <h6 class="title">Dịch vụ tuyệt vời</h6>
+                        <div class="text"> "Hyundai Hải Phòng mang đến cho tôi sự yên tâm với dịch vụ bảo hành và bảo dưỡng chuyên nghiệp."</div>
                         <div class="auther-info">
-                            <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/test-auther')}}-2.jpg" alt=""></a></figure>
-                            <h6 class="name">Floyd Miles</h6>
-                            <span>Bank of America</span>
+                            <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/test-auther-2.jpg')}}" alt=""></a></figure>
+                            <h6 class="name">Trần Thành Đạt</h6>
+                            <span>Hải Phòng</span>
                         </div>
                     </div>
                 </div>
                 <!-- testimonial-block-four -->
                 <div class="testimonial-block-four col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <figure class="icon"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/comas.png" ')}}alt=""></a></figure>
-                        <h6 class="title">Perfect Quality</h6>
-                        <div class="text"> “Amazing design, easy to customize and a design quality 
-                        superlative account on its cloud platform for 
-                        the optimized performance. And we didn’t on our original designs.”</div>
+                        <figure class="icon"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/comas.png')}}"alt=""></a></figure>
+                        <h6 class="title">Xe Tốt</h6>
+                        <div class="text"> "Sự lựa chọn xe đa dạng và chất lượng dịch vụ vượt trội khiến tôi luôn tin tưởng khi đến với Hyundai Hải Phòng."</div>
                         <div class="auther-info">
-                            <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/test-auther')}}-3.jpg" alt=""></a></figure>
-                            <h6 class="name">Dianne Russell</h6>
-                            <span>Facebook</span>
+                            <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/test-auther-3.jpg')}}" alt=""></a></figure>
+                            <h6 class="name">Hoàng Trang</h6>
+                            <span>Hải Phòng</span>
                         </div>
                     </div>
                 </div>
@@ -1623,7 +1947,7 @@
             <div class="row">
                 <div class="col-lg-6 image-column">
                     <div class="image-box">
-                        <img src="{{asset('Fe_Hyundai/assets/images/loan-img.jp')}}g" alt="">
+                        <img src="{{asset('Fe_Hyundai/assets/images/loan-img.jpg')}}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 content-column">
@@ -1695,7 +2019,7 @@
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-submit">
-                                    <button type="submit" class="theme-btn">Calculate <img src="{{asset('Fe_Hyundai/assets/images/arrow.svg" ')}}alt=""></button>
+                                    <button type="submit" class="theme-btn">Calculate <img src="{{asset('Fe_Hyundai/assets/images/arrow.svg')}}"alt=""></button>
                                 </div>
                             </div>
                         </form>
@@ -1706,128 +2030,6 @@
     </div>
 </section>
 <!-- End calculater-section -->
-
-<!-- boxcar-service-section -->
-<section class="boxcar-service-section v7 pt-0">
-    <div class="boxcar-container">
-        <div class="right-box">
-            <div class="row">
-                <!-- content-column -->
-                <div class="content-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
-                    <div class="inner-column wow fadeInUp">
-                        <h2 class="title">Shop used cars, whether<br> 
-                        you're on the lot or on the go</h2>
-                        <div class="text">
-                            Download our app to save cars and create alerts, scan 
-                            window stickers on our lot for more details, 
-                            and even call dibs on a car by holding it for up to 7 days.
-                        </div>
-                        <div class="btn-box">
-                            <a href="#" class="store">
-                                <img src="{{asset('Fe_Hyundai/assets/images/apple.png">')}}
-                                <span>Download on the</span>
-                                <h6 class="title">Apple Store</h6>
-                            </a>
-                            <a href="#" class="store two">
-                                <img src="{{asset('Fe_Hyundai/assets/images/play-2.png"')}}>
-                                <span>Get in on</span>
-                                <h6 class="title">Google Play</h6>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- image-column -->
-                <div class="image-column col-xl-6 col-lg-12 col-md-6 col-sm-12">
-                    <div class="inner-column">
-                        <div class="image-box">
-                            <figure class="image"><img src="{{asset('Fe_Hyundai/assets/images/service6.jp')}}g" alt=""></figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End service section -->
-
-<!-- brand section -->
-<section class="boxcar-brand-section v7">
-    <div class="boxcar-container">
-        <div class="boxcar-title">
-            <h2 class="wow fadeInUp">Explore Our Premium Brands</h2>
-            <a href="#" class="btn-title">Show All Brands<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none"><g clip-path="url(#clip0_601_3199)"><path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="#050B20"></path></g><defs><clipPath id="clip0_601_3199"><rect width="14" height="14" fill="white"></rect></clipPath></defs></svg></a>
-        </div>
-        <div class="row">
-            <!-- cars-block -->
-            <div class="cars-block style-1 col-lg-2 col-md-6 col-sm-6">
-                <div class="inner-box wow fadeInUp">
-                    <div class="image-box">
-                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/brand-1.png')}}" alt=""></a></figure>
-                    </div>
-                    <div class="content-box">
-                        <h6 class="title"><a href="#">Audi</a></h6>
-                    </div>
-                </div>
-            </div>
-            <!-- cars-block -->
-            <div class="cars-block style-1 col-lg-2 col-md-6 col-sm-6">
-                <div class="inner-box wow fadeInUp" data-wow-delay="100ms">
-                    <div class="image-box">
-                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/brand-2.png')}}" alt=""></a></figure>
-                    </div>
-                    <div class="content-box">
-                        <h6 class="title"><a href="#">BMW</a></h6>
-                    </div>
-                </div>
-            </div>
-            <!-- cars-block -->
-            <div class="cars-block style-1 col-lg-2 col-md-6 col-sm-6">
-                <div class="inner-box wow fadeInUp" data-wow-delay="200ms">
-                    <div class="image-box">
-                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/brand-3.png')}}" alt=""></a></figure>
-                    </div>
-                    <div class="content-box">
-                        <h6 class="title"><a href="#">ford</a></h6>
-                    </div>
-                </div>
-            </div>
-            <!-- cars-block -->
-            <div class="cars-block style-1 col-lg-2 col-md-6 col-sm-6">
-                <div class="inner-box wow fadeInUp" data-wow-delay="300ms">
-                    <div class="image-box">
-                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/brand-4.png')}}" alt=""></a></figure>
-                    </div>
-                    <div class="content-box">
-                        <h6 class="title"><a href="#">Mercedes Benz</a></h6>
-                    </div>
-                </div>
-            </div>
-            <!-- cars-block -->
-            <div class="cars-block style-1 col-lg-2 col-md-6 col-sm-6">
-                <div class="inner-box wow fadeInUp" data-wow-delay="400ms">
-                    <div class="image-box">
-                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/brand-5.png')}}" alt=""></a></figure>
-                    </div>
-                    <div class="content-box">
-                        <h6 class="title"><a href="#">Peugeot</a></h6>
-                    </div>
-                </div>
-            </div>
-            <!-- cars-block -->
-            <div class="cars-block style-1 col-lg-2 col-md-6 col-sm-6">
-                <div class="inner-box wow fadeInUp" data-wow-delay="500ms">
-                    <div class="image-box">
-                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/brand-6.png')}}" alt=""></a></figure>
-                    </div>
-                    <div class="content-box">
-                        <h6 class="title"><a href="#">Volkswagen</a></h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End brand section -->
 
 <!-- blog section -->
 <section class="blog-section">
