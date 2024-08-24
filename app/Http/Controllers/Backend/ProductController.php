@@ -48,7 +48,6 @@ class ProductController extends Controller {
      */
     public function store(Request $request) {
         $input = $request->all();
-        // dd($input);
         $validator = \Validator::make($input, $this->productRepo->validateCreate());
         if ($validator->fails()) {
             return redirect()->back()->withErrors($validator)->withInput();
@@ -61,7 +60,6 @@ class ProductController extends Controller {
         $input['post_schedule'] = isset($input['post_schedule']) ? $input['post_schedule_submit'] : date('Y-m-d H:i:s');
         $product = $this->productRepo->create($input);
         //Thêm vào lịch sử đăng bài
-        dd($input);
 
         //Thêm danh mục sản phẩm
         $product->categories()->attach($input['category_id']);
@@ -158,17 +156,23 @@ class ProductController extends Controller {
 
     public function getProductAttributes($input) {
         $attributes = array();
-        foreach ($input['attribute'] as $key => $val) {
-            $attributes[$key] = ['value' => $val];
-        }
-        foreach ($input['attribute_select'] as $key => $val) {
-            if ($val != null) {
-                $attributes[$val] = ['value' => null];
+
+        if (isset($input['attribute'])) {
+            foreach ($input['attribute'] as $key => $val) {
+                $attributes[$key] = ['value' => $val];
             }
         }
+
+        if (isset($input['attribute_select'])) {
+            foreach ($input['attribute_select'] as $key => $val) {
+                if ($val != null) {
+                    $attributes[$val] = ['value' => null];
+                }
+            }
+        }
+
         return $attributes;
     }
-
 
 
 }

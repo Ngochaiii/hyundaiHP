@@ -8,7 +8,24 @@ class Product extends Model {
 
     protected $table = 'product';
     protected $fillable = [
-        'created_by', 'is_hot', 'is_new', 'content', 'price', 'sale_price', 'images', 'title', 'description', 'keywords', 'meta_title', 'meta_description', 'meta_keywords', 'view_count', 'status', 'alias', 'ordering', 'post_schedule'
+        'created_by',
+        'is_hot',
+        'is_new',
+        'content',
+        'price',
+        'sale_price',
+        'images', 'title', 'description', 'keywords', 'meta_title', 'meta_description', 'meta_keywords', 'view_count', 'status', 'alias', 'ordering',
+        'post_schedule',
+        'library_slide', //Thư viện
+        'exterior_content', //Ngoại thất
+        'exterior_slide',
+        'interior_content', //Nội thất
+        'interior_slide',
+        'operate_content', //Vận hành
+        'operate_slide',
+        'safe_content',
+        'safe_slide',
+        'specifications', //Tiện nghi
     ];
 
     public function attributes() {

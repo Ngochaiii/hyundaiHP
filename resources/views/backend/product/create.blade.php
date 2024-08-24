@@ -31,7 +31,7 @@
                                     <div class="form-group row">
                                         <label class="col-md-2 col-form-label text-right">Tiêu đề <span class="text-danger">*</span></label>
                                         <div class="col-md-10">
-                                            <input type="text" class="form-control" name="title" value="{!!old('title')!!}" ="">
+                                            <input type="text" class="form-control" name="title" value="{!!old('title')!!}">
                                             {!! $errors->first('title', '<span class="text-danger">:message</span>') !!}
                                         </div>
                                     </div>
@@ -142,17 +142,168 @@
                                 </div>
                             </div>
                             <div class="col-md-12">
-
                                 <div class="form-group row">
-                                    <label class="col-md-2 col-form-label text-right">Nội dung: </label>
+                                    <label class="col-md-2 col-form-label text-right">Đánh giá chi tiết </label>
                                     <div class="col-md-12">
                                         <textarea class="form-control ckeditor" id="content-product" name="content">{!!old('content')!!}</textarea>
                                     </div>
                                 </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-2  control-label text-right text-semibold" for="images">Slide thư viện <span class="text-danger">*</span></label>
+                                    <div class="col-lg-12 div-image">
+                                        <div class="file-input file-input-ajax-new">
+                                            <div class="file-preview ">
+                                                <div class=" file-drop-zone">
+                                                </div>
+                                            </div>
+                                            <div class="input-group file-caption-main">
+                                                <div class="file-caption form-control kv-fileinput-caption" tabindex="500">
+                                                </div>
+                                                <div class="input-group-btn input-group-append">
+                                                    <div tabindex="500" class="btn btn-primary btn-file"><i class="icon-folder-open"></i>&nbsp; <span class="hidden-xs">Chọn</span>
+                                                        <input type="file" id="library_slide" class="upload-images" name="file_upload[]" multiple="multiple" data-fouc="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="library_slide" class="image_data">
+                                        <span class="help-block">Chỉ cho phép các file ảnh có đuôi <code>jpg</code>, <code>gif</code> và <code>png</code>. File có dung lượng tối đa 20M.</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-form-label text-right">Ngoại thất content </label>
+                                    <div class="col-md-12">
+                                        <textarea class="form-control ckeditor" id="exterior_content" name="exterior_content">{!!old('content')!!}</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-2  control-label text-right text-semibold" for="images">Ngoại thất slide  <span class="text-danger">*</span></label>
+                                    <div class="col-lg-12 div-image">
+                                        <div class="file-input file-input-ajax-new">
+                                            <div class="file-preview ">
+                                                <div class=" file-drop-zone">
+                                                </div>
+                                            </div>
+                                            <div class="input-group file-caption-main">
+                                                <div class="file-caption form-control kv-fileinput-caption" tabindex="500">
+                                                </div>
+                                                <div class="input-group-btn input-group-append">
+                                                    <div tabindex="500" class="btn btn-primary btn-file"><i class="icon-folder-open"></i>&nbsp; <span class="hidden-xs">Chọn</span>
+                                                        <input type="file" id="images" class="upload-images" name="file_upload[]" multiple="multiple" data-fouc="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="exterior_slide" class="image_data">
+                                        <span class="help-block">Chỉ cho phép các file ảnh có đuôi <code>jpg</code>, <code>gif</code> và <code>png</code>. File có dung lượng tối đa 20M.</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-form-label text-right">Nội thất content </label>
+                                    <div class="col-md-12">
+                                        <textarea class="form-control ckeditor" id="interior_content" name="interior_content">{!!old('content')!!}</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-2  control-label text-right text-semibold" for="images">Nội thất slide  <span class="text-danger">*</span></label>
+                                    <div class="col-lg-12 div-image">
+                                        <div class="file-input file-input-ajax-new">
+                                            <div class="file-preview ">
+                                                <div class=" file-drop-zone">
+                                                </div>
+                                            </div>
+                                            <div class="input-group file-caption-main">
+                                                <div class="file-caption form-control kv-fileinput-caption" tabindex="500">
+                                                </div>
+                                                <div class="input-group-btn input-group-append">
+                                                    <div tabindex="500" class="btn btn-primary btn-file"><i class="icon-folder-open"></i>&nbsp; <span class="hidden-xs">Chọn</span>
+                                                        <input type="file" id="images" class="upload-images" name="file_upload[]" multiple="multiple" data-fouc="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="interior_slide" class="image_data">
+                                        <span class="help-block">Chỉ cho phép các file ảnh có đuôi <code>jpg</code>, <code>gif</code> và <code>png</code>. File có dung lượng tối đa 20M.</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-form-label text-right">Vận hành content </label>
+                                    <div class="col-md-12">
+                                        <textarea class="form-control ckeditor" id="operate_content" name="operate_content">{!!old('content')!!}</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-2  control-label text-right text-semibold" for="images">Vận hành slide  <span class="text-danger">*</span></label>
+                                    <div class="col-lg-12 div-image">
+                                        <div class="file-input file-input-ajax-new">
+                                            <div class="file-preview ">
+                                                <div class=" file-drop-zone">
+                                                </div>
+                                            </div>
+                                            <div class="input-group file-caption-main">
+                                                <div class="file-caption form-control kv-fileinput-caption" tabindex="500">
+                                                </div>
+                                                <div class="input-group-btn input-group-append">
+                                                    <div tabindex="500" class="btn btn-primary btn-file"><i class="icon-folder-open"></i>&nbsp; <span class="hidden-xs">Chọn</span>
+                                                        <input type="file" id="images" class="upload-images" name="file_upload[]" multiple="multiple" data-fouc="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="operate_slide" class="image_data">
+                                        <span class="help-block">Chỉ cho phép các file ảnh có đuôi <code>jpg</code>, <code>gif</code> và <code>png</code>. File có dung lượng tối đa 20M.</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-form-label text-right">An toàn content </label>
+                                    <div class="col-md-12">
+                                        <textarea class="form-control ckeditor" id="safe_content" name="safe_content">{!!old('content')!!}</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-2  control-label text-right text-semibold" for="images">An toàn slide  <span class="text-danger">*</span></label>
+                                    <div class="col-lg-12 div-image">
+                                        <div class="file-input file-input-ajax-new">
+                                            <div class="file-preview ">
+                                                <div class=" file-drop-zone">
+                                                </div>
+                                            </div>
+                                            <div class="input-group file-caption-main">
+                                                <div class="file-caption form-control kv-fileinput-caption" tabindex="500">
+                                                </div>
+                                                <div class="input-group-btn input-group-append">
+                                                    <div tabindex="500" class="btn btn-primary btn-file"><i class="icon-folder-open"></i>&nbsp; <span class="hidden-xs">Chọn</span>
+                                                        <input type="file" id="images" class="upload-images" name="file_upload[]" multiple="multiple" data-fouc="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="safe_slide" class="image_data">
+                                        <span class="help-block">Chỉ cho phép các file ảnh có đuôi <code>jpg</code>, <code>gif</code> và <code>png</code>. File có dung lượng tối đa 20M.</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-2 col-form-label text-right">Thông số kỹ thuật </label>
+                                    <div class="col-md-12">
+                                        <textarea class="form-control ckeditor" id="specifications" name="specifications">{!!old('content')!!}</textarea>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
-
+t
                     <div class="tab-pane fade" id="left-icon-tab2">
                         <div class="row">
                             <div class="col-md-10 col-md-offset-1">
@@ -258,6 +409,10 @@
       filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='
     };
     CKEDITOR.replace('content-product', options);
+    CKEDITOR.replace('exterior_content', options);
+    CKEDITOR.replace('interior_content', options);
+    CKEDITOR.replace('operate_content', options);
+    CKEDITOR.replace('slide_content', options);
 
   </script>
 
