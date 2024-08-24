@@ -23,7 +23,6 @@ class BlockRepository extends AbstractRepository{
     public function validate(){
         return $rules = [
             'title' => 'required'
-
         ];
     }
 
