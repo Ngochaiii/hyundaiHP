@@ -1953,13 +1953,13 @@
                 <div class="col-lg-6 content-column">
                     <div class="inner-column">
                         <div class="boxcar-title white">
-                            <h2>Auto Loan Calculator</h2>
-                            <p>Use this car payment calculator to estimate monthly payments on your next new or used auto loan. </p>
+                            <h2>Điền thông tin của bạn dưới đây</h2>
+                            <p>Chúng Tôi Sẽ Gọi Cho Bạn Ngay Tư Vấn Cho Bạn Liền </p>
                         </div>
                         <form class="row">
                             <div class="col-lg-6">
                                 <div class="form_boxes">
-                                    <label>Vehicle Price ($)</label>
+                                    <label>Mẫu xe cần tư vấn </label>
                                     <div class="drop-menu">
                                         <div class="select">
                                             <span>45$</span>
@@ -1974,52 +1974,25 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form_boxes">
-                                    <label>Interest Rate</label>
-                                    <div class="drop-menu">
-                                        <div class="select">
-                                            <span>5</span>
-                                        </div>
-                                        <input type="hidden" name="gender">
-                                        <ul class="dropdown" style="display: none;">
-                                            <li>10</li>
-                                            <li>15</li>
-                                        </ul>
-                                    </div>
+                                    <label>Họ Tên</label>
+                                        <input type="text" name="name">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form_boxes">
-                                    <label>Period (months)</label>
-                                    <div class="drop-menu">
-                                        <div class="select">
-                                            <span>36</span>
-                                        </div>
-                                        <input type="hidden" name="gender">
-                                        <ul class="dropdown" style="display: none;">
-                                            <li>40</li>
-                                            <li>45</li>
-                                        </ul>
-                                    </div>
+                                    <label>Số điện thoại</label>
+                                        <input type="text" name="phone">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form_boxes">
-                                    <label>Down Payment</label>
-                                    <div class="drop-menu">
-                                        <div class="select">
-                                            <span>$45.000</span>
-                                        </div>
-                                        <input type="hidden" name="gender">
-                                        <ul class="dropdown" style="display: none;">
-                                            <li>$45.000</li>
-                                            <li>$50.000</li>
-                                        </ul>
-                                    </div>
+                                    <label>Email</label>
+                                        <input type="text" name="email">
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-submit">
-                                    <button type="submit" class="theme-btn">Calculate <img src="{{asset('Fe_Hyundai/assets/images/arrow.svg')}}"alt=""></button>
+                                    <button type="submit" class="theme-btn">Gửi <img src="{{asset('Fe_Hyundai/assets/images/arrow.svg')}}"alt=""></button>
                                 </div>
                             </div>
                         </form>
@@ -2035,7 +2008,66 @@
 <section class="blog-section">
     <div class="boxcar-container">
         <div class="boxcar-title wow fadeInUp">
-            <h2>Latest Blog Posts</h2>
+            <h2>Khuyến mãi bán hàng</h2>
+        </div>
+        <div class="row">
+            <!-- blog-block -->
+            <div class="blog-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInUp">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/blog-1.jpg')}}" alt=""></a></figure>
+                        <span class="date">news</span>
+                    </div>
+                    <div class="content-box">
+                        <ul class="post-info">
+                            <li>Ali Tufan</li>
+                            <li>April 20, 2023</li>
+                        </ul>
+                        <h6 class="title"><a href="blog-single.html" title="">This Long-Awaited Technology May Finally Change the World</a></h6>
+                    </div>
+                </div>
+            </div>
+            <!-- blog-block -->
+            <div class="blog-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInUp" data-wow-delay="100ms">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/blog-2.jpg')}} "alt=""></a></figure>
+                        <span class="date">news</span>
+                    </div>
+                    <div class="content-box">
+                        <ul class="post-info">
+                            <li>Ali Tufan</li>
+                            <li>April 20, 2023</li>
+                        </ul>
+                        <h6 class="title"><a href="blog-single.html" title="">This Long-Awaited Technology May Finally Change the World</a></h6>
+                    </div>
+                </div>
+            </div>
+            <!-- blog-block -->
+            <div class="blog-block col-lg-4 col-md-6 col-sm-12">
+                <div class="inner-box wow fadeInUp" data-wow-delay="200ms">
+                    <div class="image-box">
+                        <figure class="image"><a href="#"><img src="{{asset('Fe_Hyundai/assets/images/blog-3.jpg')}}" alt=""></a></figure>
+                        <span class="date">news</span>
+                    </div>
+                    <div class="content-box">
+                        <ul class="post-info">
+                            <li>Ali Tufan</li>
+                            <li>April 20, 2023</li>
+                        </ul>
+                        <h6 class="title"><a href="blog-single.html" title="">This Long-Awaited Technology May Finally Change the World</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End blog-section -->
+<!-- blog section -->
+<section class="blog-section">
+    <div class="boxcar-container">
+        <div class="boxcar-title wow fadeInUp">
+            <h2>Khuyến mãi dịch vụ</h2>
         </div>
         <div class="row">
             <!-- blog-block -->
