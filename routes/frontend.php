@@ -1,7 +1,7 @@
 <?php
 
 Route::group(['middleware' => 'frontend'], function() {
-    Route::get('/', ['as' => 'home.index', 'uses' => 'Fe_Hyundai\HompageController@index']);
+    Route::get('/', ['as' => 'home.index', 'uses' => 'Frontend\FrontendController@index']);
     Route::get('/dang-ky-lai-thu', ['as' => 'marketing.activation', 'uses' => 'Fe_Hyundai\RequestContainController@index']);
     Route::get('/construction/activation/{key}', ['as' => 'construction.activation', 'uses' => 'Frontend\ConstructionController@activation']);
     Route::get('/member/activation/{key}', ['as' => 'member.activation', 'uses' => 'Frontend\MemberController@activation']);
