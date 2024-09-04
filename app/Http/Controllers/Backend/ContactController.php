@@ -29,4 +29,11 @@ class ContactController extends Controller
         $this->contactRepo->delete($id);
         return redirect()->back()->with('success','Xóa thành công');
     }
+    public function ResgisDrive( Request $request){
+        dd($request->all());
+    }
+
+    public function drivedata(Request $request) {
+        dd($request->all());
+    }
 }

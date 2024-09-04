@@ -17,11 +17,8 @@
                                             <div class="row align-items-lg-center justify-content-center h-100">
                                                 <div class="col-11 col-xl-10">
                                                     <div class="contact-info-wrapper py-4 py-xl-5">
-                                                        <h2 class="h1 mb-3 text-light">Get in touch</h2>
-                                                        <p class="lead fs-4 text-light opacity-75 mb-4 mb-xxl-5">We're
-                                                            always on the lookout to work with new clients. If you're
-                                                            interested in working with us, please get in touch in one of the
-                                                            following ways.</p>
+                                                        <h2 class="h1 mb-3 text-light">HÃY ĐĂNG KÝ</h2>
+                                                        <p class="lead fs-4 text-light opacity-75 mb-4 mb-xxl-5">Bạn đang tìm kiếm cơ hội trải nghiệm lái thử xe? Nếu bạn quan tâm và muốn đăng ký, hãy liên hệ với chúng tôi qua một trong những cách sau đây.</p>
                                                         <div class="d-flex mb-4 mb-xxl-5">
                                                             <div class="me-4 text-primary">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="32"
@@ -32,11 +29,9 @@
                                                                 </svg>
                                                             </div>
                                                             <div>
-                                                                <h4 class="mb-3 text-light">Address</h4>
-                                                                <address class="mb-0 text-light opacity-75">8014 Edith Blvd
-                                                                    NE, Albuquerque, New York, United States</address>
-                                                                <address class="mb-0 text-light opacity-75">8014 Edith Blvd
-                                                                    NE, Albuquerque, New York, United States</address>
+                                                                <h4 class="mb-3 text-light">Địa chỉ</h4>
+                                                                <address class="mb-0 text-light opacity-75"> Địa chỉ: Shoroom 3s 742 Nguyễn Văn Linh, Lê Chân, Hải Phòng</address>
+                                                                <address class="mb-0 text-light opacity-75"> Địa chỉ: Shoroom 1s 9/10B Lê Hồng Phong, Lê Chân, Hải Phòng</address>
                                                             </div>
                                                         </div>
                                                         <div class="row mb-4 mb-xxl-5">
@@ -56,7 +51,7 @@
                                                                         <h4 class="mb-3 text-light">Phone</h4>
                                                                         <p class="mb-0">
                                                                             <a class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none"
-                                                                                href="tel:+15057922430">(505) 792-2430</a>
+                                                                                href="tel:+0906026299">0906026299</a>
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -78,7 +73,7 @@
                                                                         <h4 class="mb-3 text-light">E-Mail</h4>
                                                                         <p class="mb-0">
                                                                             <a class="link-light link-opacity-75 link-opacity-100-hover text-decoration-none"
-                                                                                href="mailto:demo@yourdomain.com">demo@yourdomain.com</a>
+                                                                                href="mailto:info@hyundaihaiphong.vn">info@hyundaihaiphong.vn</a>
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -96,15 +91,15 @@
                                                                 </svg>
                                                             </div>
                                                             <div>
-                                                                <h4 class="mb-3 text-light">Opening Hours</h4>
+                                                                <h4 class="mb-3 text-light">Giờ mở cửa</h4>
                                                                 <div class="d-flex mb-1">
-                                                                    <p class="text-light fw-bold mb-0 me-5">Mon - Fri</p>
-                                                                    <p class="text-light opacity-75 mb-0">9am - 5pm</p>
+                                                                    <p class="text-light fw-bold mb-0 me-5">Thứ hai  - Thứ Bảy</p>
+                                                                    <p class="text-light opacity-75 mb-0">08:00 - 17:00</p>
                                                                 </div>
-                                                                <div class="d-flex">
+                                                                {{-- <div class="d-flex">
                                                                     <p class="text-light fw-bold mb-0 me-5">Sat - Sun</p>
                                                                     <p class="text-light opacity-75 mb-0">9am - 2pm</p>
-                                                                </div>
+                                                                </div> --}}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -114,13 +109,14 @@
                                         <div class="col-12 col-lg-6">
                                             <div class="row align-items-lg-center h-100">
                                                 <div class="col-12">
-                                                    <form action="#!">
+                                                    <form action="{{route('regis.drive2')}}" method="POST">
+                                                        @csrf
                                                         <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                                                             <div class="col-12">
-                                                                <label for="fullname" class="form-label">Full Name <span
+                                                                <label for="fullname" class="form-label">Họ Tên  <span
                                                                         class="text-danger">*</span></label>
                                                                 <input type="text" class="form-control" id="fullname"
-                                                                    name="fullname" value="" required>
+                                                                    name="name" value="" required>
                                                             </div>
                                                             <div class="col-12 col-md-6">
                                                                 <label for="email" class="form-label">Email <span
@@ -141,8 +137,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-12 col-md-6">
-                                                                <label for="phone" class="form-label">Phone
-                                                                    Number</label>
+                                                                <label for="phone" class="form-label">Số điện thoại</label>
                                                                 <div class="input-group">
                                                                     <span class="input-group-text">
                                                                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -158,15 +153,14 @@
                                                                 </div>
                                                             </div>
                                                             <div class="col-12">
-                                                                <label for="subject" class="form-label">Subject <span
+                                                                <label for="subject" class="form-label">mẫu xe <span
                                                                         class="text-danger">*</span></label>
-                                                                <input type="text" class="form-control" id="subject"
-                                                                    name="subject" value="" required>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <label for="message" class="form-label">Message <span
-                                                                        class="text-danger">*</span></label>
-                                                                <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+                                                                        <select class="form-control" id="carSelect" name="car" required>
+                                                                            <option value="">-- Chọn loại xe --</option>
+                                                                            @foreach($all_cars as $car)
+                                                                                <option value="{{ $car->id }}">{{ $car->title }}</option>
+                                                                            @endforeach
+                                                                        </select>
                                                             </div>
                                                             <div class="col-12">
                                                                 <div class="d-grid">
@@ -206,51 +200,27 @@
                 </div>
                 <div class="featured-products">
                     <h4 class="featured-title">Sản phẩm nổi bật</h4>
+                    @foreach ($products as $item => $product)
+                    <?php
+                    // Tách chuỗi thành mảng các đường dẫn ảnh
+                    $imageArray = explode(',', $product->images);
+
+                    // Lấy đường dẫn ảnh đầu tiên
+                    $firstImage = trim($imageArray[0]);
+                    ?>
                     <div class="product-item">
                         <div class="product-image">
-                            <img src="path_to_hyundai_i10_image.jpg" alt="Hyundai i10">
+                            <figure style="height:80px;width:120px" class="image">
+                                <a href="#"><img src="{{ asset($firstImage) }}" alt="Image of {{ $product->title }}"></a>
+                            </figure>
                         </div>
                         <div class="product-details">
-                            Hyundai i10<br>
-                            <span class="product-price">Giá xe 360 Triệu</span>
+                            <h6>{{ $product->title }}</h6>
+                            <span class="product-price">{{ $product->price }}</span>
                         </div>
                     </div>
-                    <div class="product-item">
-                        <div class="product-image">
-                            <img src="path_to_hyundai_venue_image.jpg" alt="Hyundai Venue">
-                        </div>
-                        <div class="product-details">
-                            Hyundai Venue<br>
-                            <span class="product-price">Giá xe 499 Triệu</span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image">
-                            <img src="path_to_hyundai_accent_image.jpg" alt="Hyundai Accent">
-                        </div>
-                        <div class="product-details">
-                            Hyundai Accent<br>
-                            <span class="product-price">Giá xe 426 Triệu</span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image">
-                            <img src="path_to_hyundai_elantra_image.jpg" alt="Hyundai Elantra">
-                        </div>
-                        <div class="product-details">
-                            Hyundai Elantra<br>
-                            <span class="product-price">Giá xe 639 Triệu</span>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image">
-                            <img src="path_to_hyundai_creta_image.jpg" alt="Hyundai Creta">
-                        </div>
-                        <div class="product-details">
-                            Hyundai Creta<br>
-                            <span class="product-price">Giá xe ??? Triệu</span> <!-- Replace ??? with actual price -->
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
             </div>
         </div>
@@ -327,14 +297,13 @@
             /* Độ dày của dấu gạch */
             background-color: black;
             /* Màu của dấu gạch */
-            width: 300px;
+            width: 100%;
             /* Chiều rộng của dấu gạch */
         }
 
         .product-item {
             display: flex;
-            align-items: center;
-            margin-bottom: 15px;
+\            margin-bottom: 15px;
         }
 
         .product-image img {

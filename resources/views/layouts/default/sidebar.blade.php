@@ -47,56 +47,32 @@
                 <div class="nav-out-bar">
                     <nav class="nav main-menu">
                         <ul class="navigation" id="navbar">
-                            <li class="current-dropdown current"><span> <a href="{{route('home.index')}}" >Trang chủ </a></span></li>
+                            <li class="current-dropdown current"><span> <a href="{{ route('home.index') }}">Trang chủ
+                                    </a></span></li>
                             <li class="current-dropdown"><span>Sản Phẩm <i class="fa-solid fa-angle-down"></i></span>
                                 <div class="mega-menu">
-                                    <div class="mega-column">
-                                        <h3>Inventory List</h3>
-                                        <ul>
-                                            <li><a href="inventory-list-01.html" title="">Inventory List v1</a>
-                                            </li>
-                                            <li><a href="inventory-list-02.html" title="">Inventory List v2</a>
-                                            </li>
-                                            <li><a href="inventory-map-cards.html" title="">Map - Cards</a></li>
-                                            <li><a href="inventory-map-rows.html" title="">Map - Rows</a></li>
-                                            <li><a href="inventory-sidebar-rows.html" title="">Sidebar -
-                                                    Rows</a></li>
-                                            <li><a href="inventory-sidebar-cards.html" title="">Sidebar -
-                                                    Cards</a></li>
+                                    <div class="container">
+                                        <div class="row">
+                                            @foreach ($products as $item => $product)
+                                                <?php
+                                                // Tách chuỗi thành mảng các đường dẫn ảnh
+                                                $imageArray = explode(',', $product->images);
 
-                                        </ul>
+                                                // Lấy đường dẫn ảnh đầu tiên
+                                                $firstImage = trim($imageArray[0]);
+                                                ?>
+                                                <div class="col-md-4">
+                                                    <div class="col-md-4 d-flex flex-column align-items-center">
+                                                        <figure style="height:80px;width:120px" class="image">
+                                                            <a href="#"><img src="{{ asset($firstImage) }}" alt="Image of {{ $product->name }}"></a>
+                                                        </figure>
+                                                        <h6 class="text-center">{{ $product->title }}</h6>
+                                                    </div>
+                                                </div>
+                                            @endforeach
+                                        </div>
                                     </div>
-                                    <div class="mega-column">
-                                        <h3>Dịch vụ </h3>
-                                        <ul>
 
-                                        </ul>
-                                    </div>
-                                    <div class="mega-column">
-                                        <h3>Tin Tức </h3>
-                                        <ul>
-                                            <li><a href="inventory-page-single.html" title="">Audi</a></li>
-                                            <li><a href="inventory-page-single.html" title="">BMW</a></li>
-                                            <li><a href="inventory-page-single.html" title="">Ford</a></li>
-                                            <li><a href="inventory-page-single.html" title="">Honda</a></li>
-                                            <li><a href="inventory-page-single.html" title="">Land Rover</a>
-                                            </li>
-                                            <li><a href="inventory-page-single.html" title="">Mercedes-Benz</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="mega-column">
-                                        <h3>Chăm Sóc Khách Hàng </h3>
-                                        <ul>
-                                            <li><a href="inventory-page-single.html" title="">Sedan</a></li>
-                                            <li><a href="inventory-page-single.html" title="">SUVs</a></li>
-                                            <li><a href="inventory-page-single.html" title="">Sport Coupe</a>
-                                            </li>
-                                            <li><a href="inventory-page-single.html" title="">Convertible</a>
-                                            </li>
-                                            <li><a href="inventory-page-single.html" title="">Wagon</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                             </li>
                             <li class="current-dropdown"><span>Dịch Vụ <i class="fa-solid fa-angle-down"></i></span>
@@ -154,7 +130,8 @@
 
                                 </ul>
                             </li>
-                            <li class="current-dropdown right-one"><span> <a href="{{route('marketing.activation')}}">Đăng Ký Lái Thử</a></li>
+                            <li class="current-dropdown right-one"><span> <a
+                                        href="{{ route('marketing.activation') }}">Đăng Ký Lái Thử</a></li>
                         </ul>
                     </nav>
                     <!-- Main Menu End-->

@@ -201,7 +201,7 @@
                                         </a></li>
                                 </ul>
                                 <div class="btn-box">
-                                    <button class="side-btn" id="openModalBtn">
+                                    <button class="side-btn openNewModalBtn">
                                         Yêu cầu Tư Vấn
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             viewBox="0 0 14 14" fill="none">
@@ -217,7 +217,7 @@
                                             </defs>
                                         </svg>
                                     </button>
-                                    <button class="side-btn two" id="openNewModalBtn">Nhận thông tin mới
+                                    <button class="side-btn two openNewModalBtn">Nhận báo giá
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                             viewBox="0 0 14 14" fill="none">
                                             <g clip-path="url(#clip0_881_8744)">
@@ -685,7 +685,6 @@
             </div>
         </div>
         <!-- End shop section two -->
-        @include('fe_hyundai/modal/yeucautuvan')
         @include('fe_hyundai/modal/dangkylaithu')
     </section>
     <!-- End inventory-section -->

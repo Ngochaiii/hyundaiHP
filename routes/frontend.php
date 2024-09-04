@@ -3,6 +3,9 @@
 Route::group(['middleware' => 'frontend'], function() {
     Route::get('/', ['as' => 'home.index', 'uses' => 'Frontend\FrontendController@index']);
     Route::get('/dang-ky-lai-thu', ['as' => 'marketing.activation', 'uses' => 'Fe_Hyundai\RequestContainController@index']);
+    Route::post('/dang-ky-lai-thu-form', ['as' => 'regis.drive', 'uses' => 'Backend\ContactController@ResgisDrive']);
+    Route::post('/dang-ky-lai-thu', ['as' => 'regis.drive2', 'uses' => 'Backend\ContactController@drivedata']);
+
     Route::get('/construction/activation/{key}', ['as' => 'construction.activation', 'uses' => 'Frontend\ConstructionController@activation']);
     Route::get('/member/activation/{key}', ['as' => 'member.activation', 'uses' => 'Frontend\MemberController@activation']);
     /* Sản phẩm */
