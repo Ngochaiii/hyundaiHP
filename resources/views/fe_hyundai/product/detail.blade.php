@@ -64,7 +64,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <!-- Hiển thị bảng từ database -->
-                                    <div class="table-responsive">
+                                    <div>
                                         {!! $detail_product->specifications !!}
                                     </div>
                                 </div>
@@ -72,8 +72,7 @@
 
                         </div>
                         <!-- description-sec -->
-                        <div
-                            class="description-sec d-flex flex-column align-items-center justify-content-center text-center">
+                        <div>
                             {!! $detail_product->content !!}
                         </div>
 
@@ -690,6 +689,20 @@
         @include('fe_hyundai/modal/dangkylaithu')
     </section>
     <!-- End inventory-section -->
+
+    <style>
+        table {
+            border: 1px solid black !important;
+            border-collapse: collapse !important;
+        }
+
+        th, td {
+            border: 1px solid black !important;
+            padding: 8px;
+            text-align: left;
+        }
+
+        </style>
 @endsection
 @push('css')
 @endpush
