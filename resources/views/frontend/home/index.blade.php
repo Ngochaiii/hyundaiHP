@@ -16,7 +16,7 @@
                         </div>
                         <div class="col-lg-3 col-sm-3">
                             <select class="wide" id="category_id" name="category_id">
-                                <option value="0">Tất cả</option>	
+                                <option value="0">Tất cả</option>
                                 @foreach ($category_arr as $category)
                                 <option value="{!!$category->id!!}">{!!$category->title!!}</option>
                                 @endforeach
@@ -26,7 +26,7 @@
                             <input type="submit" value="Tìm kiếm">
                         </div>
                     </div>
-                    <p class="f-14 mt-15">Gần đây: 
+                    <p class="f-14 mt-15">Gần đây:
                         @foreach ($keyword_arr as $value)
                         <a href="{{route('product.index', ['keyword' => $value->keyword])}}" class="product-keyword">{{$value->keyword}},</a>
                         @endforeach ...
@@ -71,7 +71,7 @@
             </div>
             <!-- /row -->
         </div>
-        <!-- /container -->	
+        <!-- /container -->
     </div>
     <!-- /bg_color_1 -->
 
@@ -116,7 +116,7 @@
                         <img src="{{$construction->avatar}}" alt="{{$construction->full_name}}">
                         <div class="info">
                             <div class="cat_star">
-                                @for($i = 0; $i < 5; $i++) 
+                                @for($i = 0; $i < 5; $i++)
                                 @if ($i < $construction->star())
                                 <i class="icon_star"></i>
                                 @else
@@ -149,7 +149,7 @@
             <p>Xem hình ảnh các nhà thầu thi công để lấy ý tưởng cho ngôi nhà của bạn</p>
         </div>
         <div class="row add_bottom_30 recent-post">
-            
+
         </div>
         <!-- /row -->
 
