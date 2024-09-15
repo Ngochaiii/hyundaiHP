@@ -8,7 +8,6 @@ use App\Repositories\ConstructionRepository;
 use App\Repositories\KeywordRepository;
 use App\Repositories\NewsRepository;
 use App\Repositories\ProductRepository;
-use App\Repositories\NewsRepository;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller {
