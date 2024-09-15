@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Http\Controllers\Fe_Hyundai;
+namespace App\Http\Controllers\FeHyundai;
 
 use App\Http\Controllers\Controller;
 use App\Models\Block;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
-class HompageController extends Controller
+class HomepageController extends Controller
 {
     public function index() {
         $products = Product::paginate(12);

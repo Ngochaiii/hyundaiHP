@@ -39,6 +39,6 @@ Route::post('/get-products-by-tag', ['as' => 'api.get_products_by_tag', 'uses' =
 Route::post('/send-contact', ['as' => 'api.send_contact', 'uses' => 'Api\FrontendController@sendContact']);
 Route::post('/add-review', ['as' => 'api.add_review', 'uses' => 'Api\ReviewController@addReview']);
 Route::post('/register-member', ['as' => 'api.register-member', 'uses' => 'Api\FrontendController@registerMember']);
-Route::post('/upload', ['as' => 'api.upload', 'uses' => 'Api\FrontendController@upload']);
+Route::post('/upload', ['as' => 'api.upload.upload', 'uses' => 'Api\FrontendController@upload']);
 Route::post('/uploadImage', ['as' => 'api.uploadimage', 'uses' => 'Api\FrontendController@uploadImage']);
-Route::post('/delete_image', ['as' => 'api.upload', 'uses' => 'Api\FrontendController@delete_image']);
+Route::post('/delete_image', ['as' => 'api.upload.delete', 'uses' => 'Api\FrontendController@delete_image']);

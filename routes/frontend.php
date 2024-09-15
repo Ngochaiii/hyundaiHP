@@ -1,8 +1,6 @@
 <?php
 
-Route::group(['middleware' => 'frontend'], function() {
-    Route::get('/', ['as' => 'home.index', 'uses' => 'Frontend\FrontendController@index']);
-    Route::get('/dang-ky-lai-thu', ['as' => 'marketing.activation', 'uses' => 'Fe_Hyundai\RequestContainController@index']);
+
     Route::post('/dang-ky-lai-thu-form', ['as' => 'regis.drive', 'uses' => 'Backend\ContactController@ResgisDrive']);
     Route::post('/dang-ky-lai-thu', ['as' => 'regis.drive2', 'uses' => 'Backend\ContactController@drivedata']);
 
@@ -44,4 +42,4 @@ Route::group(['middleware' => 'frontend'], function() {
     /* Tiếp thị liên kết */
     Route::get('/marketing/{alias}', ['as' => 'marketing.index', 'uses' => 'Frontend\MarketingController@index']);
     Route::get('/khach-hang/tai-khoan/{alias}', ['as' => 'member.edit_profile', 'uses' => 'Frontend\MemberController@editProfile']);
-});
+

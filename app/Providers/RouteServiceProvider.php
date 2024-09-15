@@ -41,6 +41,8 @@ class RouteServiceProvider extends ServiceProvider {
         $this->mapFERoutes();
 
         $this->mapBERoutes();
+
+        $this->mapHyundaiRoutes();
         //
     }
 
@@ -81,6 +83,11 @@ class RouteServiceProvider extends ServiceProvider {
         Route::middleware('web')
                 ->namespace($this->namespace)
                 ->group(base_path('routes/backend.php'));
+    }
+
+    protected function mapHyundaiRoutes() {
+        Route::namespace($this->namespace)
+                ->group(base_path('routes/hyundai.php'));
     }
 
 }

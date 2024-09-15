@@ -16,11 +16,11 @@ Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'unisha
 Route::get('/login', ['as' => 'login', 'uses' => 'Auth\AuthController@getLogin']);
 Route::post('/login', ['as' => 'postLogin', 'uses' => 'Auth\AuthController@postLogin']);
 Route::get('/logout', ['as' => 'logout', 'uses' => 'Auth\AuthController@logout']);
-Route::any('/ckfinder/connector', '\CKSource\CKFinderBridge\Controller\CKFinderController@requestAction')
-    ->name('ckfinder_connector');
+// Route::any('/ckfinder/connector', '\CKSource\CKFinderBridge\Controller\CKFinderController@requestAction')
+//     ->name('ckfinder_connector');
 
-Route::any('/ckfinder/browser', '\CKSource\CKFinderBridge\Controller\CKFinderController@browserAction')
-    ->name('ckfinder_browser');
+// Route::any('/ckfinder/browser', '\CKSource\CKFinderBridge\Controller\CKFinderController@browserAction')
+//     ->name('ckfinder_browser');
 Route::group(['prefix' => 'api', 'middleware' => 'api'], function() {
     Route::post('/login-marketing', ['as' => 'api.login-marketing', 'uses' => 'Api\AuthController@login']);
     Route::get('/logout-marketing', ['as' => 'api.logout-marketing', 'uses' => 'Api\AuthController@logout']);
