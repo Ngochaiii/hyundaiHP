@@ -5,10 +5,12 @@ namespace App\Http\Controllers\Backend;
 use App\Repositories\ContactRepository;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Contact;
 
 class ContactController extends Controller
 {
-    public function __construct(ContactRepository $contactRepo) {
+    public function __construct(ContactRepository $contactRepo)
+    {
         $this->contactRepo = $contactRepo;
     }
 
@@ -27,13 +29,11 @@ class ContactController extends Controller
     public function destroy($id)
     {
         $this->contactRepo->delete($id);
-        return redirect()->back()->with('success','Xóa thành công');
-    }
-    public function ResgisDrive( Request $request){
-        dd($request->all());
+        return redirect()->back()->with('success', 'Xóa thành công');
     }
 
-    public function drivedata(Request $request) {
-        dd($request->all());
-    }
+
+
+
+
 }

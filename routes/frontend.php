@@ -1,8 +1,6 @@
 <?php
 
-
-    Route::post('/dang-ky-lai-thu-form', ['as' => 'regis.drive', 'uses' => 'Backend\ContactController@ResgisDrive']);
-    Route::post('/dang-ky-lai-thu', ['as' => 'regis.drive2', 'uses' => 'Backend\ContactController@drivedata']);
+    Route::get('/dang-ky-lai-thu', ['as' => 'user.request', 'uses' => 'FeHyundai\RequestContainController@index']);
 
     Route::get('/construction/activation/{key}', ['as' => 'construction.activation', 'uses' => 'Frontend\ConstructionController@activation']);
     Route::get('/member/activation/{key}', ['as' => 'member.activation', 'uses' => 'Frontend\MemberController@activation']);

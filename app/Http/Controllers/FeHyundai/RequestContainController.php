@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Fe_Hyundai;
+namespace App\Http\Controllers\FeHyundai;
 
 use App\Http\Controllers\Controller;
 use App\Models\Product;

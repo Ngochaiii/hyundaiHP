@@ -111,6 +111,7 @@
                                                 <div class="col-12">
                                                     <form action="{{route('regis.drive2')}}" method="POST">
                                                         @csrf
+                                                        <input type="hidden" name="modal_title" value="Tiêu đề Modal: Đăng ký lái thử ">
                                                         <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                                                             <div class="col-12">
                                                                 <label for="fullname" class="form-label">Họ Tên  <span

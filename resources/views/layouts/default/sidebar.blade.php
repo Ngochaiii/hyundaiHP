@@ -64,7 +64,8 @@
                                                 <div class="col-md-4">
                                                     <div class="col-md-4 d-flex flex-column align-items-center">
                                                         <figure style="height:80px;width:120px" class="image">
-                                                            <a href="#"><img src="{{ asset($firstImage) }}" alt="Image of {{ $product->name }}"></a>
+                                                            <a href="#"><img src="{{ asset($firstImage) }}"
+                                                                    alt="Image of {{ $product->name }}"></a>
                                                         </figure>
                                                         <h6 class="text-center">{{ $product->title }}</h6>
                                                     </div>
@@ -100,38 +101,11 @@
                             <li class="current-dropdown right-one"><span>Chăm Sóc Khách Hàng <i
                                         class="fa-solid fa-angle-down"></i></span>
                                 <ul class="dropdown">
-                                    <li class="nav-sub"><a href="#">Dashboard <i
-                                                class="fa fa-angle-right"></i></a>
-                                        <ul class="dropdown deep subnav-menu">
-                                            <li><a href="dashboard.html" title="">Dashboard</a></li>
-                                            <li><a href="my-listings.html" title="">My Listings</a></li>
-                                            <li><a href="add-listings.html" title="">Add Listings</a></li>
-                                            <li><a href="favorite.html" title="">Favorites</a></li>
-                                            <li><a href="saved.html" title="">Saved Search</a></li>
-                                            <li><a href="messages.html" title="">Messages</a></li>
-                                            <li><a href="profile.html" title="">Profile</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="contact.html">Services</a></li>
-                                    <li><a href="login.html">Login</a></li>
-                                    <li><a href="faq.html">FAQs</a></li>
-                                    <li><a href="pricing.html">Pricing</a></li>
-                                    <li><a href="terms.html">Terms</a></li>
-                                    <li><a href="team-list.html">Team List</a></li>
-                                    <li><a href="team-single.html">Team Single</a></li>
-                                    <li><a href="dealer.html">Dealer List</a></li>
-                                    <li><a href="dealer-single.html">Dealer Single</a></li>
-                                    <li><a href="loan-calculator.html">Loan Calculator</a></li>
-                                    <li><a href="compare.html">Compare</a></li>
-                                    <li><a href="404.html">404</a></li>
-                                    <li><a href="invoice.html">Invoice</a></li>
-                                    <li><a href="ui-elements.html">UI Elements</a></li>
-
+                                    <li><a href="">Chương trình hội viên Hyundai</a></li>
                                 </ul>
                             </li>
                             <li class="current-dropdown right-one"><span> <a
-                                        href="{{ route('marketing.activation') }}">Đăng Ký Lái Thử</a></li>
+                                        href="{{ route('user.request') }}">Đăng Ký Lái Thử</a></li>
                         </ul>
                     </nav>
                     <!-- Main Menu End-->
