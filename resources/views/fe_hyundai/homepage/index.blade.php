@@ -63,7 +63,8 @@
                                 </a>
                             </div>
                             <div class="content-box">
-                                <h6 class="title text-center mb-2"><a href="{{route('product.detail',$product->alias)}}">{{ $product->title }}</a></h6>
+                                <h6 class="title text-center mb-2"><a
+                                        href="{{ route('product.detail', $product->alias) }}">{{ $product->title }}</a></h6>
                                 <div class="btn-box">
                                     <small class="text-white p-2 bg-primary" style="font-size: 16px;">Giá xe
                                         {{ number_format($product->price / 1000000, 0, ',', '.') }} Triệu</small>
@@ -264,10 +265,10 @@
             </nav>
             <div class="tab-content wow fadeInUp" data-wow-delay="200ms" id="nav-tabContent">
 
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <div class="row car-slider-three" data-preview="4">
-                            <!-- car-block-nine -->
-                            @foreach ($products as $product)
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="row car-slider-three" data-preview="4">
+                        <!-- car-block-nine -->
+                        @foreach ($products as $product)
                             <div class="box-car style-2 car-block-nine col-lg-3 col-md-6 col-sm-12 bg-white border">
                                 <div class="inner-box">
                                     <div class="image-box">
@@ -280,20 +281,23 @@
 
                                             @foreach ($imageArray as $image)
                                                 <div class="image">
-                                                    <a href="#"><img style="height: 200px" src="{{ asset(trim($image)) }}" alt="Product Image"></a>
+                                                    <a href="#"><img style="height: 200px"
+                                                            src="{{ asset(trim($image)) }}" alt="Product Image"></a>
                                                 </div>
                                             @endforeach
                                         </div>
                                         <span>{{ $product->mileage ?? 'Mới Ra' }}</span>
                                     </div>
                                     <div class="content-box m-3">
-                                        <h6 class="title text-center"><a href="{{route('product.detail',$product->alias)}}">{{ $product->title }}</a></h6>
+                                        <h6 class="title text-center"><a
+                                                href="{{ route('product.detail', $product->alias) }}">{{ $product->title }}</a>
+                                        </h6>
                                         <div class="btn-box mt-2">
                                             <small class="text-white p-2 bg-primary" style="font-size: 16px;">Giá xe
                                                 {{ number_format($product->price / 1000000, 0, ',', '.') }} Triệu</small>
                                             <a href="{{ route('product.detail', ['alias' => $product->alias]) }}"
-                                                class="details ">Xem chi tiết<svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                                    height="14" viewBox="0 0 14 14" fill="none">
+                                                class="details ">Xem chi tiết<svg xmlns="http://www.w3.org/2000/svg"
+                                                    width="14" height="14" viewBox="0 0 14 14" fill="none">
                                                     <g clip-path="url(#clip0_601_4346)">
                                                         <path
                                                             d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z"
@@ -311,9 +315,9 @@
                                 </div>
                             </div>
                             <!-- End car-block-nine -->
-                            @endforeach
-                        </div>
+                        @endforeach
                     </div>
+                </div>
             </div>
         </div>
     </section>
@@ -346,8 +350,8 @@
                                 trường.</li>
                         </ul>
                         <a href="#" class="read-more wow fadeInUp" data-wow-delay="200ms">Liên hệ với chúng
-                            tôi<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                viewBox="0 0 14 14" fill="none">
+                            tôi<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
                                 <g clip-path="url(#clip0_634_2156)">
                                     <path
                                         d="M13.6106 0H5.05509C4.84013 0 4.66619 0.173943 4.66619 0.388901C4.66619 0.603859 4.84013 0.777802 5.05509 0.777802H12.6719L0.113453 13.3362C-0.0384687 13.4881 -0.0384687 13.7342 0.113453 13.8861C0.189396 13.962 0.288927 14 0.388422 14C0.487917 14 0.587411 13.962 0.663391 13.8861L13.2218 1.3277V8.94447C13.2218 9.15943 13.3957 9.33337 13.6107 9.33337C13.8256 9.33337 13.9996 9.15943 13.9996 8.94447V0.388901C13.9995 0.173943 13.8256 0 13.6106 0Z"
@@ -558,18 +562,22 @@
                                 <h2>Điền thông tin của bạn dưới đây</h2>
                                 <p>Chúng Tôi Sẽ Gọi Cho Bạn Ngay Tư Vấn Cho Bạn Liền </p>
                             </div>
-                            <form class="row">
+                            <form class="row" method="POST" action="{{ route('request.user') }}">
+                                @csrf
                                 <div class="col-lg-6">
                                     <div class="form_boxes">
                                         <label>Mẫu xe cần tư vấn </label>
                                         <div class="drop-menu">
                                             <div class="select">
-                                                <span>45$</span>
+                                                <span>chọn xe tư vấn</span>
                                             </div>
-                                            <input type="hidden" name="gender">
-                                            <ul class="dropdown" style="display: none;">
-                                                <li>$45</li>
-                                                <li>$50</li>
+                                            <input type="hidden" name="car_model" id="car_model">
+                                            <ul class="dropdown">
+                                                @foreach ($products as $item)
+                                                    <li
+                                                        onclick="document.getElementById('car_model').value = '{{ $item->title }}';">
+                                                        {{ $item->title }}</li>
+                                                @endforeach
                                             </ul>
                                         </div>
                                     </div>
@@ -577,28 +585,30 @@
                                 <div class="col-lg-6">
                                     <div class="form_boxes">
                                         <label>Họ Tên</label>
-                                        <input type="text" name="name">
+                                        <input type="text" name="name" value="{{ old('name') }}">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form_boxes">
                                         <label>Số điện thoại</label>
-                                        <input type="text" name="phone">
+                                        <input type="text" name="phone" value="{{ old('phone') }}">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form_boxes">
                                         <label>Email</label>
-                                        <input type="text" name="email">
+                                        <input type="text" name="email" value="{{ old('email') }}">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-submit">
                                         <button type="submit" class="theme-btn">Gửi <img
-                                                src="{{ asset('Fe_Hyundai/assets/images/arrow.svg') }}"alt=""></button>
+                                                src="{{ asset('Fe_Hyundai/assets/images/arrow.svg') }}"
+                                                alt=""></button>
                                     </div>
                                 </div>
                             </form>
+
                         </div>
                     </div>
                 </div>

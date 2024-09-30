@@ -53,4 +53,22 @@ class ContactController extends Controller
 
         return redirect()->back()->with('success', 'Dữ liệu đã được gửi thành công!');
     }
+    public function requetSale(Request $request){
+        dd($request->all());
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email',
+            'phone' => 'nullable|string|max:15',
+        ]);
+        Contact::create([
+            'name' => $validated['name'],
+            'email' => $validated['email'],
+            'mobile' => $validated['phone'],
+            'content' => 'Yêu cầu tư vấn xe ',
+            'member_id' => $request->input('car_model'),
+            'is_read' => false,
+        ]);
+        return redirect()->back()->with('success', 'Dữ liệu đã được gửi thành công!');
+    }
+
 }

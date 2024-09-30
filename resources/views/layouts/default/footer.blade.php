@@ -46,14 +46,8 @@
                                 <h4 class="widget-title"><span style="border-bottom: 2px solid #ccc; padding-bottom: 10px; display: inline-block;">Sản Phẩm</span></h4>
                                 <div class="widget-content">
                                     <ul class="user-links style-two">
-                                        <li><a href="#">Aston Martin</a></li>
-                                        <li><a href="#">Audi</a></li>
-                                        <li><a href="#">Bentley</a></li>
-                                        <li><a href="#">BMW</a></li>
-                                        <li><a href="#">Bugatti</a></li>
-                                        <li><a href="#">Ferrari</a></li>
-                                        <li><a href="#">Jaguar</a></li>
-                                        <li><a href="#">Lamborghini</a></li>
+                                        <li><a href="#">Hơn 7000+ Thông tin hữu ích  hàng tháng nhận được hỗ trợ và phương án tốt nhất khi đã đăng ký Nhận bản tin.</a></li>
+
                                     </ul>
                                 </div>
                             </div>
@@ -63,14 +57,10 @@
                                 <h4 class="widget-title"><span style="border-bottom: 2px solid #ccc; padding-bottom: 10px; display: inline-block;">Chính Sách</span></h4>
                                 <div class="widget-content">
                                     <ul class="user-links style-two">
-                                        <li><a href="#">Pickup</a></li>
-                                        <li><a href="#">Coup</a></li>
-                                        <li><a href="#">Family MPV</a></li>
-                                        <li><a href="#">Sedan</a></li>
-                                        <li><a href="#">SUVs</a></li>
-                                        <li><a href="#">Sport Coupe</a></li>
-                                        <li><a href="#">Convertible</a></li>
-                                        <li><a href="#">Wagon</a></li>
+                                        <li><a href="#">Chính sách bảo mật</a></li>
+                                        <li><a href="#">Chính sách bảo hành</a></li>
+                                        <li><a href="#">Chương trình dịch vụ</a></li>
+                                        <li><a href="#">Phụ tùng chính hiệu</a></li>
                                     </ul>
                                 </div>
                             </div>
