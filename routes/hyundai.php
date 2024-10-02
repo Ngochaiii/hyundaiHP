@@ -9,4 +9,4 @@ Route::post('/yeu-cau-tu-van', ['as' => 'request.user', 'uses' => 'FeHyundai\Con
 Route::get('/tin-tuc', ['as' => 'news.index', 'uses' => 'FeHyundai\BlogController@index']);
 
 // Đặt route động ở cuối cùng
-Route::get('/{alias}', ['as' => 'product.detail', 'uses' => 'FeHyundai\ProductController@detail']);
+Route::get('/detail', ['as' => 'product.detail', 'uses' => 'FeHyundai\ProductController@detail']);

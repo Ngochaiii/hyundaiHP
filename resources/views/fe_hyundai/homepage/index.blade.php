@@ -1,754 +1,579 @@
-@extends('layouts.index')
-
+@extends('layouts.tempateHyundai')
 @section('content')
-    <!-- boxcar-team-section-three -->
-    <section class="cars-section-four v1 layout-radius">
-        <div class="boxcar-container">
-            <div class="boxcar-title-three wow fadeInUp">
-                <ul class="breadcrumb">
-                    <li><a href="#">Home</a></li>
-                    <li><span>danh sách các xe </span></li>
+<div class="container">
+    <div class="box-header box-header-cus">
+        <h3 class="text-center home-product"><span>Sản Phẩm</span></h3>
+    </div>
+    <div class="row ">
+        <div class="col-md-3 col-sm-6 col-xs-12 car-home ">
+            <div class="cover"><a href='san-pham/hyundai-i10/index.html'><img class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2024/07/grrand-i10.jpg"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai i10"></a></div>
+            <div class="car-home-detail">
+                <p class="title"><a href="san-pham/hyundai-i10/index.html">Hyundai i10</a></p>
+                <ul class="list-unstyled list-inline">
+                    <li class="price">Giá xe 360 Triệu</li>
+                    <li class="plus"><a href="san-pham/hyundai-i10/index.html">Xem chi tiết</a></li>
                 </ul>
-                <h2>Những mẫu xe </h2>
             </div>
-            <div class="text-box">
-                <div class="text">Showing 1 to 16 of 1559 vehicles</div>
-                <form>
-                    <div class="form_boxes v3">
-                        <small>Sort by</small>
-                        <div class="drop-menu">
-                            <div class="select">
-                                <span>Any Makes</span>
-                                <i class="fa fa-angle-down"></i>
+            <div class="clearfix visible-xs-block"></div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 car-home ">
+            <div class="cover"><a href='san-pham/hyundai-venue/index.html'><img class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2022/03/venue-22.jpg"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai Venue"></a></div>
+            <div class="car-home-detail">
+                <p class="title"><a href="san-pham/hyundai-venue/index.html">Hyundai Venue</a></p>
+                <ul class="list-unstyled list-inline">
+                    <li class="price">Giá xe 499 Triệu</li>
+                    <li class="plus"><a href="san-pham/hyundai-venue/index.html">Xem chi tiết</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 car-home ">
+            <div class="cover"><a href='san-pham/hyundai-accent/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2022/03/Accne-2024r-car.png"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai Accent"></a></div>
+            <div class="car-home-detail">
+                <p class="title"><a href="san-pham/hyundai-accent/index.html">Hyundai Accent</a></p>
+                <ul class="list-unstyled list-inline">
+                    <li class="price">Giá xe 426 Triệu</li>
+                    <li class="plus"><a href="san-pham/hyundai-accent/index.html">Xem chi tiết</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 car-home ">
+            <div class="cover"><a href='san-pham/hyundai-elantra/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2022/03/hyundai-elantra-300x179-2.jpg"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai Elantra"></a></div>
+            <div class="car-home-detail">
+                <p class="title"><a href="san-pham/hyundai-elantra/index.html">Hyundai Elantra</a>
+                </p>
+                <ul class="list-unstyled list-inline">
+                    <li class="price">Giá xe 639 Triệu</li>
+                    <li class="plus"><a href="san-pham/hyundai-elantra/index.html">Xem chi tiết</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 car-home ">
+            <div class="cover"><a href='san-pham/hyundai-creta-2024/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2022/03/Hyundai-creta-anh-dai-dien.jpg"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai Creta"></a></div>
+            <div class="car-home-detail">
+                <p class="title"><a href="san-pham/hyundai-creta-2024/index.html">Hyundai Creta</a>
+                </p>
+                <ul class="list-unstyled list-inline">
+                    <li class="price">Giá xe 599 Triệu</li>
+                    <li class="plus"><a href="san-pham/hyundai-creta-2024/index.html">Xem chi
+                            tiết</a></li>
+                </ul>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 car-home ">
+            <div class="cover"><a href='san-pham/hyundai-tucson/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2022/03/Hyundai-Tucsonmau-do2.jpg"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai Tucson"></a></div>
+            <div class="car-home-detail">
+                <p class="title"><a href="san-pham/hyundai-tucson/index.html">Hyundai Tucson</a></p>
+                <ul class="list-unstyled list-inline">
+                    <li class="price">Giá xe 769 Triệu</li>
+                    <li class="plus"><a href="san-pham/hyundai-tucson/index.html">Xem chi tiết</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 car-home ">
+            <div class="cover"><a href='san-pham/hyundai-santafe/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2022/03/san2021-thumbnail-300x179-1-1.jpg"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai Santafe"></a></div>
+            <div class="car-home-detail">
+                <p class="title"><a href="san-pham/hyundai-santafe/index.html">Hyundai Santafe</a>
+                </p>
+                <ul class="list-unstyled list-inline">
+                    <li class="price">Giá xe 979 Triệu</li>
+                    <li class="plus"><a href="san-pham/hyundai-santafe/index.html">Xem chi tiết</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 car-home ">
+            <div class="cover"><a href='san-pham/hyundai-stargazer/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2024/07/stargazer-car-1.png"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai Stargazer X"></a></div>
+            <div class="car-home-detail">
+                <p class="title"><a href="san-pham/hyundai-stargazer/index.html">Hyundai Stargazer
+                        X</a></p>
+                <ul class="list-unstyled list-inline">
+                    <li class="price">Giá xe 488 Triệu</li>
+                    <li class="plus"><a href="san-pham/hyundai-stargazer/index.html">Xem chi
+                            tiết</a></li>
+                </ul>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 car-home ">
+            <div class="cover"><a href='san-pham/hyundai-custin/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2023/09/custin-home.png"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai Custin"></a></div>
+            <div class="car-home-detail">
+                <p class="title"><a href="san-pham/hyundai-custin/index.html">Hyundai Custin</a></p>
+                <ul class="list-unstyled list-inline">
+                    <li class="price">Giá xe 820 Triệu</li>
+                    <li class="plus"><a href="san-pham/hyundai-custin/index.html">Xem chi tiết</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 car-home ">
+            <div class="cover"><a href='san-pham/hyundai-palisade/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2023/09/palisade-home.png"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai Palisade"></a></div>
+            <div class="car-home-detail">
+                <p class="title"><a href="san-pham/hyundai-palisade/index.html">Hyundai Palisade</a>
+                </p>
+                <ul class="list-unstyled list-inline">
+                    <li class="price">Giá xe 1469 Triệu</li>
+                    <li class="plus"><a href="san-pham/hyundai-palisade/index.html">Xem chi tiết</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12 car-home ">
+            <div class="cover"><a href='san-pham/hyundai-ioniq5/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2023/09/IONIQ5-home.png"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai IONIQ 5"></a></div>
+            <div class="car-home-detail">
+                <p class="title"><a href="san-pham/hyundai-ioniq5/index.html">Hyundai IONIQ 5</a>
+                </p>
+                <ul class="list-unstyled list-inline">
+                    <li class="price">Giá xe 1300 Triệu</li>
+                    <li class="plus"><a href="san-pham/hyundai-ioniq5/index.html">Xem chi tiết</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+        </div>
+    </div>
+</div>
+<!-- new promotion -->
+<div class="container">
+    <div class="row">
+        <div class="box-header box-header-promotions">
+            <h3 class="section-title section-title-center"><span class="section-title-main2">HYUNDAI
+                    HẢI PHÒNG</span></h3>
+        </div>
+        <div class="colored-separator text-center style_1">
+            <div class="first-long stm-base-background-color"></div>
+            <div class="last-short stm-base-background-color"></div>
+            <div class="first-long stm-base-background-color"></div>
+        </div>
+        <link rel="stylesheet"
+            href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <div class="new-service-container">
+            <div class="new-text-section">
+                <h1>SHOWROOM 1S</h1>
+                <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: Shoroom 1S 9/10B Lê Hồng Phong, Lê
+                    Chân, Hải Phòng</p>
+                <button
+                    onclick="window.location.href='https://www.google.com/maps/place/Hyundai+Lê+Hồng+Phong/@20.8407086,106.7128558,20.58z/data=!4m15!1m8!3m7!1s0x314a7aaf95e6de9d:0xbfa3b286ae52b0af!2zOSAxMGIsIDEwYiDEkC4gTMOqIEjhu5NuZyBQaG9uZywgxJDhurFuZyBI4bqjaSwgSOG6o2kgQW4sIEjhuqNpIFBow7JuZywgVmnhu4d0IE5hbQ!3b1!8m2!3d20.8406417!4d106.713065!16s%2Fg%2F11thr8nq0k!3m5!1s0x314a7bbe8878e049:0xeec9e832a0d33ebb!8m2!3d20.8406047!4d106.7129821!16s%2Fg%2F11qnbk536c?hl=vi-VN&amp;entry=ttu'">Chỉ
+                    đường</button>
+            </div>
+            <div class="new-image-section">
+                <img src="wp-content/themes/hyundaihaiphong/cad854f4c6ab63f53aba.jpg"
+                    alt="Showroom 1S">
+            </div>
+        </div>
+
+        <div class="new-service-container reverse">
+            <div class="new-text-section">
+                <h1>SHOWROOM 3S</h1>
+                <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: Shoroom 3S 742 Nguyễn Văn Linh, Lê
+                    Chân, Hải Phòng</p>
+                <button
+                    onclick="window.location.href='https://www.google.com/maps/place/Hyundai+Hải+Phòng/@20.8418059,106.661486,19.38z/data=!4m14!1m7!3m6!1s0x314a7b85eb694031:0x29b584ac817babed!2zSHl1bmRhaSBI4bqjaSBQaMOybmc!8m2!3d20.8422399!4d106.6617486!16s%2Fg%2F11pqycm68h!3m5!1s0x314a7b85eb694031:0x29b584ac817babed!8m2!3d20.8422399!4d106.6617486!16s%2Fg%2F11pqycm68h?hl=vi-VN&amp;entry=ttu'">Chỉ
+                    đường</button>
+
+            </div>
+            <div class="new-image-section">
+                <img src="wp-content/themes/hyundaihaiphong/e0d28a2b1f74ba2ae365.jpg"
+                    alt="Showroom 3S">
+            </div>
+        </div>
+
+
+        <div class="box-header box-header-promotions">
+            <h3 class="section-title section-title-center"><span class="section-title-main2">Khuyến
+                    Mãi Bán Hàng</span></h3>
+        </div>
+        <div class="colored-separator text-center style_1">
+            <div class="first-long stm-base-background-color"></div>
+            <div class="last-short stm-base-background-color"></div>
+            <div class="first-long stm-base-background-color"></div>
+        </div>
+    </div>
+    <div class="row new-home">
+        <div class="col-md-3 col-xs-6 dn-post dn-post-spr">
+            <div class="cover"><a
+                    href='hyundai-thanh-cong-hai-phong-trien-khai-chuong-trinh-khuyen-mai-dich-vu-he-2024/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2024/07/Frame_FB-1000x1000_1000x1000-555x312.png"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai Thành Công Hải Phòng triển khai chương trình khuyến mại dịch vụ hè 2024"></a>
+            </div>
+            <div class="dn-post-detail">
+                <h3 class="title"><a
+                        href="hyundai-thanh-cong-hai-phong-trien-khai-chuong-trinh-khuyen-mai-dich-vu-he-2024/index.html">Hyundai
+                        Thành Công Hải Phòng triển khai chương trình khuyến mại dịch vụ hè 2024</a>
+                </h3>
+                <p class="from_the_blog_excerpt">Từ ngày 01/06/2024 cho đến hết 30/06/2024, Liên
+                    doanh ô tô Hyundai Thành Công Việt Nam (HTV) chính... </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-3 col-xs-6 dn-post dn-post-spr">
+            <div class="cover"><a href='mua-xe-thoi-diem-nay-cho-thue-la-tuyet-voi/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2024/05/NAM5343-300x200.jpg"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Thủ tướng yêu cầu xem xét giảm phí trước bạ ô tô lắp ráp trong nước"></a>
+            </div>
+            <div class="dn-post-detail">
+                <h3 class="title"><a
+                        href="mua-xe-thoi-diem-nay-cho-thue-la-tuyet-voi/index.html">Thủ tướng yêu
+                        cầu xem xét giảm phí trước bạ ô tô lắp ráp trong nước</a></h3>
+                <p class="from_the_blog_excerpt">Mua xe thời điểm này chờ thuế là tuyệt vời!!!
+                    Thủ tướng giao cho Bộ Tài chính khẩn... </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-3 col-xs-6 dn-post dn-post-spr">
+            <div class="cover"><a
+                    href='hyundai-hai-phong-trien-khai-chuong-trinh-uu-dai-thang-2-nam-rong-toi-ruoc-xe-moi/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2024/02/FB-Ads_FB-1200x628-1-300x157.png"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai Hải Phòng triển khai chương trình ưu đãi tháng 2 &#8220;Năm Rồng tới, rước xe mới&#8221;"></a>
+            </div>
+            <div class="dn-post-detail">
+                <h3 class="title"><a
+                        href="hyundai-hai-phong-trien-khai-chuong-trinh-uu-dai-thang-2-nam-rong-toi-ruoc-xe-moi/index.html">Hyundai
+                        Hải Phòng triển khai chương trình ưu đãi tháng 2 &#8220;Năm Rồng tới, rước
+                        xe mới&#8221;</a></h3>
+                <p class="from_the_blog_excerpt">Từ nay cho đến hết 29/02/2024, Hyundai Hải Phòng
+                    chính thức triển khai chương trình ưu đãi... </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-3 col-xs-6 dn-post dn-post-spr">
+            <div class="cover"><a
+                    href='hyundai-hai-phong-trien-khai-chuong-trinh-uu-dai-thang-1-cho-khach-hang/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2024/01/1920-x-1080-300x169.png"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai Hải Phòng triển khai chương trình ưu đãi tháng 1 cho khách hàng"></a>
+            </div>
+            <div class="dn-post-detail">
+                <h3 class="title"><a
+                        href="hyundai-hai-phong-trien-khai-chuong-trinh-uu-dai-thang-1-cho-khach-hang/index.html">Hyundai
+                        Hải Phòng triển khai chương trình ưu đãi tháng 1 cho khách hàng</a></h3>
+                <p class="from_the_blog_excerpt">Từ nay cho đến hết 31/01/2024, Liên doanh ô tô
+                    Hyundai Hải Phòng chính thức triển khai chương... </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- end new promotion -->
+<!-- new promotion Service -->
+<div class="container">
+    <div class="row">
+        <div class="box-header box-header-promotions">
+            <h3 class="section-title section-title-center"><span class="section-title-main2">khuyến
+                    mãi Dịch Vụ</span></h3>
+        </div>
+        <div class="colored-separator text-center style_1">
+            <div class="first-long stm-base-background-color"></div>
+            <div class="last-short stm-base-background-color"></div>
+            <div class="first-long stm-base-background-color"></div>
+        </div>
+    </div>
+    <div class="row new-home">
+        <div class="col-md-3 col-xs-6 dn-post dn-post-spr">
+            <div class="cover"><a
+                    href='hyundai-accent-tiep-tuc-la-mau-xe-duoc-ua-chuong/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2024/09/t9.5-500x333.jpg"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai Accent tiếp tục là mẫu xe được ưa chuộng"></a></div>
+            <div class="dn-post-detail">
+                <h3 class="title"><a
+                        href="hyundai-accent-tiep-tuc-la-mau-xe-duoc-ua-chuong/index.html">Hyundai
+                        Accent tiếp tục là mẫu xe được ưa chuộng</a></h3>
+                <p class="from_the_blog_excerpt">Hyundai Accent tiếp tục là mẫu xe có số lượng bán
+                    hàng tốt nhất tháng 8 với 937 xe, nâng... </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-3 col-xs-6 dn-post dn-post-spr">
+            <div class="cover"><a
+                    href='o-to-lap-rap-trong-nuoc-sap-duoc-giam-phi-truoc-ba-trong-3-thang/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2024/08/add-473x333.jpg"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Ô tô lắp ráp trong nước sắp được giảm phí trước bạ trong 3 tháng"></a>
+            </div>
+            <div class="dn-post-detail">
+                <h3 class="title"><a
+                        href="o-to-lap-rap-trong-nuoc-sap-duoc-giam-phi-truoc-ba-trong-3-thang/index.html">Ô
+                        tô lắp ráp trong nước sắp được giảm phí trước bạ trong 3 tháng</a></h3>
+                <p class="from_the_blog_excerpt">Chính sách giảm 50% phí trước bạ cho ô tô sản xuất
+                    và lắp ráp trong nước sẽ có hiệu... </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-3 col-xs-6 dn-post dn-post-spr">
+            <div class="cover"><a href='15505-2/index.html'><img class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2024/08/453977740_916128740558337_3288317343436352959_n-235x333.jpg"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="CHƯƠNG TRÌNH HƯỚNG DẪN SỬ DỤNG XE AN TOÀN"></a></div>
+            <div class="dn-post-detail">
+                <h3 class="title"><a href="15505-2/index.html">CHƯƠNG TRÌNH HƯỚNG DẪN SỬ DỤNG XE AN
+                        TOÀN</a></h3>
+                <p class="from_the_blog_excerpt">CHƯƠNG TRÌNH HƯỚNG DẪN SỬ DỤNG XE AN TOÀN
+                    Công ty Cổ phần Liên doanh Ô tô Hyundai Thành... </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-md-3 col-xs-6 dn-post dn-post-spr">
+            <div class="cover"><a
+                    href='hyundai-venue-chiec-xe-ly-tuong-voi-ngan-sach-500-trieu-dong/index.html'><img
+                        class="loading lazy"
+                        data-src="https://hyundaihaiphong.vn/wp-content/uploads/2024/07/hyundai-venue-xe-ly-tuong-cho-gioi-tre-2-17223155932711234600783-444x333.jpg"
+                        src="wp-content/themes/hyundaihaiphong/includes/img/pixel.gif"
+                        alt="Hyundai Venue &#8211; chiếc xe lý tưởng với ngân sách 500 triệu đồng"></a>
+            </div>
+            <div class="dn-post-detail">
+                <h3 class="title"><a
+                        href="hyundai-venue-chiec-xe-ly-tuong-voi-ngan-sach-500-trieu-dong/index.html">Hyundai
+                        Venue &#8211; chiếc xe lý tưởng với ngân sách 500 triệu đồng</a></h3>
+                <p class="from_the_blog_excerpt">Với giới trẻ, những người đòi hỏi một chiếc xe có
+                    thiết kế hiện đại, trang bị công... </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!-- end new promotion Service-->
+<!-- new promotion -->
+<div class="container">
+    <div class="row">
+        <div class="box-header box-header-promotions">
+            <h3 class="section-title section-title-center"><span class="section-title-main2">Tin Tức
+                    Hyundai Hải Phòng</span></h3>
+        </div>
+        <div class="colored-separator text-center style_1">
+            <div class="first-long stm-base-background-color"></div>
+            <div class="last-short stm-base-background-color"></div>
+            <div class="first-long stm-base-background-color"></div>
+        </div>
+    </div>
+    <div class="row new-home">
+    </div>
+</div>
+<!-- end new promotion -->
+<!-- about Hải Phòng -->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="about-ngocan">
+                <div class="ad-wrapper">
+                    <div class="el-xoay">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="img-author">
+                                    <img src="wp-content/uploads/2022/03/Dai-dien-kinh-doanh.jpg"
+                                        width="100%">
+                                </div>
+                                <div class="ngocan-info">
+                                    <b>Hotline Hải Phòng<br>
+                                        <a class="holine-home" href="tel:0906026299">0906 026
+                                            299</a></b>
+                                </div>
                             </div>
-                            <input type="hidden" name="gender">
-                            <ul class="dropdown" style="display: none;">
-                                <li>Audi</li>
-                                <li>Honda</li>
-                            </ul>
+                            <div class="col-md-9">
+                                <div class="author-title">
+                                    Hyundai Hải Phòng - Đại Lý Hyundai Miền Bắc
+                                </div>
+                                <p>
+                                    <b>GIÁ ƯU ĐÃI - GIAO XE SỚM:</b> Chúng tôi luôn cam kết mang lại
+                                    mức giá
+                                    ưu đãi nhất cho quý khách với thời gian giao xe nhanh nhất.
+                                </p>
+                                <p>
+                                    <b>KHUYẾN MÃI NHIỀU NHẤT:</b> Với hoạt động bán hàng sôi động,
+                                    chúng tôi
+                                    luôn cập nhật sớm nhất các chương trình khuyến mãi của hãng và
+                                    đại lý.
+                                </p>
+                                <p>
+                                    <b>CHƯƠNG TRÌNH TÀI CHÍNH - VAY XE TRẢ GÓP:</b> Hỗ trợ mua xe
+                                    trả góp
+                                    lãi suất thấp &amp; tối ưu tài chính.
+                                </p>
+                                <p>
+                                    <b>BẢO HÀNH TIÊU CHUẨN CHẤT LƯỢNG TOÀN CẦU:</b> Quý khách hãy
+                                    yên tâm về
+                                    xe Hyundai mua ở Hyundai Hải Phòng, vì chúng tôi bảo hành, bảo
+                                    dưỡng và
+                                    sửa chữa theo tiêu chuẩn chất lượng của Hyundai trên toàn cầu
+                                    cùng với
+                                    hệ thống máy móc thiết bị tiên tiến được nhập khẩu. Chúng tôi
+                                    tin sẽ
+                                    mang lại sự tận tâm về chất lượng và trải nghiệm dịch vụ sau bán
+                                    hàng.
+                                </p>
+                                <p>
+                                    <b>LÁI THỬ TẬN NHÀ:</b> Giúp quý khách nhanh chóng trải nghiệm
+                                    xe
+                                    Hyundai mà không tốn thời gian.
+                                </p>
+
+                            </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
-            <div class="row wow fadeInUp">
-                @foreach ($products as $product)
-                    <!-- car-block-four -->
-                    <?php
-                    // Tách chuỗi thành mảng các đường dẫn ảnh
-                    $imageArray = explode(',', $product->images);
+        </div>
+    </div>
 
-                    // Lấy đường dẫn ảnh đầu tiên
-                    $firstImage = trim($imageArray[0]);
-                    ?>
-                    <div class="car-block-four col-xl-3 col-lg-4 col-md-6 col-sm-6">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <figure style="height:180px;width:330px " class="image"><a href="#"><img
-                                            src="{{ asset($firstImage) }}" alt="Image of {{ $product->name }}"></a></figure>
-                                <span>Low Mileage</span>
-                                <a class="icon-box">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-                                        viewBox="0 0 12 12" fill="none">
-                                        <g clip-path="url(#clip0_601_1274)">
-                                            <path
-                                                d="M9.39062 12C9.15156 12 8.91671 11.9312 8.71128 11.8009L6.11794 10.1543C6.04701 10.1091 5.95296 10.1096 5.88256 10.1543L3.28869 11.8009C2.8048 12.1082 2.13755 12.0368 1.72722 11.6454C1.47556 11.4047 1.33685 11.079 1.33685 10.728V1.2704C1.33738 0.570053 1.90743 0 2.60778 0H9.39272C10.0931 0 10.6631 0.570053 10.6631 1.2704V10.728C10.6631 11.4294 10.0925 12 9.39062 12ZM6.00025 9.06935C6.24193 9.06935 6.47783 9.13765 6.68169 9.26743L9.27503 10.9135C9.31233 10.9371 9.35069 10.9487 9.39114 10.9487C9.48046 10.9487 9.61286 10.8788 9.61286 10.728V1.2704C9.61233 1.14956 9.51356 1.05079 9.39272 1.05079H2.60778C2.48642 1.05079 2.38817 1.14956 2.38817 1.2704V10.728C2.38817 10.7911 2.41023 10.8436 2.45384 10.8851C2.52582 10.9539 2.63563 10.9708 2.72599 10.9135L5.31934 9.2669C5.52267 9.13765 5.75857 9.06935 6.00025 9.06935Z"
-                                                fill="black"></path>
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_601_1274">
-                                                <rect width="12" height="12" fill="white"></rect>
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                </a>
+</div>
+<!-- end About Hải Phòng -->
+<section class="section_why">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="promo-section">
+                    <h4 class="special-head">Tại sao lại chọn chúng tôi</h4>
+                </div>
+                <div class="why-description">Với mục tiêu trở thành đại lý Hyundai hàng đầu tại Hải Phòng chúng
+                    cam
+                    kết cung cấp cho khách hàng sản phẩm và dịch vụ chất lượng chuẩn mực của Hyundai toàn cầu
+                    <p class="why-link">
+                        <a href="#test-drive" data-toggle="modal" data-target="#lai_thu">Về chúng tôi</a> / <a
+                            style="color: #FF7911;" href="dang-ky-lai-thu/index.html">Đăng ký lái thử</a>
+                    </p>
+                </div>
+                <div class="why-item-wrapper">
+                    <div class="row">
+                        <div class="col-md-6" style="margin-bottom: 40px;">
+                            <div class="why-list">
+                                <div class="why-icon-wrapp">
+                                    <div class="why-icon-content">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="why-content">
+                                    <div class="why-content-1">Thương Hiệu Uy Tín</div>
+                                    <div class="why-content-2">Là đại lý Hyundai Lâu đời với sự phát triển có
+                                        chiều
+                                        sâu, Hyundai Hải Phòng luôn là thương hiệu Hyundai hàng đầu tại Hải
+                                        Phòng
+                                    </div>
+                                </div>
                             </div>
-                            <div class="content-box">
-                                <h6 class="title text-center mb-2"><a
-                                        href="{{ route('product.detail', $product->alias) }}">{{ $product->title }}</a></h6>
-                                <div class="btn-box">
-                                    <small class="text-white p-2 bg-primary" style="font-size: 16px;">Giá xe
-                                        {{ number_format($product->price / 1000000, 0, ',', '.') }} Triệu</small>
-                                    <a href="{{ route('product.detail', ['alias' => $product->alias]) }}"
-                                        class="details ">Xem chi tiết<svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                            height="14" viewBox="0 0 14 14" fill="none">
-                                            <g clip-path="url(#clip0_601_4346)">
-                                                <path
-                                                    d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z"
-                                                    fill="#405FF2"></path>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_601_4346">
-                                                    <rect width="14" height="14" fill="white"></rect>
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </a>
+                        </div>
+                        <div class="col-md-6" style="margin-bottom: 40px;">
+                            <div class="why-list">
+                                <div class="why-icon-wrapp">
+                                    <div class="why-icon-content">
+                                        <i class="fa fa-car" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="why-content">
+                                    <div class="why-content-1">Cơ sở vật chất</div>
+                                    <div class="why-content-2">Showroom trưng bày xe đa dạng và phong phú. Hệ
+                                        thống
+                                        kho bãi rộng rãi, đầy đủ các dòng xe có sẵn để quý khách lựa chọn và lái
+                                        thử.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-list">
+                                <div class="why-icon-wrapp">
+                                    <div class="why-icon-content">
+                                        <i class="fa fa-diamond" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="why-content">
+                                    <div class="why-content-1">HẬU MÃI CAO</div>
+                                    <div class="why-content-2">Bảo hành chính hãng theo tiêu chuẩn cao nhất
+                                        trong
+                                        khu vực. Hỗ trợ đăng ký, đăng kiểm, giao xe tận nhà. Đặc biệt có chỗ
+                                        nghỉ
+                                        ngơi, cho khách ở xa.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="why-list">
+                                <div class="why-icon-wrapp">
+                                    <div class="why-icon-content">
+                                        <i class="fa fa-smile-o" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="why-content">
+                                    <div class="why-content-1">Dịch vụ tận tâm</div>
+                                    <div class="why-content-2">Trân trọng từng khách hàng và luôn nỗ lực mang
+                                        đến
+                                        những sản phẩm, dịch vụ đáp ứng tốt nhất nhu cầu của khách hàng.</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- car-block-four -->
-                @endforeach
-
+                </div>
             </div>
-        </div>
-    </section>
-    <!-- End boxcar-team-section-three -->
-
-    <!-- why choose us section -->
-    <section class="why-choose-us-section-four">
-        <div class="boxcar-container">
-            <div class="boxcar-title text-center wow fadeInUp">
-                <h2 class="title">Lý Do Nên Chọn Chúng Tôi?</h2>
-            </div>
-            <div class="row">
-                <!-- choose-us-block -->
-                <div class="choose-us-block-four col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp">
-                        <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="51" height="60"
-                                viewBox="0 0 51 60" fill="none">
-                                <g clip-path="url(#clip0_24_628)">
-                                    <path
-                                        d="M22.9688 52.9676C22.9688 52.732 22.827 52.5195 22.6096 52.4289C20.0682 51.3695 18.2812 48.8627 18.2812 45.9375V23.4375C18.2812 20.5123 20.0682 18.0054 22.6096 16.9461C22.827 16.8555 22.9688 16.6429 22.9688 16.4074V16.4062H18.2812C14.398 16.4062 11.25 19.5543 11.25 23.4375V45.9375C11.25 49.8207 14.398 52.9688 18.2812 52.9688H22.9688V52.9676Z"
-                                        fill="#EEF1FB"></path>
-                                    <path d="M23.3708 41.3167L36.6292 28.0583" stroke="#FF5CF4" stroke-width="3"
-                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path d="M30 21.0938L44.0625 2.34375" stroke="#405FF2" stroke-width="3"
-                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path d="M15.9375 2.34375L25.3895 12.9483" stroke="#405FF2" stroke-width="3"
-                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path
-                                        d="M48.75 30V23.4375C48.75 19.5543 45.602 16.4062 41.7188 16.4062H38.0747C36.4508 13.6159 33.4612 11.7188 30 11.7188C26.5388 11.7188 23.5493 13.6159 21.9253 16.4062H18.2812C14.398 16.4062 11.25 19.5543 11.25 23.4375V45.9375C11.25 49.8207 14.398 52.9688 18.2812 52.9688H21.9253C23.5492 55.7591 26.5388 57.6562 30 57.6562C33.4612 57.6562 36.4507 55.7591 38.0747 52.9688H41.7188C45.602 52.9688 48.75 49.8207 48.75 45.9375V39.375"
-                                        stroke="#405FF2" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_24_628">
-                                        <rect width="51" height="60" fill="white"></rect>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </div>
-                        <div class="content-box">
-                            <h6 class="title">Ưu đãi tài chính đặc biệt</h6>
-                            <div class="text">Bộ phận tài chính của chúng tôi sẽ giúp bạn tìm kiếm các giải pháp tài
-                                chính tối ưu, giúp tiết kiệm chi phí một cách dễ dàng và không căng thẳng.</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- choose-us-block -->
-                <div class="choose-us-block-four col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="100ms">
-                        <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
-                                viewBox="0 0 60 60" fill="none">
-                                <path d="M30 2.34375V7.03125" stroke="#FF5CF4" stroke-width="3" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M48.75 2.34375L44.0625 7.03125" stroke="#FF5CF4" stroke-width="3"
-                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path
-                                    d="M15.4738 36.6607C14.3072 35.4056 13.5938 33.7236 13.5938 31.875C13.5938 30.7464 13.8596 29.68 14.3323 28.7347L19.0198 19.3597C20.1732 17.0529 22.5579 15.4688 25.3125 15.4688H18.2812C15.5266 15.4688 13.142 17.0529 11.9885 19.3597L7.30102 28.7347C6.8284 29.68 6.5625 30.7464 6.5625 31.875C6.5625 33.7236 7.27594 35.4056 8.44254 36.6607L26.5658 56.1592C27.4218 57.0802 28.6436 57.6562 30 57.6562C31.3564 57.6562 32.5782 57.0802 33.4342 56.1593L33.5156 56.0716L15.4738 36.6607Z"
-                                    fill="#EEF1FB"></path>
-                                <path
-                                    d="M48.0115 19.3597L52.699 28.7347C53.1716 29.6798 53.4375 30.7464 53.4375 31.875C53.4375 33.7236 52.7241 35.4057 51.5575 36.6608L33.4342 56.1593C32.5782 57.0802 31.3564 57.6562 30 57.6562C28.6436 57.6562 27.4218 57.0802 26.5658 56.1593L8.44254 36.6608C7.27594 35.4057 6.5625 33.7236 6.5625 31.875C6.5625 30.7464 6.8284 29.6798 7.30102 28.7347L11.9885 19.3597C13.142 17.0528 15.5266 15.4688 18.2812 15.4688H41.7188C44.4734 15.4688 46.858 17.0528 48.0115 19.3597Z"
-                                    stroke="#405FF2" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
-                                    stroke-linejoin="round"></path>
-                                <path d="M11.25 2.34375L15.9375 7.03125" stroke="#FF5CF4" stroke-width="3"
-                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M17.3849 29.5312H42.6151" stroke="#405FF2" stroke-width="3"
-                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M25.3125 24.8438L30 29.5312L34.6875 24.8438" stroke="#405FF2" stroke-width="3"
-                                    stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M30 43.5938V29.7306" stroke="#405FF2" stroke-width="3" stroke-miterlimit="10"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                        </div>
-                        <div class="content-box">
-                            <h6 class="title">Đại lý ô tô đáng tin cậy</h6>
-                            <div class="text">Bộ phận tài chính của chúng tôi sẽ giúp bạn tìm kiếm các giải pháp tài
-                                chính tối ưu, giúp tiết kiệm chi phí một cách dễ dàng và không căng thẳng.</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- choose-us-block -->
-                <div class="choose-us-block-four col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="200ms">
-                        <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
-                                viewBox="0 0 60 60" fill="none">
-                                <g clip-path="url(#clip0_24_681)">
-                                    <path
-                                        d="M8.75576 36.7478L35.3054 10.198C37.136 8.36741 40.104 8.36741 41.9346 10.198L36.8955 5.15894C35.0649 3.32837 32.097 3.32837 30.2664 5.15894L3.71671 31.7087C1.88613 33.5393 1.88613 36.5073 3.71671 38.3378L8.75576 43.3768C6.92518 41.5462 6.92518 38.5783 8.75576 36.7478Z"
-                                        fill="#EEF1FB"></path>
-                                    <path
-                                        d="M50.1537 18.4171C51.9843 20.2477 51.9843 23.2157 50.1537 25.0463L23.6039 51.5959C21.7734 53.4265 18.8054 53.4265 16.9748 51.5959L3.71671 38.3378C1.88613 36.5072 1.88613 33.5392 3.71671 31.7086L30.2664 5.15894C32.097 3.32836 35.0649 3.32836 36.8955 5.15894L43.5247 11.7881L52.9689 2.34387"
-                                        stroke="#405FF2" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                    <path
-                                        d="M18.9633 31.0458C18.7631 32.4554 19.2051 33.9388 20.2894 35.0231C22.12 36.8537 25.088 36.8537 26.9186 35.0231C28.7492 33.1926 28.7492 30.2246 26.9186 28.394C25.088 26.5634 25.088 23.5954 26.9186 21.7648C28.7492 19.9342 31.7172 19.9342 33.5478 21.7648C34.6321 22.8491 35.0741 24.3325 34.8739 25.7421"
-                                        stroke="#405FF2" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
-                                        stroke-linejoin="round"></path>
-                                    <path d="M16.9749 38.3378L20.2894 35.0232" stroke="#405FF2" stroke-width="3"
-                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path d="M33.5476 21.765L36.8621 18.4504" stroke="#405FF2" stroke-width="3"
-                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path d="M43.5938 57.6562L57.6563 43.5937" stroke="#FF5CF4" stroke-width="3"
-                                        stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_24_681">
-                                        <rect width="60" height="60" fill="white"></rect>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </div>
-                        <div class="content-box">
-                            <h6 class="title">Giá cả minh bạch</h6>
-                            <div class="text">Bộ phận tài chính của chúng tôi sẽ giúp bạn tìm kiếm các giải pháp tài
-                                chính tối ưu, giúp tiết kiệm chi phí một cách dễ dàng và không căng thẳng</div>
-                        </div>
-                    </div>
-                </div>
-                <!-- choose-us-block -->
-                <div class="choose-us-block-four col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="300ms">
-                        <div class="icon-box"><svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
-                                viewBox="0 0 60 60" fill="none">
-                                <path
-                                    d="M23.5465 4.45312C19.8452 4.45312 16.4904 6.63082 14.9836 10.0114L8.88656 23.6906C5.23148 23.9418 2.34375 26.9843 2.34375 30.7031V36.0938C2.34375 39.3298 4.96711 41.9531 8.20312 41.9531H9.80918C9.81785 41.5022 9.82934 41.0514 9.84375 40.6005C9.4623 39.823 9.24727 38.949 9.24727 38.0245L9.14062 33.8672C9.14062 30.7927 9.76617 29.6094 12.0483 29.1497C13.1331 28.9311 14.0413 28.192 14.4858 27.1786L22.0148 10.0114C23.5215 6.63082 26.8764 4.45312 30.5777 4.45312H23.5465Z"
-                                    fill="#EEF1FB"></path>
-                                <path
-                                    d="M8.20312 41.9531C4.96711 41.9531 2.34375 39.3298 2.34375 36.0938V30.7031C2.34375 26.9843 5.23148 23.9418 8.88656 23.6906L14.9836 10.0114C16.4903 6.63082 19.8451 4.45312 23.5465 4.45312H34.2217C37.7441 4.45312 40.9692 6.4275 42.5711 9.56461L45.5859 15.4688M57.6562 30.7031C57.6562 26.8199 54.5082 23.6719 50.625 23.6719H18.6328M28.2422 15.4688V4.57031M32.4609 41.9531H27.1873M20.742 37.2656C18.1532 37.2656 16.0545 39.3643 16.0545 41.9531C16.0545 44.5419 18.1532 46.6406 20.742 46.6406C23.3307 46.6406 25.4295 44.5419 25.4295 41.9531C25.4295 39.3643 23.3309 37.2656 20.742 37.2656Z"
-                                    stroke="#405FF2" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
-                                    stroke-linejoin="round"></path>
-                                <path
-                                    d="M57.6562 41.6016C57.6562 46.0997 54.0098 49.8047 49.5117 49.8047C45.0136 49.8047 41.3672 46.1583 41.3672 41.6602C41.3672 37.162 45.0722 33.5156 49.5703 33.5156M43.5352 48.1055L36.0938 55.5469"
-                                    stroke="#FF5CF3" stroke-width="3" stroke-miterlimit="10" stroke-linecap="round"
-                                    stroke-linejoin="round"></path>
-                            </svg>
-                        </div>
-                        <div class="content-box">
-                            <h6 class="title">Dịch vụ ô tô chuyên nghiệp</h6>
-                            <div class="text">Bộ phận tài chính của chúng tôi sẽ giúp bạn tìm kiếm các giải pháp tài
-                                chính tối ưu, giúp tiết kiệm chi phí một cách dễ dàng và không căng thẳng.</div>
-                        </div>
+            <div class="col-md-5 imge-whychooseus">
+                <div class="why-img-box">
+                    <div class="why-img-content">
+                        <img src="wp-content/uploads/2022/03/dai-ly-hyundai-hai-phong-2.jpg">
+                        <img src="wp-content/uploads/2022/03/dai-ly-hyundai-hai-phong-1.jpg"
+                            style="display: block; margin-top: 5px;">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- End why choose us section -->
-
-    <!-- cars-section-three -->
-    <section class="cars-section-nine">
-        <div class="boxcar-container">
-            <div class="boxcar-title wow fadeInUp">
-                <h2>Xe nổi bật</h2>
-                <a href="#" class="btn-title">View All<svg xmlns="http://www.w3.org/2000/svg" width="14"
-                        height="14" viewBox="0 0 14 14" fill="none">
-                        <g clip-path="url(#clip0_601_243)">
-                            <path
-                                d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z"
-                                fill="#050B20"></path>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_601_243">
-                                <rect width="14" height="14" fill="white"></rect>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </a>
-            </div>
-            <nav class="wow fadeInUp" data-wow-delay="100ms">
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
-                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">New cars</button>
-                </div>
-            </nav>
-            <div class="tab-content wow fadeInUp" data-wow-delay="200ms" id="nav-tabContent">
-
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <div class="row car-slider-three" data-preview="4">
-                        <!-- car-block-nine -->
-                        @foreach ($products as $product)
-                            <div class="box-car style-2 car-block-nine col-lg-3 col-md-6 col-sm-12 bg-white border">
-                                <div class="inner-box">
-                                    <div class="image-box">
-                                        <div class="slider-thumb">
-                                            <?php
-                                            // Tách chuỗi thành mảng các đường dẫn ảnh
-                                            $imageArray = explode(',', $product->images);
-                                            $imageArray = array_slice($imageArray, 0, 3);
-                                            ?>
-
-                                            @foreach ($imageArray as $image)
-                                                <div class="image">
-                                                    <a href="#"><img style="height: 200px"
-                                                            src="{{ asset(trim($image)) }}" alt="Product Image"></a>
-                                                </div>
-                                            @endforeach
-                                        </div>
-                                        <span>{{ $product->mileage ?? 'Mới Ra' }}</span>
-                                    </div>
-                                    <div class="content-box m-3">
-                                        <h6 class="title text-center"><a
-                                                href="{{ route('product.detail', $product->alias) }}">{{ $product->title }}</a>
-                                        </h6>
-                                        <div class="btn-box mt-2">
-                                            <small class="text-white p-2 bg-primary" style="font-size: 16px;">Giá xe
-                                                {{ number_format($product->price / 1000000, 0, ',', '.') }} Triệu</small>
-                                            <a href="{{ route('product.detail', ['alias' => $product->alias]) }}"
-                                                class="details ">Xem chi tiết<svg xmlns="http://www.w3.org/2000/svg"
-                                                    width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                                    <g clip-path="url(#clip0_601_4346)">
-                                                        <path
-                                                            d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z"
-                                                            fill="#405FF2"></path>
-                                                    </g>
-                                                    <defs>
-                                                        <clipPath id="clip0_601_4346">
-                                                            <rect width="14" height="14" fill="white"></rect>
-                                                        </clipPath>
-                                                    </defs>
-                                                </svg>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End car-block-nine -->
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End shop section two -->
-
-    <!-- pricing section -->
-    <section class="boxcar-pricing-section-four v7 pb-0 pt-0">
-        <div class="boxcar-container">
-            <div class="row">
-                <!-- image-column -->
-                <div class="image-column col-lg-6 col-md-6 col-sm-12">
-                    <div class="image-box">
-                        <figure class="image"><img src="{{ asset('Fe_Hyundai/assets/images/pricing7-1.jpg') }}"
-                                alt=""></figure>
-                        <figure class="image-2"><img src="{{ asset('Fe_Hyundai/assets/images/pricing7-2.jpg') }}"
-                                alt=""></figure>
-                    </div>
-                </div>
-                <div class="content-column col-lg-6 col-md-6 col-sm-12">
-                    <div class="inner-column">
-                        <div class="boxcar-title wow fadeInUp">
-                            <h2>Nhận giá tốt cho xe của bạn - Nhận ngay hôm nay</h2>
-                            <div class="text">Chúng tôi cam kết mang đến cho khách hàng dịch vụ xuất sắc, giá cả cạnh
-                                tranh và đa dạng các lựa chọn.</div>
-                        </div>
-                        <ul class="list-style-one wow fadeInUp" data-wow-delay="100ms">
-                            <li><i class="fa-solid fa-check"></i>Chúng tôi là nhà cung cấp lớn nhất tại Hải Phòng,</li>
-                            <li><i class="fa-solid fa-check"></i>Bạn sẽ nhận được hỗ trợ cứu hộ 24/7 bên đường.</li>
-                            <li><i class="fa-solid fa-check"></i>Chúng tôi sửa chữa được 4 trong 5 xe ngay tại hiện
-                                trường.</li>
-                        </ul>
-                        <a href="#" class="read-more wow fadeInUp" data-wow-delay="200ms">Liên hệ với chúng
-                            tôi<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
-                                fill="none">
-                                <g clip-path="url(#clip0_634_2156)">
-                                    <path
-                                        d="M13.6106 0H5.05509C4.84013 0 4.66619 0.173943 4.66619 0.388901C4.66619 0.603859 4.84013 0.777802 5.05509 0.777802H12.6719L0.113453 13.3362C-0.0384687 13.4881 -0.0384687 13.7342 0.113453 13.8861C0.189396 13.962 0.288927 14 0.388422 14C0.487917 14 0.587411 13.962 0.663391 13.8861L13.2218 1.3277V8.94447C13.2218 9.15943 13.3957 9.33337 13.6107 9.33337C13.8256 9.33337 13.9996 9.15943 13.9996 8.94447V0.388901C13.9995 0.173943 13.8256 0 13.6106 0Z"
-                                        fill="white"></path>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_634_2156">
-                                        <rect width="14" height="14" fill="white"></rect>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End pricing section -->
-
-    <!-- Fun Fact Section -->
-    <section class="boxcar-fun-fact-section">
-        <div class="large-container">
-            <div class="fact-counter">
-                <div class="row">
-                    <!-- Counter block Two-->
-                    <div class="counter-block col-lg-3 col-md-3 col-sm-4 wow fadeInUp">
-                        <div class="inner wow fadeInUp">
-                            <div class="content">
-                                <div class="widget-counter"><span class="count-text" data-speed="3000"
-                                        data-stop="834">0</span>M</div>
-                                <h6 class="counter-title">CARS FOR SALE</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Counter block Two-->
-                    <div class="counter-block col-lg-3 col-md-3 col-sm-4 wow fadeInUp" data-wow-delay="300ms">
-                        <div class="inner wow fadeInUp" data-wow-delay="100ms">
-                            <div class="content">
-                                <div class="widget-counter"><span class="count-text" data-speed="3000"
-                                        data-stop="732">0</span>M</div>
-                                <h6 class="counter-title">DEALER REVIEWS</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Counter block Two-->
-                    <div class="counter-block col-lg-3 col-md-3 col-sm-4 wow fadeInUp" data-wow-delay="600ms">
-                        <div class="inner wow fadeInUp" data-wow-delay="200ms">
-                            <div class="content">
-                                <div class="widget-counter"><span class="count-text" data-speed="3000"
-                                        data-stop="90">0</span>M</div>
-                                <h6 class="counter-title">VISITORS PER DAY</h6>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Counter block Two-->
-                    <div class="counter-block col-lg-3 col-md-3 col-sm-4 wow fadeInUp" data-wow-delay="900ms">
-                        <div class="inner wow fadeInUp" data-wow-delay="300ms">
-                            <div class="content">
-                                <div class="widget-counter"><span class="count-text" data-speed="3000"
-                                        data-stop="236">0</span>M</div>
-                                <h6 class="counter-title">VERIFIED DEALERS</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Fun Fact Section-->
-
-    <!-- boxcar-testimonial-section-four -->
-    <section class="boxcar-testimonial-section-four v7">
-        <div class="boxcar-container">
-            <div class="right-box">
-                <div class="boxcar-title">
-                    <h2>Khách hàng nói gì về chúng tôi</h2>
-                    <div class="text">Được đánh giá 4.7 / 5 dựa trên 28.370 đánh giá Hiển thị các đánh giá 4 và 5 sao
-                        của chúng tôi</div>
-                </div>
-                <div class="row stories-slider">
-                    <!-- testimonial-block-four -->
-                    <div class="testimonial-block-four col-lg-4 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <figure class="icon"><a href="#"><img
-                                        src="{{ asset('Fe_Hyundai/assets/images/comas.png') }}" alt=""></a>
-                            </figure>
-                            <h6 class="title">Tốt</h6>
-                            <div class="text"> "Dịch vụ chăm sóc khách hàng tuyệt vời! Tôi đã có trải nghiệm mua xe suôn
-                                sẻ và nhanh chóng tại Hyundai Hải Phòng."</div>
-                            <div class="auther-info">
-                                <figure class="image"><a href="#"><img
-                                            src="{{ asset('Fe_Hyundai/assets/images/test-auther-1.jpg') }}"
-                                            alt=""></a></figure>
-                                <h6 class="name">Hoàng Thúy Vân</h6>
-                                <span>Hải Phòng</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- testimonial-block-four -->
-                    <div class="testimonial-block-four col-lg-4 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <figure class="icon"><a href="#"><img
-                                        src="{{ asset('Fe_Hyundai/assets/images/comas.png') }}"alt=""></a></figure>
-                            <h6 class="title">Tuyệt Vời</h6>
-                            <div class="text"> "Xe chất lượng, giá cả hợp lý. Tôi rất hài lòng với chiếc Hyundai mới mua
-                                từ đại lý này."</div>
-                            <div class="auther-info">
-                                <figure class="image"><a href="#"><img
-                                            src="{{ asset('Fe_Hyundai/assets/images/test-auther-2.jpg') }}"
-                                            alt=""></a></figure>
-                                <h6 class="name">Mai Anh Khôi</h6>
-                                <span>Quảng Ninh</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- testimonial-block-four -->
-                    <div class="testimonial-block-four col-lg-4 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <figure class="icon"><a href="#"><img
-                                        src="{{ asset('Fe_Hyundai/assets/images/comas.png') }}" alt=""></a>
-                            </figure>
-                            <h6 class="title">Giá cả hợp lý</h6>
-                            <div class="text"> "Đội ngũ nhân viên nhiệt tình, tư vấn rõ ràng và hỗ trợ mọi thắc mắc của
-                                khách hàng. Hyundai Hải Phòng thực sự là một nơi đáng tin cậy."</div>
-                            <div class="auther-info">
-                                <figure class="image"><a href="#"><img
-                                            src="{{ asset('Fe_Hyundai/assets/images/test-auther-3.jpg') }}"
-                                            alt=""></a></figure>
-                                <h6 class="name">Trương Văn Thanh</h6>
-                                <span>Hải Phòng</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- testimonial-block-four -->
-                    <div class="testimonial-block-four col-lg-4 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <figure class="icon"><a href="#"><img
-                                        src="{{ asset('Fe_Hyundai/assets/images/comas.png') }}"alt=""></a></figure>
-                            <h6 class="title">Chất Lượng Cao</h6>
-                            <div class="text"> "Quy trình mua xe nhanh gọn, giá cả minh bạch. Tôi rất ấn tượng với dịch
-                                vụ của Hyundai Hải Phòng."</div>
-                            <div class="auther-info">
-                                <figure class="image"><a href="#"><img
-                                            src="{{ asset('Fe_Hyundai/assets/images/test-auther-1.jpg') }}"
-                                            alt=""></a></figure>
-                                <h6 class="name">Nguyễn Văn Sơn</h6>
-                                <span>Hải Phòng</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- testimonial-block-four -->
-                    <div class="testimonial-block-four col-lg-4 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <figure class="icon"><a href="#"><img
-                                        src="{{ asset('Fe_Hyundai/assets/images/comas.png') }}"alt=""></a></figure>
-                            <h6 class="title">Dịch vụ tuyệt vời</h6>
-                            <div class="text"> "Hyundai Hải Phòng mang đến cho tôi sự yên tâm với dịch vụ bảo hành và
-                                bảo dưỡng chuyên nghiệp."</div>
-                            <div class="auther-info">
-                                <figure class="image"><a href="#"><img
-                                            src="{{ asset('Fe_Hyundai/assets/images/test-auther-2.jpg') }}"
-                                            alt=""></a></figure>
-                                <h6 class="name">Trần Thành Đạt</h6>
-                                <span>Hải Phòng</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- testimonial-block-four -->
-                    <div class="testimonial-block-four col-lg-4 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <figure class="icon"><a href="#"><img
-                                        src="{{ asset('Fe_Hyundai/assets/images/comas.png') }}"alt=""></a></figure>
-                            <h6 class="title">Xe Tốt</h6>
-                            <div class="text"> "Sự lựa chọn xe đa dạng và chất lượng dịch vụ vượt trội khiến tôi luôn
-                                tin tưởng khi đến với Hyundai Hải Phòng."</div>
-                            <div class="auther-info">
-                                <figure class="image"><a href="#"><img
-                                            src="{{ asset('Fe_Hyundai/assets/images/test-auther-3.jpg') }}"
-                                            alt=""></a></figure>
-                                <h6 class="name">Hoàng Trang</h6>
-                                <span>Hải Phòng</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End boxcar-testimonial-section-four -->
-
-
-    <!-- calculater-section -->
-    <section class="calculater-section pt-0 v2">
-        <div class="boxcar-container">
-            <div class="right-box">
-                <div class="row">
-                    <div class="col-lg-6 image-column">
-                        <div class="image-box">
-                            <img src="{{ asset('Fe_Hyundai/assets/images/loan-img.jpg') }}" alt="">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 content-column">
-                        <div class="inner-column">
-                            <div class="boxcar-title white">
-                                <h2>Điền thông tin của bạn dưới đây</h2>
-                                <p>Chúng Tôi Sẽ Gọi Cho Bạn Ngay Tư Vấn Cho Bạn Liền </p>
-                            </div>
-                            <form class="row" method="POST" action="{{ route('request.user') }}">
-                                @csrf
-                                <div class="col-lg-6">
-                                    <div class="form_boxes">
-                                        <label>Mẫu xe cần tư vấn </label>
-                                        <div class="drop-menu">
-                                            <div class="select">
-                                                <span>chọn xe tư vấn</span>
-                                            </div>
-                                            <input type="hidden" name="car_model" id="car_model">
-                                            <ul class="dropdown">
-                                                @foreach ($products as $item)
-                                                    <li
-                                                        onclick="document.getElementById('car_model').value = '{{ $item->title }}';">
-                                                        {{ $item->title }}</li>
-                                                @endforeach
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form_boxes">
-                                        <label>Họ Tên</label>
-                                        <input type="text" name="name" value="{{ old('name') }}">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form_boxes">
-                                        <label>Số điện thoại</label>
-                                        <input type="text" name="phone" value="{{ old('phone') }}">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form_boxes">
-                                        <label>Email</label>
-                                        <input type="text" name="email" value="{{ old('email') }}">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="form-submit">
-                                        <button type="submit" class="theme-btn">Gửi <img
-                                                src="{{ asset('Fe_Hyundai/assets/images/arrow.svg') }}"
-                                                alt=""></button>
-                                    </div>
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End calculater-section -->
-
-    <!-- blog section -->
-    <section class="blog-section">
-        <div class="boxcar-container">
-            <div class="boxcar-title wow fadeInUp">
-                <h2>Khuyến mãi bán hàng</h2>
-            </div>
-            <div class="row">
-                <!-- blog-block -->
-                <div class="blog-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp">
-                        <div class="image-box">
-                            <figure class="image"><a href="#"><img
-                                        src="{{ asset('Fe_Hyundai/assets/images/blog-1.jpg') }}" alt=""></a>
-                            </figure>
-                            <span class="date">news</span>
-                        </div>
-                        <div class="content-box">
-                            <ul class="post-info">
-                                <li>Ali Tufan</li>
-                                <li>April 20, 2023</li>
-                            </ul>
-                            <h6 class="title"><a href="blog-single.html" title="">This Long-Awaited Technology
-                                    May Finally Change the World</a></h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- blog-block -->
-                <div class="blog-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="100ms">
-                        <div class="image-box">
-                            <figure class="image"><a href="#"><img
-                                        src="{{ asset('Fe_Hyundai/assets/images/blog-2.jpg') }} "alt=""></a></figure>
-                            <span class="date">news</span>
-                        </div>
-                        <div class="content-box">
-                            <ul class="post-info">
-                                <li>Ali Tufan</li>
-                                <li>April 20, 2023</li>
-                            </ul>
-                            <h6 class="title"><a href="blog-single.html" title="">This Long-Awaited Technology
-                                    May Finally Change the World</a></h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- blog-block -->
-                <div class="blog-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="200ms">
-                        <div class="image-box">
-                            <figure class="image"><a href="#"><img
-                                        src="{{ asset('Fe_Hyundai/assets/images/blog-3.jpg') }}" alt=""></a>
-                            </figure>
-                            <span class="date">news</span>
-                        </div>
-                        <div class="content-box">
-                            <ul class="post-info">
-                                <li>Ali Tufan</li>
-                                <li>April 20, 2023</li>
-                            </ul>
-                            <h6 class="title"><a href="blog-single.html" title="">This Long-Awaited Technology
-                                    May Finally Change the World</a></h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End blog-section -->
-    <!-- blog section -->
-    <section class="blog-section">
-        <div class="boxcar-container">
-            <div class="boxcar-title wow fadeInUp">
-                <h2>Khuyến mãi dịch vụ</h2>
-            </div>
-            <div class="row">
-                <!-- blog-block -->
-                <div class="blog-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp">
-                        <div class="image-box">
-                            <figure class="image"><a href="#"><img
-                                        src="{{ asset('Fe_Hyundai/assets/images/blog-1.jpg') }}" alt=""></a>
-                            </figure>
-                            <span class="date">news</span>
-                        </div>
-                        <div class="content-box">
-                            <ul class="post-info">
-                                <li>Ali Tufan</li>
-                                <li>April 20, 2023</li>
-                            </ul>
-                            <h6 class="title"><a href="blog-single.html" title="">This Long-Awaited Technology
-                                    May Finally Change the World</a></h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- blog-block -->
-                <div class="blog-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="100ms">
-                        <div class="image-box">
-                            <figure class="image"><a href="#"><img
-                                        src="{{ asset('Fe_Hyundai/assets/images/blog-2.jpg') }} "alt=""></a></figure>
-                            <span class="date">news</span>
-                        </div>
-                        <div class="content-box">
-                            <ul class="post-info">
-                                <li>Ali Tufan</li>
-                                <li>April 20, 2023</li>
-                            </ul>
-                            <h6 class="title"><a href="blog-single.html" title="">This Long-Awaited Technology
-                                    May Finally Change the World</a></h6>
-                        </div>
-                    </div>
-                </div>
-                <!-- blog-block -->
-                <div class="blog-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="200ms">
-                        <div class="image-box">
-                            <figure class="image"><a href="#"><img
-                                        src="{{ asset('Fe_Hyundai/assets/images/blog-3.jpg') }}" alt=""></a>
-                            </figure>
-                            <span class="date">news</span>
-                        </div>
-                        <div class="content-box">
-                            <ul class="post-info">
-                                <li>Ali Tufan</li>
-                                <li>April 20, 2023</li>
-                            </ul>
-                            <h6 class="title"><a href="blog-single.html" title="">This Long-Awaited Technology
-                                    May Finally Change the World</a></h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End blog-section -->
+    </div>
+</section>
 @endsection

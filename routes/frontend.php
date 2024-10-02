@@ -5,7 +5,7 @@
     Route::get('/construction/activation/{key}', ['as' => 'construction.activation', 'uses' => 'Frontend\ConstructionController@activation']);
     Route::get('/member/activation/{key}', ['as' => 'member.activation', 'uses' => 'Frontend\MemberController@activation']);
     /* Sản phẩm */
-    Route::get('/{alias}', ['as' => 'product.detail', 'uses' => 'Fe_Hyundai\ProductController@detail']);
+    Route::get('/detail', ['as' => 'product.detail', 'uses' => 'Fe_Hyundai\ProductController@detail']);
     Route::get('/sale', ['as' => 'product.sale', 'uses' => 'Frontend\ProductController@sale']);
     // Route::get('/san-pham/{alias}', ['as' => 'product.detail', 'uses' => 'Frontend\ProductController@detail']);
     /* Hình ảnh */
