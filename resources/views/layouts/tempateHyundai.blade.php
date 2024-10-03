@@ -35,6 +35,7 @@
         /* ]]> */
     </script>
         <meta name="msapplication-TileImage" content="https://hyundaihaiphong.vn/wp-content/uploads/2021/08/fav.png" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     @include('layouts.template_hyundai.header_css')
     @stack('css')
 </head>

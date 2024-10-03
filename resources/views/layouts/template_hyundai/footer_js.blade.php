@@ -1,4 +1,3 @@
-<script type="text/javascript" src="{{asset('Fe_Hyundai/wp-includes/js/jquery/jquery.minf43b.js')}}" id="jquery-core-js"></script>
 <script type="text/javascript" src="{{asset('Fe_Hyundai/wp-includes/js/jquery/jquery-migrate.min5589.js')}}" id="jquery-migrate-js">
 </script>
 <script type="text/javascript" src="{{asset('Fe_hyundai/wp-content/themes/hyundaihaiphong/js/jquery.lazy.min.js')}}"></script>
