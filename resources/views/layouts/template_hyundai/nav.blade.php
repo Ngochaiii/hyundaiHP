@@ -70,26 +70,23 @@
                             <ul class="sub-menu">
                                 <li id="menu-item-14744"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14744">
-                                    <a href="dich-vu/ung-dung-hyundai-me/index.html">Ứng dụng Hyundai Me</a>
+                                    <a href="{{route('service.hyundai_me')}}">Ứng dụng Hyundai Me</a>
                                 </li>
                                 <li id="menu-item-14740"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14740">
-                                    <a href="dich-vu/chuong-trinh-dich-vu/index.html">Chương trình dịch vụ</a>
+                                    <a href="{{route('service.service_programming')}}">Chương trình dịch vụ</a>
                                 </li>
-                                <li id="menu-item-14739"
-                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14739">
-                                    <a href="dich-vu/bao-hanh/index.html">Bảo Hành</a></li>
                                 <li id="menu-item-14743"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14743">
-                                    <a href="dich-vu/phu-tung-chinh-hieu/index.html">Phụ tùng chính hiệu</a>
+                                    <a href="{{route('service.genuine')}}">Phụ tùng chính hiệu</a>
                                 </li>
                                 <li id="menu-item-14742"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14742">
-                                    <a href="dich-vu/dat-lich-hen-sua-chua/index.html">Đặt lịch hẹn sửa chữa</a>
+                                    <a href="{{route('service.schedule_repair')}}">Đặt lịch hẹn sửa chữa</a>
                                 </li>
                                 <li id="menu-item-14741"
                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14741">
-                                    <a href="dich-vu/dich-vu-va-cuu-ho/index.html">Dịch vụ và cứu hộ</a></li>
+                                    <a href="{{route('service.rescue_service')}}">Dịch vụ và cứu hộ</a></li>
                             </ul>
                         </li>
                         <li id="menu-item-14763"
@@ -98,10 +95,10 @@
                             <ul class="sub-menu">
                                 <li id="menu-item-14764"
                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14764">
-                                    <a href="category/tin-tuc/tin-tuc-chung/index.html">Tin tức chung</a></li>
+                                    <a href="{{route('news.list')}}">Tin tức chung</a></li>
                                 <li id="menu-item-14765"
                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14765">
-                                    <a href="category/tin-tuc/tin-khuyen-mai/index.html">Tin khuyến mãi</a></li>
+                                    <a href="{{route('news.listpomo')}}">Tin khuyến mãi</a></li>
                             </ul>
                         </li>
                         <li id="menu-item-14767"

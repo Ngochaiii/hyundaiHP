@@ -1,4 +1,4 @@
-@extends('layouts.default')
+@extends('layouts.default_template_hyundai')
 
 @section('content')
     <div class="container">
