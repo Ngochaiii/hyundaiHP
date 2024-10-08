@@ -3,7 +3,7 @@
     <div class="quickcontact">
         <div class="container">
             <div class="row mt-3">
-                <div class="col-xs-12 col-sm-8 header-logo-top">
+                <div class="col-xs-12 col-sm-6 header-logo-top text-center">
                     <a href="https://hyundaihaiphong.vn" rel="home" class="hyundai-logo">
                         <img width="300"
                             src="https://hyundaihaiphong.vn/wp-content/uploads/2022/03/logo-hyundai-htv.png"
@@ -11,7 +11,7 @@
                     </a>
 
                 </div>
-                <div class="col-xs-12 col-sm-4 text-right header-logo-top hidden-xs">
+                <div class="col-xs-12 col-sm-6 text-center header-logo-top hidden-xs">
                     <p><img src="https://hyundaihaiphong.vn/wp-content/uploads/2022/03/logo-HHP-03.png"
                             alt="logo hyundai Hải Phòng"></p>
                 </div>

@@ -574,9 +574,14 @@ figure.image {
 .boxcar-container {
     position: static;
     max-width: var(--container-width);
-    padding: 0px 15px;
-    margin: 0 auto;
-    width: 100%;
+    /* padding: 0px 15px; */
+    /* margin: 0 auto; */
+    /* width: 100%; */
+    max-width: 80%; /* Điều chỉnh giá trị này để thu hẹp theo ý muốn */
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .small-container {
