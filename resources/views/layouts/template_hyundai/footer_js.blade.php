@@ -91,8 +91,7 @@
         wp.i18n.setLocaleData({ 'text direction\u0004ltr': ['ltr'] });
         /* ]]> */
     </script>
-    <script type="text/javascript" src="{{asset('Fe_hyundai/wp-content/plugins/contact-form-7/includes/swv/js/indexe2db.js?ver=5.9.8')}}"
-        id="swv-js"></script>
+
     <script type="text/javascript" id="contact-form-7-js-extra">
         /* <![CDATA[ */
         var wpcf7 = { "api": { "root": "https:\/\/hyundaihaiphong.vn\/wp-json\/", "namespace": "contact-form-7\/v1" } };
@@ -107,7 +106,6 @@
         })("contact-form-7", { "translation-revision-date": "2024-08-11 13:44:17+0000", "generator": "GlotPress\/4.0.1", "domain": "messages", "locale_data": { "messages": { "": { "domain": "messages", "plural-forms": "nplurals=1; plural=0;", "lang": "vi_VN" }, "This contact form is placed in the wrong place.": ["Bi\u1ec3u m\u1eabu li\u00ean h\u1ec7 n\u00e0y \u0111\u01b0\u1ee3c \u0111\u1eb7t sai v\u1ecb tr\u00ed."], "Error:": ["L\u1ed7i:"] } }, "comment": { "reference": "includes\/js\/index.js" } });
         /* ]]> */
     </script>
-    <script type="text/javascript" src="{{asset('Fe_hyundai/wp-content/plugins/contact-form-7/includes/js/indexe2db.js?ver=5.9.8')}}"
         id="contact-form-7-js"></script>
     <script type="text/javascript" src="{{asset('Fe_hyundai/wp-content/themes/hyundaihaiphong/js/navigation4a7d.js?ver=20151215')}}"
         id="_s-navigation-js"></script>

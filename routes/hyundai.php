@@ -2,9 +2,10 @@
 
 Route::get('/', ['as' => 'home.index', 'uses' => 'FeHyundai\HomepageController@index']);
 
-Route::post('/dang-ky-lai-thu-form', ['as' => 'regis.drive', 'uses' => 'FeHyundai\ContactController@ResgisDrive']);
-Route::post('/dang-ky-lai-thu', ['as' => 'regis.drive2', 'uses' => 'FeHyundai\ContactController@drivedata']);
-Route::post('/yeu-cau-tu-van', ['as' => 'request.user', 'uses' => 'FeHyundai\ContactController@requetSale']);
+Route::post('/dang-ky-lai-thu-form', [
+    'as' => 'regis.drive',
+    'uses' => 'FeHyundai\ContactController@ResgisDrive'
+]);
 
 // Sản phẩm
 Route::get('/san-pham/{alias}', ['as' => 'product.detail', 'uses' => 'FeHyundai\ProductController@detail']);

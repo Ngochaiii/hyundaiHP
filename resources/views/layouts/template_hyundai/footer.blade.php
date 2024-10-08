@@ -9,51 +9,46 @@
                         <p role="status" aria-live="polite" aria-atomic="true"></p>
                         <ul></ul>
                     </div>
-                    <form action="https://hyundaihaiphong.vn/#wpcf7-f12866-o1" method="post"
-                        class="wpcf7-form init" aria-label="Form liên hệ" novalidate="novalidate"
-                        data-status="init">
-                        <div style="display: none;">
-                            <input type="hidden" name="_wpcf7" value="12866" />
-                            <input type="hidden" name="_wpcf7_version" value="5.9.8" />
-                            <input type="hidden" name="_wpcf7_locale" value="vi" />
-                            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f12866-o1" />
-                            <input type="hidden" name="_wpcf7_container_post" value="0" />
-                            <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                        </div>
+                    <form action="{{ route('regis.drive') }}" method="post" class="wpcf7-form init"
+                        aria-label="Form liên hệ" novalidate="novalidate" data-status="init">
+                        @csrf
+                        <input type="hidden" name="form_type" value="general_contact">
+
                         <div class="form-group form-insert">
-                            <p><span class="wpcf7-form-control-wrap" data-name="your-car"><select
-                                        class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
+                            <p><span class="wpcf7-form-control-wrap" data-name="your-car">
+                                    <select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
                                         aria-required="true" aria-invalid="false" name="your-car">
-                                        <option value="Hyundai i10">Hyundai i10</option>
-                                        <option value="Hyundai Accent">Hyundai Accent</option>
-                                        <option value="Hyundai Kona">Hyundai Kona</option>
-                                        <option value="Hyundai Elantra">Hyundai Elantra</option>
-                                        <option value="Hyundai Tucson">Hyundai Tucson</option>
-                                        <option value="Hyundai Santafe">Hyundai Santafe</option>
-                                    </select></span>
-                            </p>
+                                        <option value="">-- Chọn loại xe --</option>
+                                        @foreach ($products as $car)
+                                            <option value="{{ $car->id }}">{{ $car->title }}</option>
+                                        @endforeach
+                                    </select>
+                                </span></p>
                         </div>
+
                         <div class="form-group form-insert">
-                            <p><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40"
-                                        maxlength="400"
+                            <p><span class="wpcf7-form-control-wrap" data-name="your-name">
+                                    <input size="40" maxlength="400"
                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                         aria-required="true" aria-invalid="false" placeholder="Họ tên" value=""
-                                        type="text" name="your-name" /></span>
-                            </p>
+                                        type="text" name="your-name" />
+                                </span></p>
                         </div>
+
                         <div class="form-group form-insert">
-                            <p><span class="wpcf7-form-control-wrap" data-name="your-phone"><input size="40"
-                                        maxlength="400"
+                            <p><span class="wpcf7-form-control-wrap" data-name="your-phone">
+                                    <input size="40" maxlength="400"
                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                         aria-required="true" aria-invalid="false" placeholder="Số điện thoại"
-                                        value="" type="text" name="your-phone" /></span>
-                            </p>
+                                        value="" type="text" name="your-phone" />
+                                </span></p>
                         </div>
+
                         <div class="form-group phone-group">
                             <p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit"
-                                    value="Gửi" />
-                            </p>
+                                    value="Gửi" /></p>
                         </div>
+
                         <div class="wpcf7-response-output" aria-hidden="true"></div>
                     </form>
                 </div>
@@ -76,10 +71,10 @@
                                 Chân, Hải Phòng</p>
                             <p><span class="fa fa-phone"></span> Kinh doanh: <a href="tel:0906026299">0906 026
                                     299</a> - Dịch vụ: <a href="tel:0936622727">0936 622 727</a></p>
-                            <p><span class="fa fa-phone"></span> Hotline đặt hẹn dịch vụ: <a
-                                    href="tel:0937731199">0937 73 11 99</a></p>
-                            <p><span class="fa fa-phone"></span> Hotline hỗ trợ bảo hiểm: <a
-                                    href="tel:0836742742">0836 742 742</a></p>
+                            <p><span class="fa fa-phone"></span> Hotline đặt hẹn dịch vụ: <a href="tel:0937731199">0937
+                                    73 11 99</a></p>
+                            <p><span class="fa fa-phone"></span> Hotline hỗ trợ bảo hiểm: <a href="tel:0836742742">0836
+                                    742 742</a></p>
                             <p><span class="fa fa-envelope-o"></span> <a href="mailto:info@hyundaihaiphong.vn"
                                     title="mailto:info@hyundaihaiphong.vn">info@hyundaihaiphong.vn</a> </p>
                             <p><span class="fa fa-clock-o"></span> 07:30 - 17:00</p>
@@ -92,8 +87,7 @@
                     <ul>
                         <li><a href="index.html"><i class="fa fa-star" aria-hidden="true"></i><span>Trang
                                     Chủ</span></a></li>
-                        <li><a href="gioi-thieu/index.html"><i class="fa fa-star"
-                                    aria-hidden="true"></i><span>Giới
+                        <li><a href="gioi-thieu/index.html"><i class="fa fa-star" aria-hidden="true"></i><span>Giới
                                     Thiệu</span></a></li>
                         <li><a href="cham-soc-khach-hang/dang-ky-lai-thu-xe/index.html"><i class="fa fa-star"
                                     aria-hidden="true"></i><span>Đăng ký lái thử</span></a></li>
@@ -140,8 +134,8 @@
                                     </div>
                                     <div class="form-group m-0">
                                         <div class="form-group form-insert">
-                                            <p><span class="wpcf7-form-control-wrap"
-                                                    data-name="your-email"><input size="40" maxlength="400"
+                                            <p><span class="wpcf7-form-control-wrap" data-name="your-email"><input
+                                                        size="40" maxlength="400"
                                                         class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
                                                         aria-required="true" aria-invalid="false"
                                                         placeholder="Địa chỉ Email của bạn" value=""
@@ -163,8 +157,8 @@
                                 target="_blank" title="Facebook" rel="nofollow">
                                 <i class="fa fa-facebook-official" aria-hidden="true"></i>
                             </a>
-                            <a class="social-youtube" href="https://www.facebook.com/HyundaiHaiPhong"
-                                target="_blank" title="Youtube" rel="nofollow">
+                            <a class="social-youtube" href="https://www.facebook.com/HyundaiHaiPhong" target="_blank"
+                                title="Youtube" rel="nofollow">
                                 <i class="fa fa-youtube-play" aria-hidden="true"></i>
                             </a>
                         </div>

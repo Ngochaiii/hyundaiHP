@@ -129,24 +129,14 @@
                         </div>
                         <form action="https://hyundaihaiphong.vn/#wpcf7-f12866-o3" method="post" class="wpcf7-form init"
                             aria-label="Form liên hệ" novalidate="novalidate" data-status="init">
-                            <div style="display: none;">
-                                <input type="hidden" name="_wpcf7" value="12866" />
-                                <input type="hidden" name="_wpcf7_version" value="5.9.8" />
-                                <input type="hidden" name="_wpcf7_locale" value="vi" />
-                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f12866-o3" />
-                                <input type="hidden" name="_wpcf7_container_post" value="0" />
-                                <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                            </div>
                             <div class="form-group form-insert">
                                 <p><span class="wpcf7-form-control-wrap" data-name="your-car"><select
                                             class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
                                             aria-required="true" aria-invalid="false" name="your-car">
-                                            <option value="Hyundai i10">Hyundai i10</option>
-                                            <option value="Hyundai Accent">Hyundai Accent</option>
-                                            <option value="Hyundai Kona">Hyundai Kona</option>
-                                            <option value="Hyundai Elantra">Hyundai Elantra</option>
-                                            <option value="Hyundai Tucson">Hyundai Tucson</option>
-                                            <option value="Hyundai Santafe">Hyundai Santafe</option>
+                                            <option value="">-- Chọn loại xe --</option>
+                                            @foreach ($products as $car)
+                                                <option value="{{ $car->id }}">{{ $car->title }}</option>
+                                            @endforeach
                                         </select></span>
                                 </p>
                             </div>
@@ -187,7 +177,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Nhận Yêu Cầu Báo Giá</h4>
+                    <h4 class="modal-title">Nhận Yêu Cầu Báo Giá hi</h4>
                     <p class="sologan-quote">Chào Anh/Chị - để nhận Báo giá xe mới nhất, và các <span
                             class="note-car">chương trình khuyến mãi</span> vui lòng liên hệ trực tiếp: <strong> <a
                                 class="phoneshowallcall"><span class="phoneshowall"></span></a></strong></p>
@@ -201,24 +191,14 @@
                         </div>
                         <form action="https://hyundaihaiphong.vn/#wpcf7-f12866-o4" method="post" class="wpcf7-form init"
                             aria-label="Form liên hệ" novalidate="novalidate" data-status="init">
-                            <div style="display: none;">
-                                <input type="hidden" name="_wpcf7" value="12866" />
-                                <input type="hidden" name="_wpcf7_version" value="5.9.8" />
-                                <input type="hidden" name="_wpcf7_locale" value="vi" />
-                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f12866-o4" />
-                                <input type="hidden" name="_wpcf7_container_post" value="0" />
-                                <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                            </div>
                             <div class="form-group form-insert">
                                 <p><span class="wpcf7-form-control-wrap" data-name="your-car"><select
                                             class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
                                             aria-required="true" aria-invalid="false" name="your-car">
-                                            <option value="Hyundai i10">Hyundai i10</option>
-                                            <option value="Hyundai Accent">Hyundai Accent</option>
-                                            <option value="Hyundai Kona">Hyundai Kona</option>
-                                            <option value="Hyundai Elantra">Hyundai Elantra</option>
-                                            <option value="Hyundai Tucson">Hyundai Tucson</option>
-                                            <option value="Hyundai Santafe">Hyundai Santafe</option>
+                                            <option value="">-- Chọn loại xe --</option>
+                                            @foreach ($products as $car)
+                                                <option value="{{ $car->id }}">{{ $car->title }}</option>
+                                            @endforeach
                                         </select></span>
                                 </p>
                             </div>

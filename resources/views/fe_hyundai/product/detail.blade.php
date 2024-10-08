@@ -1505,14 +1505,7 @@
             opacity: .5
         }
     </style>
-    <script type="text/javascript">
-        jQuery(document).ready(function (o) {
-            if (o("#back-to-top").length) { var n = function () { o(window).scrollTop() > 100 ? o("#back-to-top").addClass("show") : o("#back-to-top").removeClass("show") }; n(), o(window).on("scroll", function () { n() }), o("#back-to-top").on("click", function (n) { n.preventDefault(), o("html,body").animate({ scrollTop: 0 }, 700) }) } if (o(".site-header").length) { var t = function () { o(window).scrollTop() > 150 ? o(".fix-header-home").addClass("stuck") : o(".fix-header-home").removeClass("stuck") }; t(), o(window).on("scroll", function () { t() }) }
-            setTimeout(function () {
-                //  o("#bao_gia").modal('show');
-            }, 20000);
-        });
-    </script>
+
     <style>
         .detail-product-single .col-t-sgp {
             padding-left: 8px;

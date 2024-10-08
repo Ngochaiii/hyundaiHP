@@ -9,13 +9,9 @@ use Illuminate\Http\Request;
 class RequestContainController extends Controller
 {
     public function index() {
-        $products = Product::paginate(12);
-        $all_cars = Product::all();
-
+        $products = Product::where('status', true)->orderBy('ordering', 'desc')->get();
         $compacts = [
             'products'=>$products,
-            'all_cars' => $all_cars,
-
         ];
         return view('fe_hyundai.request_consultation.index',$compacts);
     }
