@@ -18,24 +18,26 @@ class NewsController extends Controller {
         $this->newsCategoryRepo = $newsCategoryRepo;
     }
 
-    public function index(Request $request, $alias = '') {
+    public function list(Request $request, $alias = '') {
+        $category_name = '';
         if ($alias) {
             $category = $this->categoryRepo->findByAlias($alias);
+            $category_name = $category->title;
             $records = $this->newsRepo->readFE($request, $category->id);
         } else {
             $records = $this->newsRepo->readFE($request);
         }
+        $products = Product::where('status', true)->orderBy('ordering', 'desc')->get();
         $category_arr = $this->categoryRepo->readHomeNewsCategory();
         $featured_news = $this->newsRepo->readFeaturedNews($limit = 5);
-        if (config('global.device') != 'pc') {
-            return view('mobile/news/list', compact('records', 'category_arr', 'featured_news'));
-        } else {
-            return view('frontend/news/list', compact('records', 'category_arr', 'featured_news'));
-        }
+        return view('fe_hyundai/news/list', compact('records', 'category_arr', 'featured_news', 'category_name', 'products'));
     }
 
     public function detail($alias) {
         $record = $this->newsRepo->findByAlias($alias);
+        if(!$record){
+            return redirect()->route('home.index');
+        }
         $this->newsRepo->updateViewCount($record->id, $record->view_count);
         $products = Product::where('status', true)->orderBy('ordering', 'desc')->get();
         $featured_news = $this->newsRepo->readFeaturedNews($limit = 5);

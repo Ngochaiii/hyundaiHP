@@ -86,7 +86,8 @@ class RouteServiceProvider extends ServiceProvider {
     }
 
     protected function mapHyundaiRoutes() {
-        Route::namespace($this->namespace)
+        Route::middleware('frontend')
+        ->namespace($this->namespace)
                 ->group(base_path('routes/hyundai.php'));
     }
 

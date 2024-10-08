@@ -9,7 +9,7 @@ class Menu extends Model {
     //
     protected $table = "menu";
     protected $fillable = [
-        'title', 'link', 'ordering', 'status', 'parent_id'
+        'title', 'link', 'ordering', 'status', 'parent_id','image'
     ];
 
     public function created_at() {
