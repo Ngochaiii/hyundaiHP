@@ -20,6 +20,6 @@
         </div>
         <!-- /page content -->
     </body>
-    @yield('script')   
+    @yield('script')
 </html>
 

@@ -95,10 +95,10 @@
                             <ul class="sub-menu">
                                 <li id="menu-item-14764"
                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14764">
-                                    <a href="{{route('news.list')}}">Tin tức chung</a></li>
-                                <li id="menu-item-14765"
+                                    <a href="{{route('news.list', 'a')}}">Tin tức chung</a></li>
+                                {{-- <li id="menu-item-14765"
                                     class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-14765">
-                                    <a href="{{route('news.listpomo')}}">Tin khuyến mãi</a></li>
+                                    <a href="{{route('news.listpomo')}}">Tin khuyến mãi</a></li> --}}
                             </ul>
                         </li>
                         <li id="menu-item-14767"

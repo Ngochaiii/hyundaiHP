@@ -83,7 +83,7 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="form-group row">
-                                    <label class="col-form-label col-md-4 text-left">Giá </label>
+                                    <label class="col-form-label col-md-4 text-left">Giá (triệu) </label>
                                     <div class="col-md-7">
                                         <input type="text" name="price" class="form-control touchspin text-center" value="{!!is_null(old('price'))?$record->price:old('price')!!}">
                                     </div>
