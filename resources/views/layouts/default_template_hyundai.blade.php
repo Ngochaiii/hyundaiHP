@@ -127,8 +127,10 @@
                             <p role="status" aria-live="polite" aria-atomic="true"></p>
                             <ul></ul>
                         </div>
-                        <form action="https://hyundaihaiphong.vn/#wpcf7-f12866-o3" method="post" class="wpcf7-form init"
+                        <form action="{{ route('regis.drive') }}" method="post" class="wpcf7-form init"
                             aria-label="Form liên hệ" novalidate="novalidate" data-status="init">
+                            @csrf
+                            <input type="hidden" name="form_type" value="lai_thu">
                             <div class="form-group form-insert">
                                 <p><span class="wpcf7-form-control-wrap" data-name="your-car"><select
                                             class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
@@ -144,8 +146,8 @@
                                 <p><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40"
                                             maxlength="400"
                                             class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                            aria-required="true" aria-invalid="false" placeholder="Họ tên" value=""
-                                            type="text" name="your-name" /></span>
+                                            aria-required="true" aria-invalid="false" placeholder="Họ tên"
+                                            value="" type="text" name="your-name" /></span>
                                 </p>
                             </div>
                             <div class="form-group form-insert">
@@ -161,7 +163,6 @@
                                         value="Gửi" />
                                 </p>
                             </div>
-                            <div class="wpcf7-response-output" aria-hidden="true"></div>
                         </form>
                     </div>
                 </div>
@@ -177,7 +178,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Nhận Yêu Cầu Báo Giá hi</h4>
+                    <h4 class="modal-title">Nhận Yêu Cầu Báo Giá</h4>
                     <p class="sologan-quote">Chào Anh/Chị - để nhận Báo giá xe mới nhất, và các <span
                             class="note-car">chương trình khuyến mãi</span> vui lòng liên hệ trực tiếp: <strong> <a
                                 class="phoneshowallcall"><span class="phoneshowall"></span></a></strong></p>
@@ -189,8 +190,10 @@
                             <p role="status" aria-live="polite" aria-atomic="true"></p>
                             <ul></ul>
                         </div>
-                        <form action="https://hyundaihaiphong.vn/#wpcf7-f12866-o4" method="post" class="wpcf7-form init"
-                            aria-label="Form liên hệ" novalidate="novalidate" data-status="init">
+                        <form action="{{ route('regis.drive') }}" method="POST" class="wpcf7-form init"
+                            aria-label="Form liên hệ">
+                            @csrf
+                            <input type="hidden" name="form_type" value="bao_gia">
                             <div class="form-group form-insert">
                                 <p><span class="wpcf7-form-control-wrap" data-name="your-car"><select
                                             class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
@@ -206,8 +209,8 @@
                                 <p><span class="wpcf7-form-control-wrap" data-name="your-name"><input size="40"
                                             maxlength="400"
                                             class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                            aria-required="true" aria-invalid="false" placeholder="Họ tên" value=""
-                                            type="text" name="your-name" /></span>
+                                            aria-required="true" aria-invalid="false" placeholder="Họ tên"
+                                            value="" type="text" name="your-name" /></span>
                                 </p>
                             </div>
                             <div class="form-group form-insert">
@@ -219,11 +222,10 @@
                                 </p>
                             </div>
                             <div class="form-group phone-group">
-                                <p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit"
-                                        value="Gửi" />
+                                <p><button class="wpcf7-form-control wpcf7-submit has-spinner"
+                                        type="submit">Gửi</button>
                                 </p>
                             </div>
-                            <div class="wpcf7-response-output" aria-hidden="true"></div>
                         </form>
                     </div>
                 </div>

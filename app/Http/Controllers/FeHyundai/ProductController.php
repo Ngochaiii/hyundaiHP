@@ -8,19 +8,15 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function detail() {
-        // $detail_product = Product::where('alias', $alias)->first();
-        // $images = explode(',', $detail_product->images);
-        // $all_cars = Product::all();
-        // $products = Product::paginate(12);
-        // $compacts = [
-        //     'products' => $products,
-        //     'detail_product' => $detail_product,
-        //     'images' => $images,
-        //     'all_cars' => $all_cars,
+    public function detail(string $alias) {
 
-        // ];
-        // dd($compacts);
-        return view('fe_hyundai.product.detail');
+        $products_detail = Product::where('alias', $alias)->first();
+        $products = Product::where('status', true)->orderBy('ordering', 'desc')->get();
+        $compacts = [
+            'product' => $products_detail,
+            'products' => $products
+        ];
+
+        return view('fe_hyundai.product.detail',$compacts);
     }
 }
