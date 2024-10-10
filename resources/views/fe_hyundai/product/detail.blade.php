@@ -1,7 +1,7 @@
 @extends('layouts.default_template_hyundai')
 
 @section('content')
-{!!$product->content!!}
+    {!! $product->content !!}
 
     <style>
         .is-divider-center {
@@ -778,10 +778,168 @@
         }
     </style>
     <script type="text/javascript">
-        jQuery(document).ready(function (t) { var e = t("#big"), n = t("#thumbs"), d = !1; e.owlCarousel({ items: 1, slideSpeed: 5e3, nav: !0, autoplay: !1, dots: !1, loop: !0, responsiveRefreshRate: 200, navText: ["", ""] }).on("changed.owl.carousel", function (t) { var e = t.item.count - 1, i = Math.round(t.item.index - t.item.count / 2 - .5); i < 0 && (i = e); i > e && (i = 0); n.find(".owl-item").removeClass("current").eq(i).addClass("current"); var d = n.find(".owl-item.active").length - 1, a = n.find(".owl-item.active").first().index(), r = n.find(".owl-item.active").last().index(); i > r && n.trigger("to.owl.carousel", [i, 100, !0]); i < a && n.trigger("to.owl.carousel", [i - d, 100, !0]) }), n.on("initialized.owl.carousel", function () { n.find(".owl-item").eq(0).addClass("current") }).owlCarousel({ dots: !1, nav: !0, navText: ['<i class="fa fa-angle-left owl-prev-next-product" aria-hidden="true"></i>', '<i class="fa fa-angle-right owl-prev-next-product" aria-hidden="true"></i>'], smartSpeed: 200, slideSpeed: 500, slideBy: 4, responsiveRefreshRate: 100, responsive: { 0: { items: 3 }, 600: { items: 4 }, 1000: { items: 5 } } }).on("changed.owl.carousel", function (t) { if (d) { var i = t.item.index; e.data("owl.carousel").to(i, 100, !0) } }), n.on("click", ".owl-item", function () { var i = t(this).index(); console.log(i), e.trigger("to.owl.carousel", [i, 200, !0]) }), t(".lable-car").first().addClass("color-select"), t(".lable-car").click(function () { var i = t(this).attr("data-item-car"); t(".item-color").removeClass("color-select"), t(this).addClass("color-select"), e.trigger("to.owl.carousel", [i, 200, !0]) }), t(window).on("scroll", function () { t(window).scrollTop() >= t(".site-content").offset().top + t(".site-content").outerHeight() - window.innerHeight ? t(".nav__product").css("display", "none") : t(".nav__product ").css("display", "block") }); var a = 10, r = 1; price = t(".price-all-single").attr("data-price"), name_car = t(".car-title").text(), t("#select-percent-pay").change(function () { a = t(this).val() }), t("#year-pay").change(function () { r = t(this).val() }), toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"), t("#calculate-single").click(function () { var e = price / 100 * a, n = e / (12 * r), d = e / 100 * .625, o = t("<tr>"), l = 0; for (i = 1; i <= 12 * r; i++) { var s = n + d; t(window).width() < 767 ? o.append('<div class="uoc-tinh-tra-gop-item"><table><tbody><tr><td>Kỳ ' + i + "</td><td></td></tr><tr><td>Tổng số gốc còn nợ</td><td>" + parseFloat(e, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() + "</td></tr><tr><td>Tiền gốc trả trong tháng</td><td>" + parseFloat(n, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() + "</td></tr><tr><td>Tiền lãi trong tháng <span>(tính trên gốc còn nợ)</span></td><td>" + parseFloat(d, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() + "</td></tr><tr><td>Tổng số tiền thanh toán hàng tháng</td><td>" + parseFloat(s, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() + "</td></tr></table></tbody></div>") : o.append("<tr><td>" + i + "</td><td>" + parseFloat(e, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() + "</td><td>" + parseFloat(n, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() + "</td><td>" + parseFloat(d, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() + "</td><td>" + parseFloat(s, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() + "</td></tr>"), l += d, d = (e -= n) / 100 * .625 } t(".notification").html("Bạn chọn mua xe <span>" + name_car + "</span><div> với số tiền vay là: <span>" + a + "</span>% tương đương:<strong> (" + (price / 100 * a).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + " VND) </strong>giá trị xe, trong thời gian là <span>" + r + "</span> năm </div><div>Lãi suất ngân hàng là<span> 7,5%/năm</span></div>"), t(window).width() < 767 ? t("#result-is-single").html(o.html()) : t("#result-is-single").html("<table><tbody><tr><th>Kỳ</th><th>Tổng dư nợ</th><th>Tiền gốc</th><th>Tiền lãi</th><th>Tổng tiền</th></tr>" + o.html() + '<tr style="font-weight:bold"><td></td><td>Tổng trả góp</td><td>' + (price / 100 * a).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + "</td><td>" + parseFloat(l, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() + '<td style="color:#f00">' + parseFloat(price / 100 * a + l, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() + " VND</td></tr></tbody></table>") }), t(".owl-related-prd").owlCarousel({ slideSpeed: 5e3, nav: !0, autoplay: !0, dots: !0, loop: !0, margin: 10, navText: ["", ""], responsive: { 0: { items: 3 }, 600: { items: 4 }, 1000: { items: 5 } } }) });
+        jQuery(document).ready(function(t) {
+            var e = t("#big"),
+                n = t("#thumbs"),
+                d = !1;
+            e.owlCarousel({
+                items: 1,
+                slideSpeed: 5e3,
+                nav: !0,
+                autoplay: !1,
+                dots: !1,
+                loop: !0,
+                responsiveRefreshRate: 200,
+                navText: ["", ""]
+            }).on("changed.owl.carousel", function(t) {
+                var e = t.item.count - 1,
+                    i = Math.round(t.item.index - t.item.count / 2 - .5);
+                i < 0 && (i = e);
+                i > e && (i = 0);
+                n.find(".owl-item").removeClass("current").eq(i).addClass("current");
+                var d = n.find(".owl-item.active").length - 1,
+                    a = n.find(".owl-item.active").first().index(),
+                    r = n.find(".owl-item.active").last().index();
+                i > r && n.trigger("to.owl.carousel", [i, 100, !0]);
+                i < a && n.trigger("to.owl.carousel", [i - d, 100, !0])
+            }), n.on("initialized.owl.carousel", function() {
+                n.find(".owl-item").eq(0).addClass("current")
+            }).owlCarousel({
+                dots: !1,
+                nav: !0,
+                navText: ['<i class="fa fa-angle-left owl-prev-next-product" aria-hidden="true"></i>',
+                    '<i class="fa fa-angle-right owl-prev-next-product" aria-hidden="true"></i>'
+                ],
+                smartSpeed: 200,
+                slideSpeed: 500,
+                slideBy: 4,
+                responsiveRefreshRate: 100,
+                responsive: {
+                    0: {
+                        items: 3
+                    },
+                    600: {
+                        items: 4
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            }).on("changed.owl.carousel", function(t) {
+                if (d) {
+                    var i = t.item.index;
+                    e.data("owl.carousel").to(i, 100, !0)
+                }
+            }), n.on("click", ".owl-item", function() {
+                var i = t(this).index();
+                console.log(i), e.trigger("to.owl.carousel", [i, 200, !0])
+            }), t(".lable-car").first().addClass("color-select"), t(".lable-car").click(function() {
+                var i = t(this).attr("data-item-car");
+                t(".item-color").removeClass("color-select"), t(this).addClass("color-select"), e.trigger(
+                    "to.owl.carousel", [i, 200, !0])
+            }), t(window).on("scroll", function() {
+                t(window).scrollTop() >= t(".site-content").offset().top + t(".site-content")
+                    .outerHeight() - window.innerHeight ? t(".nav__product").css("display", "none") : t(
+                        ".nav__product ").css("display", "block")
+            });
+            var a = 10,
+                r = 1;
+            price = t(".price-all-single").attr("data-price"), name_car = t(".car-title").text(), t(
+                "#select-percent-pay").change(function() {
+                a = t(this).val()
+            }), t("#year-pay").change(function() {
+                r = t(this).val()
+            }), toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"), t("#calculate-single").click(function() {
+                var e = price / 100 * a,
+                    n = e / (12 * r),
+                    d = e / 100 * .625,
+                    o = t("<tr>"),
+                    l = 0;
+                for (i = 1; i <= 12 * r; i++) {
+                    var s = n + d;
+                    t(window).width() < 767 ? o.append(
+                            '<div class="uoc-tinh-tra-gop-item"><table><tbody><tr><td>Kỳ ' + i +
+                            "</td><td></td></tr><tr><td>Tổng số gốc còn nợ</td><td>" + parseFloat(e, 10)
+                            .toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() +
+                            "</td></tr><tr><td>Tiền gốc trả trong tháng</td><td>" + parseFloat(n, 10)
+                            .toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() +
+                            "</td></tr><tr><td>Tiền lãi trong tháng <span>(tính trên gốc còn nợ)</span></td><td>" +
+                            parseFloat(d, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() +
+                            "</td></tr><tr><td>Tổng số tiền thanh toán hàng tháng</td><td>" + parseFloat(s,
+                                10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() +
+                            "</td></tr></table></tbody></div>") : o.append("<tr><td>" + i + "</td><td>" +
+                            parseFloat(e, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() +
+                            "</td><td>" + parseFloat(n, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,")
+                            .toString() + "</td><td>" + parseFloat(d, 10).toFixed(2).replace(
+                                /(\d)(?=(\d{3})+\.)/g, "$1,").toString() + "</td><td>" + parseFloat(s, 10)
+                            .toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() + "</td></tr>"),
+                        l += d, d = (e -= n) / 100 * .625
+                }
+                t(".notification").html("Bạn chọn mua xe <span>" + name_car +
+                    "</span><div> với số tiền vay là: <span>" + a + "</span>% tương đương:<strong> (" +
+                    (price / 100 * a).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") +
+                    " VND) </strong>giá trị xe, trong thời gian là <span>" + r +
+                    "</span> năm </div><div>Lãi suất ngân hàng là<span> 7,5%/năm</span></div>"), t(
+                    window).width() < 767 ? t("#result-is-single").html(o.html()) : t(
+                    "#result-is-single").html(
+                    "<table><tbody><tr><th>Kỳ</th><th>Tổng dư nợ</th><th>Tiền gốc</th><th>Tiền lãi</th><th>Tổng tiền</th></tr>" +
+                    o.html() + '<tr style="font-weight:bold"><td></td><td>Tổng trả góp</td><td>' + (
+                        price / 100 * a).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") +
+                    "</td><td>" + parseFloat(l, 10).toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,")
+                    .toString() + '<td style="color:#f00">' + parseFloat(price / 100 * a + l, 10)
+                    .toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").toString() +
+                    " VND</td></tr></tbody></table>")
+            }), t(".owl-related-prd").owlCarousel({
+                slideSpeed: 5e3,
+                nav: !0,
+                autoplay: !0,
+                dots: !0,
+                loop: !0,
+                margin: 10,
+                navText: ["", ""],
+                responsive: {
+                    0: {
+                        items: 3
+                    },
+                    600: {
+                        items: 4
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        });
     </script>
     <script type="text/javascript">
-        jQuery(document).ready(function (e) { window.onload = function () { if (e(window).width() >= 1024 && window.innerWidth >= 1e3 && 0 != e("body").find(".tieudiem").length) { var o = e("#sidebar").offset().top - parseFloat(e("#sidebar").css("marginTop").replace(/auto/, 0)), t = e(".footer-slider-wrap").offset().top - parseFloat(e(".footer-slider-wrap").css("marginTop").replace(/auto/, 0)), i = t - e("#sidebar").outerHeight(); e(window).scroll(function () { "use strict"; var t = e(this).scrollTop(); t + 40 > o ? t + 40 < i ? e("#sidebar").addClass("fixed").removeAttr("style") : e("#sidebar").removeClass("fixed").css({ position: "relative", top: i - o - 10 + "px" }) : e("#sidebar").removeClass("fixed") }); var r = e(".tieudiem"), s = e(".tieudiem").offset().top; !function o() { r.offset().top != s && (s = e(".tieudiem").offset().top, t = e(".footer-slider-wrap").offset().top - parseFloat(e(".footer-slider-wrap").css("marginTop").replace(/auto/, 0)), i = t - e("#sidebar").outerHeight(), window.console.log("changed")), setTimeout(o, 1e3) }() } } });
+        jQuery(document).ready(function(e) {
+            window.onload = function() {
+                if (e(window).width() >= 1024 && window.innerWidth >= 1e3 && 0 != e("body").find(".tieudiem")
+                    .length) {
+                    var o = e("#sidebar").offset().top - parseFloat(e("#sidebar").css("marginTop").replace(
+                            /auto/, 0)),
+                        t = e(".footer-slider-wrap").offset().top - parseFloat(e(".footer-slider-wrap").css(
+                            "marginTop").replace(/auto/, 0)),
+                        i = t - e("#sidebar").outerHeight();
+                    e(window).scroll(function() {
+                        "use strict";
+                        var t = e(this).scrollTop();
+                        t + 40 > o ? t + 40 < i ? e("#sidebar").addClass("fixed").removeAttr("style") :
+                            e("#sidebar").removeClass("fixed").css({
+                                position: "relative",
+                                top: i - o - 10 + "px"
+                            }) : e("#sidebar").removeClass("fixed")
+                    });
+                    var r = e(".tieudiem"),
+                        s = e(".tieudiem").offset().top;
+                    ! function o() {
+                        r.offset().top != s && (s = e(".tieudiem").offset().top, t = e(".footer-slider-wrap")
+                            .offset().top - parseFloat(e(".footer-slider-wrap").css("marginTop").replace(
+                                /auto/, 0)), i = t - e("#sidebar").outerHeight(), window.console.log(
+                                "changed")), setTimeout(o, 1e3)
+                    }()
+                }
+            }
+        });
     </script>
 @endsection
-
