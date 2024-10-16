@@ -37,8 +37,8 @@ class NewsRepository extends AbstractRepository {
         //$query = $query->join('news_category', 'news.id', '=', 'news_category.news_id')->whereNotIn ('news_category.category_id',[238,239])->select('news.*','news_category.category_id');
         if ($request->get('keyword')) {
             $query = $query->where(function($que) use ($request) {
-                return $que->where('news.title', 'like', '%' . $request->get('keyword') . '%');
-                                //->orWhere('news.description', 'like', '%' . $request->get('keyword') . '%')
+                return $que->where('news.title', 'like', '%' . $request->get('keyword') . '%')
+                                ->orWhere('news.description', 'like', '%' . $request->get('keyword') . '%');
                                 //->orWhere('news.content', 'like', '%' . $request->get('keyword') . '%');
             });
         }

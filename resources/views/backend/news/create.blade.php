@@ -208,8 +208,7 @@
 <script src="{!! asset('assets/global_assets/js/plugins/pickers/pickadate/picker.time.js') !!}"></script>
 <script src="{!! asset('assets/global_assets/js/plugins/pickers/pickadate/legacy.js') !!}"></script>
 <script src="{!! asset('assets/global_assets/js/plugins/notifications/jgrowl.min.js') !!}"></script>
-{{-- <script src="{!! asset('assets/backend/ckeditor/ckeditor.js') !!}"></script>
-<script src="{!! asset('ckfinder/ckfinder.js') !!}"></script> --}}
+
 <script>
     var options = {
         filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
