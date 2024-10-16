@@ -149,7 +149,7 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row">
+                                {{-- <div class="form-group row">
                                     <label class="col-md-2  control-label text-right text-semibold" for="images">Slide thư viện <span class="text-danger">*</span></label>
                                     <div class="col-lg-12 div-image">
                                         <div class="file-input file-input-ajax-new">
@@ -297,7 +297,7 @@
                                     <div class="col-md-12">
                                         <textarea class="form-control ckeditor" id="specifications" name="specifications">{!!old('content')!!}</textarea>
                                     </div>
-                                </div>
+                                </div> --}}
 
 
                             </div>

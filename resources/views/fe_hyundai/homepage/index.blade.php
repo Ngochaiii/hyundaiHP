@@ -7,7 +7,7 @@
     <div class="row ">
         @foreach($products as $key => $product)
         <div class="col-md-3 col-sm-6 col-xs-12 car-home ">
-            <div class="cover"><a href='{{ route('product.detail', $product->alias) }}'><img class="loading lazy"
+            <div class="cover"><a href='{{ route('product.detail', $product->alias) }}'><img style="height:130px; !important;" class="loading lazy"
                         data-src="{{ $product->getImage() }}"
                         src="{{ $product->getImage() }}"
                         alt="{{$product->title}}"></a></div>
