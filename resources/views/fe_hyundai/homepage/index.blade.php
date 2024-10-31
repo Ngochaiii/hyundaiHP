@@ -24,6 +24,7 @@
     </div>
 </div>
 <!-- new promotion -->
+@include('fe_hyundai.homepage.promo')
 <div class="container">
     <div class="row">
         <div class="box-header box-header-promotions">
@@ -37,38 +38,8 @@
         </div>
         <link rel="stylesheet"
             href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <div class="new-service-container">
-            <div class="new-text-section">
-                <h1>SHOWROOM 1S</h1>
-                <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: Shoroom 1S 9/10B Lê Hồng Phong, Lê
-                    Chân, Hải Phòng</p>
-                <button
-                    onclick="window.location.href='https://www.google.com/maps/place/Hyundai+Lê+Hồng+Phong/@20.8407086,106.7128558,20.58z/data=!4m15!1m8!3m7!1s0x314a7aaf95e6de9d:0xbfa3b286ae52b0af!2zOSAxMGIsIDEwYiDEkC4gTMOqIEjhu5NuZyBQaG9uZywgxJDhurFuZyBI4bqjaSwgSOG6o2kgQW4sIEjhuqNpIFBow7JuZywgVmnhu4d0IE5hbQ!3b1!8m2!3d20.8406417!4d106.713065!16s%2Fg%2F11thr8nq0k!3m5!1s0x314a7bbe8878e049:0xeec9e832a0d33ebb!8m2!3d20.8406047!4d106.7129821!16s%2Fg%2F11qnbk536c?hl=vi-VN&amp;entry=ttu'">Chỉ
-                    đường</button>
-            </div>
-            <div class="new-image-section">
-                <img src="wp-content/themes/hyundaihaiphong/cad854f4c6ab63f53aba.jpg"
-                    alt="Showroom 1S">
-            </div>
-        </div>
 
-        <div class="new-service-container reverse">
-            <div class="new-text-section">
-                <h1>SHOWROOM 3S</h1>
-                <p><i class="fas fa-map-marker-alt"></i> Địa chỉ: Shoroom 3S 742 Nguyễn Văn Linh, Lê
-                    Chân, Hải Phòng</p>
-                <button
-                    onclick="window.location.href='https://www.google.com/maps/place/Hyundai+Hải+Phòng/@20.8418059,106.661486,19.38z/data=!4m14!1m7!3m6!1s0x314a7b85eb694031:0x29b584ac817babed!2zSHl1bmRhaSBI4bqjaSBQaMOybmc!8m2!3d20.8422399!4d106.6617486!16s%2Fg%2F11pqycm68h!3m5!1s0x314a7b85eb694031:0x29b584ac817babed!8m2!3d20.8422399!4d106.6617486!16s%2Fg%2F11pqycm68h?hl=vi-VN&amp;entry=ttu'">Chỉ
-                    đường</button>
-
-            </div>
-            <div class="new-image-section">
-                <img src="wp-content/themes/hyundaihaiphong/e0d28a2b1f74ba2ae365.jpg"
-                    alt="Showroom 3S">
-            </div>
-        </div>
-
-
+        @include('fe_hyundai.homepage.location')
         <div class="box-header box-header-promotions">
             <h3 class="section-title section-title-center"><span class="section-title-main2">Khuyến
                     Mãi Bán Hàng</span></h3>
@@ -101,6 +72,11 @@
     </div>
 </div>
 <!-- end new promotion -->
+<div class="container">
+    <div class="row">
+        @include('fe_hyundai.homepage.service')
+    </div>
+</div>
 <!-- new promotion Service -->
 <div class="container">
     <div class="row">
@@ -336,6 +312,7 @@
         </div>
     </div>
 </section>
+@include('fe_hyundai.homepage.popup')
 <style>
       .news-description {
         display: -webkit-box;

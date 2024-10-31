@@ -1,5 +1,4 @@
 <?php
-Route::get('/dang-ky-lai-thu', ['as' => 'user.drive','uses' => 'FeHyundai\RequestContainController@index']);
 Route::post('/dang-ky-lai-thu-form', ['as' => 'regis.drive','uses' => 'FeHyundai\ContactController@ResgisDrive']);
 
 Route::get('/construction/activation/{key}', ['as' => 'construction.activation', 'uses' => 'Frontend\ConstructionController@activation']);

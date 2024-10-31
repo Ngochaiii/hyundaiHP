@@ -13,7 +13,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <title>Hyundai Hải Phòng - Đại lý Hyundai Hải Phòng - Hotline 0906 026 299</title>
     <meta name='robots' content='max-image-preview:large' />
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- This site is optimized with the Yoast SEO Premium plugin v11.3 - https://yoast.com/wordpress/plugins/seo/ -->
     <meta name="description" content="Đại lý Hyundai Hải Phòng - Hotline 0906 026 299" />
     <link rel="canonical" href="index.html" />

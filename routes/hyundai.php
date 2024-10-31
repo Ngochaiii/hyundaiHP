@@ -1,6 +1,7 @@
 <?php
 
 Route::get('/', ['as' => 'home.index', 'uses' => 'FeHyundai\HomepageController@index']);
+Route::get('/dang-ky-lai-thu', ['as' => 'user.drive','uses' => 'FeHyundai\RequestContainController@index']);
 
 Route::post('/dang-ky-lai-thu-form', [
     'as' => 'regis.drive',

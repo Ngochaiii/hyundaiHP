@@ -23,62 +23,7 @@
                                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                                     <ul></ul>
                                 </div>
-                                <form action="{{ route('regis.drive') }}" method="post" class="wpcf7-form init"
-                                    aria-label="Form liên hệ" novalidate="novalidate" data-status="init">
-                                    @csrf
-                                    <input type="hidden" name="form_type" value="dang_ky_lai_thu">
-
-                                    <p><label> Họ tên<br />
-                                            <span class="wpcf7-form-control-wrap" data-name="your-name">
-                                                <input size="40" maxlength="400"
-                                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                    aria-required="true" aria-invalid="false" value="" type="text"
-                                                    name="your-name" />
-                                            </span>
-                                        </label></p>
-
-                                    <p><label> Số điện thoại<br />
-                                            <span class="wpcf7-form-control-wrap" data-name="your-phone">
-                                                <input size="40" maxlength="400"
-                                                    class="wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel"
-                                                    aria-required="true" aria-invalid="false" value="" type="tel"
-                                                    name="your-phone" />
-                                            </span>
-                                        </label></p>
-
-                                    <p><label> Địa chỉ<br />
-                                            <span class="wpcf7-form-control-wrap" data-name="your-address">
-                                                <input size="40" maxlength="400"
-                                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                    aria-required="true" aria-invalid="false" value="" type="text"
-                                                    name="your-address" />
-                                            </span>
-                                        </label></p>
-
-                                    <p><label> Dòng xe:<br />
-                                            <span class="wpcf7-form-control-wrap" data-name="your-car">
-                                                <select class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
-                                                    aria-required="true" aria-invalid="false" name="your-car">
-                                                    <option value="">-- Chọn loại xe --</option>
-                                                    @foreach ($products as $car)
-                                                        <option value="{{ $car->id }}">{{ $car->title }}</option>
-                                                    @endforeach
-                                                </select>
-                                            </span>
-                                        </label></p>
-
-                                    <p><label> Lời nhắn<br />
-                                            <span class="wpcf7-form-control-wrap" data-name="your-message">
-                                                <textarea cols="40" rows="10" maxlength="2000" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"
-                                                    name="your-message"></textarea>
-                                            </span>
-                                        </label></p>
-
-                                    <p><input class="wpcf7-form-control wpcf7-submit has-spinner" type="submit"
-                                            value="Gửi yêu cầu" /></p>
-
-                                    <div class="wpcf7-response-output" aria-hidden="true"></div>
-                                </form>
+                                @include('fe_hyundai.request_consultation.form_request')
                             </div>
                         </h4>
                         <div class="clearfix"></div>

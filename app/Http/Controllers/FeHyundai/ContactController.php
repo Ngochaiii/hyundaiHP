@@ -12,20 +12,16 @@ class ContactController extends Controller
 {
     public function ResgisDrive(Request $request)
     {
-        // Base validation rules
         $rules = [
             'form_type' => 'required|string|max:20',
             'your-name' => 'required|string|max:255',
             'your-car' => 'required|string|max:50',
             'your-phone' => 'required|string|max:20',
         ];
-
-        // Validate the request data
+        // dd($request->all());
         $validatedData = $request->validate($rules);
-
         $formType = $validatedData['form_type'];
 
-        // Determine the content based on form type
         switch ($formType) {
             case 'lai_thu':
                 $content = 'Yêu cầu lái thử';
@@ -42,6 +38,9 @@ class ContactController extends Controller
             case 'general_contact':
                 $content = 'Liên hệ chung';
                 break;
+            case 'khuyen_mai':
+                $content = 'Đăng ký nhận khuyến mãi';
+                break;
             default:
                 $content = 'Yêu cầu thông tin';
         }
@@ -53,14 +52,20 @@ class ContactController extends Controller
             'member_id' => $validatedData['your-car'],
             'form_type' => $formType,
             'is_read' => false,
+            'company_name' => trim($request->input('your-address', '') . ' ' . $request->input('your-message', '')),
         ];
 
         try {
             Contact::create($contactData);
+            if ($request->ajax()) {
+                return response()->json(['success' => true]);
+            }
             return redirect()->back()->with('success', 'Gửi thông tin thành công!');
         } catch (\Exception $e) {
-            // Log the error
             Log::error('Error creating contact: ' . $e->getMessage());
+            if ($request->ajax()) {
+                return response()->json(['success' => false]);
+            }
             return redirect()->back()->with('error', 'Có lỗi xảy ra. Vui lòng thử lại sau.');
         }
     }
