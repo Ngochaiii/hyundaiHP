@@ -26,6 +26,41 @@
                     <div class="tab-pane fade show active" id="left-icon-tab1">
                         <div class="row">
                             <div class="col-md-8">
+                                <div class="form-group row">
+                                    <div class="col-md-2">
+                                        <label class="text-right">Base URL của ảnh 360° <span class="text-danger">*</span></label>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <input type="text" id="base_360_url" name="base_360_url" class="form-control"
+                                               placeholder="Ví dụ: https://hyundai-api.thanhcong.vn/threesixty/uploads/product/94/blocks/5/QYYvSnuRHSiMcJy/QYYvSnuRHSiMcJyphantom-black"
+                                               value="{{ $record->base_360_url }}">
+                                               <small class="form-text text-muted">Hệ thống sẽ tự thêm _{số}.png vào cuối URL</small>
+                                    </div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-2">
+                                        <label class="text-right">Số frame <span class="text-danger">*</span></label>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <input type="number" name="total_frames" class="form-control" value="{{ $record->total_frames }}" min="1" max="72">
+                                        <small class="form-text text-muted">Tổng số ảnh trong bộ 360°</small>
+                                    </div>
+
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-2">
+                                        <label class="text-right">Link youtube <span class="text-danger">*</span></label>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <input type="text" name="youtube_link" class="form-control" value="{{ $record->youtube_link }}">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
                                 <input type="hidden" name="_token" value="{!! csrf_token() !!}" />
                                 <fieldset>
                                     <div class="form-group row">

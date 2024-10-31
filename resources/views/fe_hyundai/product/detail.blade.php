@@ -1,8 +1,734 @@
 @extends('layouts.default_template_hyundai')
 
 @section('content')
-    {!! $product->content !!}
+<div class="hyundai-product-wrapper">
+    <!-- Full width background for video and 360 viewer -->
+    <div class="viewer-360-section">
+        @if($product->youtube_link != null)
+        <!-- Video -->
+        <div class="youtube-video-container">
+            {!! $product->youtube_link !!}
+        </div>
+        @endif
 
+        @if($product->base_360_url != null && $product->total_frames > 0)
+        <!-- 360 Viewer -->
+        <div class="viewer-360-content">
+            {{-- <div class="viewer-360-title">
+                <span class="rotate-icon">🔄</span>
+                Xem xe 360° - Kéo để xoay
+            </div> --}}
+            <div class="viewer-360-container">
+                <canvas id="car360Canvas"></canvas>
+                <div class="loading-indicator">
+                    <div class="loading-spinner"></div>
+                    <div class="loading-text">Đang tải (<span class="loading-progress">0</span>%)</div>
+                </div>
+                <div class="drag-indicator">
+                    <i class="fa fa-arrows-h"></i>
+                    Kéo để xoay
+                </div>
+            </div>
+        </div>
+        @endif
+    </div>
+<!-- Product Detail Section -->
+<div class="sticky-header-wrapper">
+    <div class="hyundai-main-title-bar">
+        <div class="hyundai-main-title-container">
+            <h2 class="hyundai-main-title">Chi tiết sản phẩm</h2>
+        </div>
+    </div>
+
+    <!-- Tab Navigation -->
+    <div class="hyundai-tab-header">
+        <div class="hyundai-tabs-wrapper">
+            <ul class="hyundai-tabs">
+                <li class="hyundai-tab active" data-target="info">
+                    {{-- <span class="tab-icon">📋</span> --}}
+                    Thông tin cơ bản
+                </li>
+                <li class="hyundai-tab" data-target="content">
+                    {{-- <span class="tab-icon">📝</span> --}}
+                    Nội dung
+                </li>
+                <li class="hyundai-tab" data-target="specifications">
+                    {{-- <span class="tab-icon">🔧</span> --}}
+                    Thông số kỹ thuật
+                </li>
+                <li class="hyundai-tab" data-target="product_sugget">
+                    {{-- <span class="tab-icon">🚗</span> --}}
+                    Sản phẩm liên quan
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <!-- Tab Content -->
+    <div class="hyundai-tab-container">
+        <div class="hyundai-tab-content-outer">
+            <!-- Single content that contains all sections -->
+            <div class="hyundai-tab-content active">
+                <div class="content-wrapper">
+                    {!! $product->content !!}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- <div class="hyundai-tab-container">
+        <div class="hyundai-tab-content-outer">
+            <!-- Tab content: Nổi bật -->
+            <div class="hyundai-tab-content active" id="product-highlight">
+                <div class="content-wrapper">
+                    {!! $product->content !!}
+                </div>
+            </div>
+
+            <!-- Tab content: Ngoại thất -->
+            <div class="hyundai-tab-content" id="product-exterior">
+                <div class="content-wrapper">
+                    {!! $product->exterior !!}
+                </div>
+            </div>
+
+            <!-- Tab content: Nội thất -->
+            <div class="hyundai-tab-content" id="product-interior">
+                <div class="content-wrapper">
+                    {!! $product->interior !!}
+                </div>
+            </div>
+
+            <!-- Tab content: Vận hành -->
+            <div class="hyundai-tab-content" id="product-performance">
+                <div class="content-wrapper">
+                    {!! $product->performance !!}
+                </div>
+            </div>
+
+            <!-- Tab content: An toàn -->
+            <div class="hyundai-tab-content" id="product-safety">
+                <div class="content-wrapper">
+                    {!! $product->safety !!}
+                </div>
+            </div>
+
+            <!-- Tab content: Tiện nghi -->
+            <div class="hyundai-tab-content" id="product-convenience">
+                <div class="content-wrapper">
+                    {!! $product->convenience !!}
+                </div>
+            </div>
+
+            <!-- Tab content: Thông số xe -->
+            <div class="hyundai-tab-content" id="product-specs">
+                <div class="content-wrapper">
+                    {!! $product->specifications !!}
+                </div>
+            </div>
+        </div>
+    </div> --}}
+</div>
+<style>
+
+
+/* Reset styles */
+.hyundai-product-wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+/* Video Container */
+.youtube-video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+
+.youtube-video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+}
+
+/* 360 Viewer Section */
+.viewer-360-section {
+    width: 100%;
+    background: white;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.viewer-360-inner {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.viewer-360-content {
+    /* height: auto; */
+    position: relative;
+    text-align: center;
+}
+
+.viewer-360-title {
+    color: #000;
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.viewer-360-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+    background: rgba(255,255,255,0.05);
+    position: relative;
+    cursor: grab;
+}
+
+/* Main title bar */
+.hyundai-main-title-bar {
+    width: 100%;
+    background: #143B87;
+    padding: 15px 0;
+}
+
+.hyundai-main-title-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hyundai-main-title {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Tab Navigation */
+.navbar.fix-header-home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1001;
+}
+
+.sticky-header-wrapper {
+    position: sticky;
+    top: 60px; /* Điều chỉnh theo chiều cao của navbar chính */
+    z-index: 1000;
+    background: #fff;
+}
+
+.hyundai-tab-header {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+
+.hyundai-tabs-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hyundai-tabs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hyundai-tab {
+    padding: 15px 25px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    color: #666;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.hyundai-tab:hover {
+    color: #143B87;
+}
+
+.hyundai-tab.active {
+    color: #143B87;
+    border-bottom-color: #143B87;
+}
+
+/* Tab Content */
+.hyundai-tab-container {
+    width: 100%;
+    background: #fff;
+    padding-top: 20px;
+}
+
+#info, #content, #specifications, #product_sugget {
+    scroll-margin-top: 160px; /* Điều chỉnh theo tổng chiều cao của navbar + title bar + tab header */
+}
+
+.hyundai-tab-content-outer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.hyundai-tab-content {
+    display: none;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.hyundai-tab-content.active {
+    display: block;
+}
+
+/* Content Styling */
+.content-wrapper {
+    width: 100%;
+}
+
+.content-wrapper h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.content-wrapper p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* .content-wrapper img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+} */
+
+/* Loading Indicator */
+.loading-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+}
+
+.loading-spinner {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #000;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    animation: spin 1s linear infinite;
+}
+
+.loading-text {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Điều chỉnh drag indicator */
+.drag-indicator {
+    position: absolute;
+    top: 0px; /* Thay đổi từ 0% sang giá trị cụ thể */
+    margin-bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: 10;
+    white-space: nowrap; /* Thêm để tránh văn bản bị wrap */
+}
+
+.drag-indicator i {
+    font-size: 16px;
+    animation: dragAnimation 1.5s infinite;
+}
+
+/* Sửa lại animation */
+@keyframes fadeInOut {
+    0% { opacity: 0.4; }
+    50% { opacity: 1; }
+    100% { opacity: 0.4; }
+}
+
+@keyframes dragAnimation {
+    0% { transform: translateX(-3px); }
+    50% { transform: translateX(3px); }
+    100% { transform: translateX(-3px); }
+}
+
+/* Thêm hiệu ứng khi đang drag */
+.viewer-360-container.dragging .drag-indicator {
+    opacity: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .hyundai-tabs-wrapper,
+    .hyundai-tab-content-outer {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .sticky-header-wrapper {
+        top: 50px;
+    }
+
+    #info, #content, #specifications, #product_sugget {
+        scroll-margin-top: 120px;
+    }
+
+    .hyundai-main-title {
+        font-size: 20px;
+    }
+
+    .hyundai-tab {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .viewer-360-container {
+        height: 300px;
+    }
+
+    .drag-indicator {
+        top: 20px; /* Điều chỉnh vị trí cho mobile */
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .drag-indicator i {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hyundai-tabs {
+        justify-content: flex-start;
+    }
+
+    .hyundai-tab {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+
+    .viewer-360-container {
+        height: 200px;
+    }
+
+    .drag-indicator {
+        top: 15px; /* Điều chỉnh vị trí cho mobile nhỏ hơn */
+    }
+}
+</style>
+
+<script>
+
+$(document).ready(function() {
+    const $mainHeader = $('.navbar.fix-header-home');
+    const $stickyWrapper = $('.sticky-header-wrapper');
+    const $tabs = $('.hyundai-tab');
+
+    // Tính toán các chiều cao
+    const mainHeaderHeight = $mainHeader.outerHeight() || 0;
+    const stickyWrapperHeight = $stickyWrapper.outerHeight() || 0;
+    const totalHeaderHeight = mainHeaderHeight + stickyWrapperHeight;
+
+    // Function để set active tab
+    function setActiveTab($target) {
+        $tabs.removeClass('active');
+        $target.addClass('active');
+    }
+
+    // Function để kiểm tra section trong viewport
+    function isInViewport($element) {
+        const elementTop = $element.offset().top - totalHeaderHeight;
+        const elementBottom = elementTop + $element.outerHeight();
+        const viewportTop = $(window).scrollTop();
+        const viewportBottom = viewportTop + $(window).height();
+
+        return elementTop < viewportBottom && elementBottom > viewportTop;
+    }
+
+    // Xử lý click tab
+    $tabs.on('click', function(e) {
+        e.preventDefault();
+        const $thisTab = $(this);
+        const targetId = $thisTab.data('target');
+        const $targetSection = $('#' + targetId);
+
+        if ($targetSection.length) {
+            // Set active state
+            setActiveTab($thisTab);
+
+            // Scroll đến section
+            $('html, body').animate({
+                scrollTop: $targetSection.offset().top - totalHeaderHeight
+            }, 500);
+        }
+    });
+
+    // Xử lý scroll với throttle
+    let scrollTimeout;
+    $(window).on('scroll', function() {
+        if (!scrollTimeout) {
+            scrollTimeout = setTimeout(function() {
+                const scrollPosition = $(window).scrollTop() + totalHeaderHeight;
+
+                // Tìm section đang visible
+                let currentSection = '';
+
+                $('section[id], div[id]').each(function() {
+                    const $section = $(this);
+                    const sectionTop = $section.offset().top - totalHeaderHeight;
+                    const sectionBottom = sectionTop + $section.outerHeight();
+
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                        currentSection = $section.attr('id');
+                        return false; // Break the loop
+                    }
+                });
+
+                // Update active tab nếu tìm thấy section
+                if (currentSection) {
+                    const $activeTab = $tabs.filter(`[data-target="${currentSection}"]`);
+                    if ($activeTab.length) {
+                        setActiveTab($activeTab);
+                    }
+                }
+
+                scrollTimeout = null;
+            }, 100); // Throttle 100ms
+        }
+    });
+
+    // Xử lý initial state khi load trang
+    function setInitialActiveTab() {
+        const scrollPosition = $(window).scrollTop() + totalHeaderHeight;
+        let currentSection = '';
+
+        $('section[id], div[id]').each(function() {
+            const $section = $(this);
+            if (isInViewport($section)) {
+                currentSection = $section.attr('id');
+                return false;
+            }
+        });
+
+        if (currentSection) {
+            const $activeTab = $tabs.filter(`[data-target="${currentSection}"]`);
+            if ($activeTab.length) {
+                setActiveTab($activeTab);
+            }
+        }
+    }
+
+    // Update khi resize window với debounce
+    let resizeTimeout;
+    $(window).on('resize', function() {
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function() {
+            const mainHeaderHeight = $mainHeader.outerHeight() || 0;
+            const stickyWrapperHeight = $stickyWrapper.outerHeight() || 0;
+            const totalHeaderHeight = mainHeaderHeight + stickyWrapperHeight;
+        }, 250); // Debounce 250ms
+    });
+
+    // Set initial state
+    setInitialActiveTab();
+});
+</script>
+
+<script>
+    class Car360Viewer {
+        constructor(canvasId) {
+            this.canvas = document.getElementById(canvasId);
+            this.ctx = this.canvas.getContext('2d');
+            this.images = [];
+            this.currentFrame = 0;
+            this.isLoading = true;
+            this.totalFrames = {{ $product->total_frames }}; // Số frame trong 360 độ
+            this.loadedFrames = 0;
+            this.isDragging = false;
+            this.lastX = 0;
+            this.base360Url = '{{ $product->base_360_url }}'; // URL cơ sở của các hình ảnh 360
+
+            this.setupCanvas();
+            this.loadImages();
+            this.setupEvents();
+        }
+
+        setupCanvas() {
+            const resizeCanvas = () => {
+                const container = this.canvas.parentElement;
+                this.canvas.width = container.offsetWidth;
+                this.canvas.height = container.offsetHeight;
+            };
+
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+        }
+
+        loadImages() {
+            const loadingProgress = document.querySelector('.loading-progress');
+            const loadingIndicator = document.querySelector('.loading-indicator');
+
+            for (let i = 0; i < this.totalFrames; i++) {
+                const img = new Image();
+
+                img.onload = () => {
+                    this.loadedFrames++;
+                    const progress = Math.round((this.loadedFrames / this.totalFrames) * 100);
+                    loadingProgress.textContent = progress;
+
+                    if (this.loadedFrames === this.totalFrames) {
+                        this.isLoading = false;
+                        loadingIndicator.style.display = 'none';
+                        this.draw();
+                    }
+                };
+
+                img.src = `${this.base360Url}${i + 1}.png`;
+                this.images.push(img);
+            }
+        }
+
+        setupEvents() {
+            // Mouse events
+            this.canvas.addEventListener('mousedown', (e) => {
+                this.isDragging = true;
+                this.lastX = e.clientX;
+                this.canvas.style.cursor = 'grabbing';
+            });
+
+            window.addEventListener('mousemove', (e) => {
+                if (!this.isDragging) return;
+
+                const delta = e.clientX - this.lastX;
+                const frameStep = Math.floor(delta / 10);
+
+                if (frameStep !== 0) {
+                    this.currentFrame = (this.currentFrame + frameStep + this.totalFrames) % this.totalFrames;
+                    this.lastX = e.clientX;
+                    this.draw();
+                }
+            });
+
+            window.addEventListener('mouseup', () => {
+                this.isDragging = false;
+                this.canvas.style.cursor = 'grab';
+            });
+
+            // Touch events
+            this.canvas.addEventListener('touchstart', (e) => {
+                this.isDragging = true;
+                this.lastX = e.touches[0].clientX;
+            });
+
+            window.addEventListener('touchmove', (e) => {
+                if (!this.isDragging) return;
+
+                const delta = e.touches[0].clientX - this.lastX;
+                const frameStep = Math.floor(delta / 5);
+
+                if (frameStep !== 0) {
+                    this.currentFrame = (this.currentFrame + frameStep + this.totalFrames) % this.totalFrames;
+                    this.lastX = e.touches[0].clientX;
+                    this.draw();
+                }
+            });
+
+            window.addEventListener('touchend', () => {
+                this.isDragging = false;
+            });
+        }
+
+        draw() {
+            if (this.isLoading || !this.images[this.currentFrame]) return;
+
+            const img = this.images[this.currentFrame];
+
+            // Thiết lập màu nền trắng
+            this.ctx.fillStyle = '#ffffff';
+            this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
+
+            // Tính toán kích thước để giữ tỷ lệ khung hình
+            const scale = Math.min(
+                this.canvas.width / img.width,
+                this.canvas.height / img.height
+            );
+
+            const x = (this.canvas.width - img.width * scale) / 2;
+            const y = (this.canvas.height - img.height * scale) / 2;
+
+            this.ctx.drawImage(
+                img,
+                x, y,
+                img.width * scale,
+                img.height * scale
+            );
+        }
+    }
+
+    // Initialize viewer when DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+        const viewer = new Car360Viewer('car360Canvas');
+    });
+    </script>
+
+{{-- Style riêng sản phẩm --}}
     <style>
         .is-divider-center {
             height: 2px;
@@ -16,7 +742,7 @@
         .sologan-tvbh {
             text-transform: uppercase;
             font-size: 25px;
-            color: #000;
+            color: white;
             text-align: center;
             margin-top: 0;
             margin-bottom: 20px

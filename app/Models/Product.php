@@ -16,6 +16,10 @@ class Product extends Model {
         'sale_price',
         'images', 'title', 'description', 'keywords', 'meta_title', 'meta_description', 'meta_keywords', 'view_count', 'status', 'alias', 'ordering',
         'post_schedule',
+        'youtube_link',
+        'base_360_url',
+        'total_frames',
+        'youtube_link',
         'library_slide', //Thư viện
         'exterior_content', //Ngoại thất
         'exterior_slide',
