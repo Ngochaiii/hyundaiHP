@@ -147,6 +147,7 @@
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
+    margin-bottom: 20px; /* Thêm margin bottom để tạo khoảng cách */
 }
 
 .youtube-video-container iframe {
@@ -162,7 +163,8 @@
     width: 100%;
     background: white;
     margin-bottom: 30px;
-    overflow: hidden;
+    overflow: visible; /* Thay đổi từ hidden sang visible */
+    position: relative; /* Thêm position relative */
 }
 
 .viewer-360-inner {
@@ -172,9 +174,11 @@
 }
 
 .viewer-360-content {
-    /* height: auto; */
     position: relative;
     text-align: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20px; /* Thêm margin top */
 }
 
 .viewer-360-title {
@@ -229,7 +233,7 @@
 .sticky-header-wrapper {
     position: sticky;
     top: 60px; /* Điều chỉnh theo chiều cao của navbar chính */
-    z-index: 1000;
+    z-index: 80;
     background: #fff;
 }
 
@@ -352,7 +356,7 @@
 /* Điều chỉnh drag indicator */
 .drag-indicator {
     position: absolute;
-    top: 0px; /* Thay đổi từ 0% sang giá trị cụ thể */
+    top: -20px; /* Thay đổi từ 0% sang giá trị cụ thể */
     margin-bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
