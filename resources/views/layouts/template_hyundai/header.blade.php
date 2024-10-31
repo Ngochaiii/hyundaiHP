@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-7 header-logo-top">
-                        <a href="index.html" rel="home" class="hyundai-logo">
+                        <a href="" rel="home" class="hyundai-logo">
                             <img width="300" src="{{asset('uploads/2022/03/logo-hyundai-htv.png')}}"
                                 alt="Hyundai Hải Phòng">
                         </a>

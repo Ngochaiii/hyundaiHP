@@ -4,9 +4,9 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%) scale(0.9);
-        width: 90%;
+        width: 60%;
         max-width: 1200px;
-        height: 90vh;
+        height: 70vh;
         max-height: 700px;
         background: white;
         display: flex;
@@ -195,7 +195,7 @@
         <button class="hyundai-promo-close">&times;</button>
 
         <div class="hyundai-promo-form-header">
-            <img src="path-to-hyundai-logo.png" alt="Hyundai">
+            <img src="{{asset('uploads/2022/03/logo-hyundai-htv.png')}}" alt="Hyundai">
             <h2>ĐĂNG KÝ LÁI THỬ</h2>
             <p>Trải nghiệm cảm giác lái đẳng cấp cùng Hyundai</p>
         </div>
