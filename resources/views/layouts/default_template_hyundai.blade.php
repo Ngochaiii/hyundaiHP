@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" media="all">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <title>Hyundai Hải Phòng - Đại lý Hyundai Hải Phòng - Hotline 0906 026 299</title>
+     <!-- Google Tracking Codes -->
+     @include('partials.tracking-codes')
     <meta name='robots' content='max-image-preview:large' />
 
     <!-- This site is optimized with the Yoast SEO Premium plugin v11.3 - https://yoast.com/wordpress/plugins/seo/ -->

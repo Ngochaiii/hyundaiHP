@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>{{ $siteTitle ?? 'Hyundai Hải Phòng - Đại lý Hyundai Hải Phòng - Hotline 0906 026 299' }}</title>
-
+<!-- Google Tracking Codes -->
+@include('partials.tracking-codes')
     <link rel="shortcut icon" href="favicons/8705-images-favicon.png" type="image/x-icon">
     <link rel="icon" href="favicons/2446-images-favicon.png" type="image/x-icon">
     @include('layouts.default.header_css')

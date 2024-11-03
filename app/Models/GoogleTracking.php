@@ -10,13 +10,18 @@ class GoogleTracking extends Model
 
     protected $fillable = [
         'tracking_code',
-        'is_active',
-        'campaign_name',
-        'conversion_id',
-        'conversion_label'
+        'is_active'
     ];
 
     protected $casts = [
         'is_active' => 'boolean'
     ];
+
+    public static function getActiveTrackingCodes()
+    {
+        return self::where('is_active', true)
+                   ->pluck('tracking_code')
+                   ->filter()
+                   ->toArray();
+    }
 }
