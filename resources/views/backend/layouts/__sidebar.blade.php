@@ -106,6 +106,13 @@
                         <li class="nav-item"><a href="{{route('admin.order.index')}}" class="nav-link">Đơn hàng</a></li>
                     </ul>
                 </li>
+                <li class="nav-item nav-item-submenu">
+                    <a href="{{route('admin.google_tracking.index')}}" class="nav-link"><i class="icon-copy"></i> <span>Gán Link Marketting</span></a>
+                    {{-- <ul class="nav nav-group-sub" data-submenu-title="Layouts">
+                        <li class="nav-item"><a href="{{route('admin.slide.index')}}" class="nav-link">Slide</a></li>
+                        <li class="nav-item"><a href="{{route('admin.menu.index')}}" class="nav-link">Menu</a></li>
+                    </ul> --}}
+                </li>
             </ul>
         </div>
         <!-- /main navigation -->
