@@ -36,7 +36,7 @@
 <div class="sticky-header-wrapper">
     <div class="hyundai-main-title-bar">
         <div class="hyundai-main-title-container">
-            <h2 class="hyundai-main-title">Chi tiết sản phẩm</h2>
+            <h2 class="hyundai-main-title">Chi tiết sản phẩm {{ $product->title }}</h2>
         </div>
     </div>
 

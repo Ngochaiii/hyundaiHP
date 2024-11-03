@@ -27,6 +27,7 @@
                         @endif --}}
                     </div>
                 @endforeach
+
             </div>
 
             <!-- Left and right controls -->

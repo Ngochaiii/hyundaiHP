@@ -81,7 +81,7 @@
     .image-track {
         display: flex;
         width: fit-content;
-        animation: scroll 60s linear infinite;
+        animation: scroll 20s linear infinite;
     }
 
     .image-track:hover {
