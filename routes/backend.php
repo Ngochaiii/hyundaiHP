@@ -7,7 +7,7 @@
  */
 
 
-Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function() {
+Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
     Route::get('/', ['as' => 'admin.index', 'uses' => 'Backend\BackendController@index']);
     /* Cấu hình website */
     Route::get('/config', ['as' => 'admin.config.index', 'uses' => 'Backend\ConfigController@index']);
@@ -161,9 +161,50 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function() {
     Route::get('/order', ['as' => 'admin.order.index', 'uses' => 'Backend\OrderController@index']);
     Route::delete('/order/delete/{id}', ['as' => 'admin.order.destroy', 'uses' => 'Backend\OrderController@destroy']);
     Route::get('/order/show/{id}', ['as' => 'admin.order.edit', 'uses' => 'Backend\OrderController@show']);
-     /* Template_seting*/
+    /* Template_seting*/
     Route::get('/template_setting', ['as' => 'admin.template_setting.index', 'uses' => 'Backend\TemplateSettingController@index']);
     Route::get('/template_setting/create', ['as' => 'admin.template_setting.create', 'uses' => 'Backend\TemplateSettingController@create']);
     Route::post('/template_setting/store', ['as' => 'admin.template_setting.store', 'uses' => 'Backend\TemplateSettingController@store']);
+    /* quản lý code ggg tracking*/
+    // Route cho danh sách tracking
+    Route::get('/google_tracking', [
+        'as' => 'admin.google_tracking.index',
+        'uses' => 'Backend\GoogleTrackingController@index'
+    ]);
 
+    // Route cho trang tạo mới
+    Route::get('/google_tracking/create', [
+        'as' => 'admin.google_tracking.create',
+        'uses' => 'Backend\GoogleTrackingController@create'
+    ]);
+
+    // Route cho việc lưu tracking mới
+    Route::post('/google_tracking/store', [
+        'as' => 'admin.google_tracking.store',
+        'uses' => 'Backend\GoogleTrackingController@store'
+    ]);
+
+    // Route cho trang chỉnh sửa
+    Route::get('/google_tracking/edit/{id}', [
+        'as' => 'admin.google_tracking.edit',
+        'uses' => 'Backend\GoogleTrackingController@edit'
+    ]);
+
+    // Route cho việc cập nhật
+    Route::post('/google_tracking/update/{id}', [
+        'as' => 'admin.google_tracking.update',
+        'uses' => 'Backend\GoogleTrackingController@update'
+    ]);
+
+    // Route cho việc xóa
+    Route::post('/google_tracking/delete/{id}', [
+        'as' => 'admin.google_tracking.destroy',
+        'uses' => 'Backend\GoogleTrackingController@destroy'
+    ]);
+
+    // Route cho việc toggle trạng thái
+    Route::post('/google_tracking/toggle/{id}', [
+        'as' => 'admin.google_tracking.toggle',
+        'uses' => 'Backend\GoogleTrackingController@toggleStatus'
+    ]);
 });
