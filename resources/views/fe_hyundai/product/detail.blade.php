@@ -147,7 +147,7 @@
     position: relative;
     width: 100%;
     padding-bottom: 56.25%;
-    margin-bottom: 20px; /* Thêm margin bottom để tạo khoảng cách */
+    margin-bottom: 20px;
 }
 
 .youtube-video-container iframe {
