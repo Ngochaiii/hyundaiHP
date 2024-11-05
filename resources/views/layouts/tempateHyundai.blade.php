@@ -17,7 +17,8 @@
     <meta name='robots' content='max-image-preview:large' />
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- This site is optimized with the Yoast SEO Premium plugin v11.3 - https://yoast.com/wordpress/plugins/seo/ -->
-    <meta name="description" content="Đại lý Hyundai Hải Phòng - Hotline 0906 026 299" />
+    <meta name="description" content="{{ $meta_description ?? 'Đại lý Hyundai Hải Phòng - Hotline 0906 026 299' }}" />
+    <meta name="title" content="{{ $meta_title ?? 'Hyundai Hải Phòng - Đại lý ủy quyền chính hãng của TC MOTOR' }}" />
     <link rel="canonical" href="index.html" />
     <link rel="next" href="page/2/index.html" />
     <meta property="og:locale" content="vi_VN" />

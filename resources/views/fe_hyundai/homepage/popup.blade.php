@@ -78,8 +78,8 @@
         position: absolute;
         top: 20px;
         right: 20px;
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
         border-radius: 50%;
         background: white;
         border: none;
@@ -87,7 +87,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 24px;
+        font-size: 18px;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
         transition: transform 0.3s;
         z-index: 100;
@@ -184,12 +184,197 @@
         }
     }
 </style>
+<style>
+    .hyundai-promo-left {
+        flex: 1;
+        background: url('/img/activity-social-banner.png');
+        background-size: cover;
+        background-position: bottom right;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        color: white;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* Hiệu ứng làm tối hơn cho background */
+    .hyundai-promo-left::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(circle at center, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.8) 100%);
+        z-index: 1;
+    }
+
+    .hyundai-promo-left h3,
+    .hyundai-promo-left p,
+    .hyundai-promo-left .btn-learn-more {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hyundai-promo-left h3 {
+        font-size: 3.5rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hyundai-promo-left p {
+        font-size: 1.75rem;
+        line-height: 1.4;
+        margin-bottom: 30px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        max-width: 80%;
+    }
+
+    .hyundai-promo-left .btn-learn-more {
+        background: #002c5f;
+        color: white;
+        padding: 12px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.1rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .hyundai-promo-left .btn-learn-more:hover {
+        background: #004182;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    </style>
+    <style>
+        @media (max-width: 1024px) {
+            .hyundai-promo-popup {
+                width: 90%;
+                height: auto;
+                max-height: 90vh;
+            }
+
+            .hyundai-promo-left {
+                padding: 30px;
+                background: #002c5f; /* Màu nền thay thế khi không có ảnh */
+            }
+
+            .hyundai-promo-left h3 {
+                font-size: 2.5rem;
+            }
+
+            .hyundai-promo-left p {
+                font-size: 1.25rem;
+                max-width: 100%;
+            }
+
+            .hyundai-promo-right {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hyundai-promo-popup {
+                width: 95%;
+                flex-direction: column;
+            }
+
+            .hyundai-promo-left {
+                padding: 20px;
+                min-height: auto;
+            }
+
+            .hyundai-promo-left h3 {
+                font-size: 2rem;
+            }
+
+            .hyundai-promo-left p {
+                font-size: 1rem;
+            }
+
+            .hyundai-promo-left .btn-learn-more {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+
+            .hyundai-promo-right {
+                width: 100%;
+                padding: 20px;
+            }
+
+            .hyundai-promo-form-header h2 {
+                font-size: 20px;
+            }
+
+            .hyundai-promo-form-header p {
+                font-size: 14px;
+            }
+
+            .hyundai-promo-input-group input,
+            .hyundai-promo-input-group select,
+            .hyundai-promo-input-group textarea {
+                font-size: 14px;
+                padding: 10px 15px 10px 40px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hyundai-promo-popup {
+                width: 100%;
+                height: 100vh;
+                max-height: 100vh;
+                border-radius: 0;
+            }
+
+            .hyundai-promo-left {
+                padding: 15px;
+                background: linear-gradient(45deg, #002c5f, #004182); /* Gradient thay thế */
+            }
+
+            .hyundai-promo-left h3 {
+                font-size: 1.75rem;
+                margin-bottom: 15px;
+            }
+
+            .hyundai-promo-left p {
+                font-size: 0.9rem;
+                margin-bottom: 20px;
+            }
+
+            .hyundai-promo-left .btn-learn-more {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hyundai-promo-right {
+                padding: 15px;
+            }
+
+            .hyundai-promo-form-header {
+                margin-bottom: 20px;
+            }
+
+            .hyundai-promo-form-header img {
+                height: 30px;
+            }
+        }
+        </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 <div class="hyundai-promo-overlay"></div>
 <div class="hyundai-promo-popup">
     <div class="hyundai-promo-left">
-        <h3>PHỦ XANH<br>VIỆT NAM</h3>
-        <p>Nhận ưu đãi xanh lên đến 12.000.000 VNĐ</p>
+        <h3>Tầm nhìn & sứ mệnh</h3>
+        <p>Hyundai đang phấn đấu trở thành Thương hiệu số 1 trong ngành Công nghiệp Ô tô tại Việt Nam</p>
+        <a href="#" class="btn-learn-more">Tìm hiểu thêm</a>
     </div>
 
     <div class="hyundai-promo-right">

@@ -178,7 +178,7 @@ body{
    width: 44px !important;
     float: left;
     margin-top: 5px;
-    margin-left: 15px; 
+    margin-left: 15px;
 }
 .logo-mobile-right{
     width: 190px !important;
@@ -332,7 +332,7 @@ a.btn-phone {
     font-weight: bold;
 }
 #dichvu li img{
-    
+
 }
 #page-content{
     left:0
@@ -429,7 +429,7 @@ a.btn-phone {
     -ms-user-select: none;
     user-select: none;
     border: 1px solid transparent;
-    border-radius: 4px; 
+    border-radius: 4px;
     border: none;
     margin-top:25px;
     width: 100%;
@@ -470,7 +470,7 @@ a.btn-phone {
     width:310px;
 }
 @media (min-width:767px){
-    
+
     .news2 .news{
         height: 350px;
     }
@@ -530,7 +530,7 @@ a.btn-phone {
         line-height: 22px;
     }
     .call-to-action{
-   
+
     }
     #slide-nav .container{
         margin:0;
@@ -616,7 +616,7 @@ a.btn-phone {
         overflow: hidden;
     }
     .dn-post-spr .cover img{
-        height: 115px !important;
+        height: 100% !important;
     }
     .navbar-nav,.navbar-nav>li{
         float:none!important;
@@ -636,7 +636,7 @@ a.btn-phone {
     .navbar.navbar-fixed-top.slide-active{
         position:fixed
     }
- 
+
 }
 .uix_panelMask{
     visibility:hidden;
@@ -880,7 +880,7 @@ a.btn-phone {
     border-bottom-right-radius: 5px;
     margin-bottom: 13px;
     padding: 10px 15px;
-    height: 145px;
+    /* height: 145px; */
     overflow: hidden;
     box-shadow: rgba(0,0,0,.125) 0px 1px 10px -1px, rgba(0,0,0,.05) 0px 1px 20px -1px;
     border: 1px solid #f4f4f4;
@@ -915,7 +915,7 @@ a.btn-phone {
 .hna-pagination ul{
     margin: 20px px auto;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
  }
  .hna-pagination ul li{
      display: inline;
@@ -1378,7 +1378,7 @@ font-size: 14px;
     padding: 0;
 }
 @media only screen and (max-width:768px){
-    
+
     .logo{
         text-align: center;
         margin-top: 12px;
@@ -1534,7 +1534,7 @@ font-size: 14px;
     #bao_gia .form-cus label {
       font-size: 22px;
     }
-   
+
 }
 @media only screen and (max-width:991px){
     .sidebar-home{
@@ -1711,7 +1711,7 @@ font-size: 14px;
     font-weight:700;
     color:#fff;
     margin-top:10px
-    
+
 }
 #absolute-footer{
     background-color:#5b5b5b
@@ -1912,7 +1912,7 @@ font-size: 14px;
     height: 50px;
 }
 .nav-tab-product{
-   margin-bottom: 20px; 
+   margin-bottom: 20px;
 }
 .footer-info{
    background: #1f1f1f;
@@ -2227,8 +2227,8 @@ article .summary{
     .modal-dialog {
         width: 700px !important;
     }
-    
-    
+
+
 }
 @media screen and (min-width: 651px) {
     .phone-group .wpcf7-submit {

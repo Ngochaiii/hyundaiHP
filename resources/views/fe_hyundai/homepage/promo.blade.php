@@ -3,25 +3,25 @@
     <div class="sliding-images">
         <div class="image-track">
             <!-- Lặp lại các ảnh để tạo hiệu ứng vô tận -->
-            <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/2000x599 (1).jpg" alt="Khuyến mãi 1"
+            <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/2000x599 (1).jpg" alt="Khuyến mãi hấp dẫn"
                 class="ad-image"
-                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/2000x599 (1).jpg', 'Tiêu đề khuyến mãi 1')">
-            <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide-palisade.jpg" alt="Khuyến mãi 2"
+                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/2000x599 (1).jpg', 'Khuyễn mãi vô cùng hấp dẫn')">
+            <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide-palisade.jpg" alt="Khuyến mãi hấp dẫn"
                 class="ad-image"
-                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide-palisade.jpg', 'Tiêu đề khuyến mãi 2')">
+                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide-palisade.jpg', 'Khuyễn mãi vô cùng hấp dẫn')">
             <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide website banner.jpg"
                 alt="Khuyến mãi 3" class="ad-image"
-                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide website banner.jpg', 'Tiêu đề khuyến mãi 3')">
+                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide website banner.jpg', 'Khuyễn mãi vô cùng hấp dẫn')">
             <!-- Lặp lại ảnh -->
-            <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/2000x599 (1).jpg" alt="Khuyến mãi 1"
+            <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/2000x599 (1).jpg" alt="Khuyến mãi hấp dẫn"
                 class="ad-image"
-                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/2000x599 (1).jpg', 'Tiêu đề khuyến mãi 1')">
-            <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide-palisade.jpg" alt="Khuyến mãi 2"
+                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/2000x599 (1).jpg', 'Khuyễn mãi vô cùng hấp dẫn')">
+            <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide-palisade.jpg" alt="Khuyến mãi hấp dẫn"
                 class="ad-image"
-                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide-palisade.jpg', 'Tiêu đề khuyến mãi 2')">
+                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide-palisade.jpg', 'Khuyễn mãi vô cùng hấp dẫn')">
             <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide website banner.jpg"
                 alt="Khuyến mãi 3" class="ad-image"
-                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide website banner.jpg', 'Tiêu đề khuyến mãi 3')">
+                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide website banner.jpg', 'Khuyễn mãi vô cùng hấp dẫn')">
         </div>
     </div>
 </div>
@@ -43,7 +43,7 @@
                     <li>Ưu đãi giá đặc biệt</li>
                     <li>Tặng phụ kiện chính hãng</li>
                     <li>Hỗ trợ trả góp lên đến 85%</li>
-                    <li>Bảo hành chính hãng 3 năm</li>
+                    <li>Bảo hành chính hãng 5 năm</li>
                 </ul>
                 <div class="contact-info">
                     <span><i class="fas fa-phone"></i> Hotline: <a style="text-align: center;

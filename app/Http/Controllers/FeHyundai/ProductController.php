@@ -14,9 +14,10 @@ class ProductController extends Controller
         $products = Product::where('status', true)->orderBy('ordering', 'desc')->get();
         $compacts = [
             'product' => $products_detail,
-            'products' => $products
+            'products' => $products,
+            'meta_description' => $products_detail->meta_description,
+            'meta_title' => $products_detail->meta_title
         ];
-
         return view('fe_hyundai.product.detail',$compacts);
     }
 }

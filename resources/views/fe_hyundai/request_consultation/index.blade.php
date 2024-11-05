@@ -90,143 +90,22 @@
                     <section id="recent-posts-product" class="widget widget_recent_entries">
                         <h2 class="widget-title">Sản phẩm nổi bật</h2>
                         <ul>
-                            <li>
-                                <a href="../san-pham/hyundai-i10/index.html"><img class="loading lazy"
-                                        src="../wp-content/uploads/2024/07/grrand-i10.jpg"
-                                        src="../wp-content/themes/hyundai/includes/img/pixel.html"
-                                        alt="Hyundai i10"></a></a>
-                                <div class="detail-car-widget">
-                                    <p class="title h-bold"><a href="../san-pham/hyundai-i10/index.html">Hyundai
-                                            i10</a></p>
-                                    <p class="widget-price h-bold">Giá xe 360 Triệu</p>
-                                </div>
+                            @foreach ($products as $product)
+                                <li>
+                                    <a href="{{ route('product.detail', $product->alias) }}"><img class="loading lazy"
+                                            src="{{ $product->getImage() }}"
+                                            src="../wp-content/themes/hyundai/includes/img/pixel.html"
+                                            alt="{{ $product->title }}"></a></a>
+                                    <div class="detail-car-widget">
+                                        <p class="title h-bold"><a
+                                                href="{{ route('product.detail', $product->alias) }}">{{ $product->title }}</a>
+                                        </p>
+                                        <p class="widget-price h-bold">Giá xe {{ $product->price }} Triệu</p>
+                                    </div>
 
-                                <div class="clearfix"></div </li>
-                            <li>
-                                <a href="../san-pham/hyundai-venue/index.html"><img class="loading lazy"
-                                        src="../wp-content/uploads/2022/03/venue-22.jpg"
-                                        src="../wp-content/themes/hyundai/includes/img/pixel.html"
-                                        alt="Hyundai Venue"></a></a>
-                                <div class="detail-car-widget">
-                                    <p class="title h-bold"><a href="../san-pham/hyundai-venue/index.html">Hyundai
-                                            Venue</a></p>
-                                    <p class="widget-price h-bold">Giá xe 499 Triệu</p>
-                                </div>
-
-                                <div class="clearfix"></div </li>
-                            <li>
-                                <a href="../san-pham/hyundai-accent/index.html"><img class="loading lazy"
-                                        src="../wp-content/uploads/2022/03/Accne-2024r-car.png"
-                                        src="../wp-content/themes/hyundai/includes/img/pixel.html"
-                                        alt="Hyundai Accent"></a></a>
-                                <div class="detail-car-widget">
-                                    <p class="title h-bold"><a href="../san-pham/hyundai-accent/index.html">Hyundai
-                                            Accent</a></p>
-                                    <p class="widget-price h-bold">Giá xe 426 Triệu</p>
-                                </div>
-
-                                <div class="clearfix"></div </li>
-                            <li>
-                                <a href="../san-pham/hyundai-elantra/index.html"><img class="loading lazy"
-                                        src="../wp-content/uploads/2022/03/hyundai-elantra-300x179-2.jpg"
-                                        src="../wp-content/themes/hyundai/includes/img/pixel.html"
-                                        alt="Hyundai Elantra"></a></a>
-                                <div class="detail-car-widget">
-                                    <p class="title h-bold"><a href="../san-pham/hyundai-elantra/index.html">Hyundai
-                                            Elantra</a>
-                                    </p>
-                                    <p class="widget-price h-bold">Giá xe 639 Triệu</p>
-                                </div>
-
-                                <div class="clearfix"></div </li>
-                            <li>
-                                <a href="../san-pham/hyundai-creta-2024/index.html"><img class="loading lazy"
-                                        src="../wp-content/uploads/2022/03/Hyundai-creta-anh-dai-dien.jpg"
-                                        src="../wp-content/themes/hyundai/includes/img/pixel.html"
-                                        alt="Hyundai Creta"></a></a>
-                                <div class="detail-car-widget">
-                                    <p class="title h-bold"><a href="../san-pham/hyundai-creta-2024/index.html">Hyundai
-                                            Creta</a>
-                                    </p>
-                                    <p class="widget-price h-bold">Giá xe 599 Triệu</p>
-                                </div>
-
-                                <div class="clearfix"></div </li>
-                            <li>
-                                <a href="../san-pham/hyundai-tucson/index.html"><img class="loading lazy"
-                                        src="../wp-content/uploads/2022/03/Hyundai-Tucsonmau-do2.jpg"
-                                        src="../wp-content/themes/hyundai/includes/img/pixel.html"
-                                        alt="Hyundai Tucson"></a></a>
-                                <div class="detail-car-widget">
-                                    <p class="title h-bold"><a href="../san-pham/hyundai-tucson/index.html">Hyundai
-                                            Tucson</a></p>
-                                    <p class="widget-price h-bold">Giá xe 769 Triệu</p>
-                                </div>
-
-                                <div class="clearfix"></div </li>
-                            <li>
-                                <a href="../san-pham/hyundai-santafe/index.html"><img class="loading lazy"
-                                        src="../wp-content/uploads/2022/03/san2021-thumbnail-300x179-1-1.jpg"
-                                        src="../wp-content/themes/hyundai/includes/img/pixel.html"
-                                        alt="Hyundai Santafe"></a></a>
-                                <div class="detail-car-widget">
-                                    <p class="title h-bold"><a href="../san-pham/hyundai-santafe/index.html">Hyundai
-                                            Santafe</a>
-                                    </p>
-                                    <p class="widget-price h-bold">Giá xe 979 Triệu</p>
-                                </div>
-
-                                <div class="clearfix"></div </li>
-                            <li>
-                                <a href="../san-pham/hyundai-stargazer/index.html"><img class="loading lazy"
-                                        src="../wp-content/uploads/2024/07/stargazer-car-1.png"
-                                        src="../wp-content/themes/hyundai/includes/img/pixel.html"
-                                        alt="Hyundai Stargazer X"></a></a>
-                                <div class="detail-car-widget">
-                                    <p class="title h-bold"><a href="../san-pham/hyundai-stargazer/index.html">Hyundai
-                                            Stargazer
-                                            X</a></p>
-                                    <p class="widget-price h-bold">Giá xe 488 Triệu</p>
-                                </div>
-
-                                <div class="clearfix"></div </li>
-                            <li>
-                                <a href="../san-pham/hyundai-custin/index.html"><img class="loading lazy"
-                                        src="../wp-content/uploads/2023/09/custin-home.png"
-                                        src="../wp-content/themes/hyundai/includes/img/pixel.html"
-                                        alt="Hyundai Custin"></a></a>
-                                <div class="detail-car-widget">
-                                    <p class="title h-bold"><a href="../san-pham/hyundai-custin/index.html">Hyundai
-                                            Custin</a></p>
-                                    <p class="widget-price h-bold">Giá xe 820 Triệu</p>
-                                </div>
-
-                                <div class="clearfix"></div </li>
-                            <li>
-                                <a href="../san-pham/hyundai-palisade/index.html"><img class="loading lazy"
-                                        src="../wp-content/uploads/2023/09/palisade-home.png"
-                                        src="../wp-content/themes/hyundai/includes/img/pixel.html"
-                                        alt="Hyundai Palisade"></a></a>
-                                <div class="detail-car-widget">
-                                    <p class="title h-bold"><a href="../san-pham/hyundai-palisade/index.html">Hyundai
-                                            Palisade</a>
-                                    </p>
-                                    <p class="widget-price h-bold">Giá xe 1469 Triệu</p>
-                                </div>
-
-                                <div class="clearfix"></div </li>
-                            <li>
-                                <a href="../san-pham/hyundai-ioniq5/index.html"><img class="loading lazy"
-                                        src="../wp-content/uploads/2023/09/IONIQ5-home.png"
-                                        src="../wp-content/themes/hyundai/includes/img/pixel.html"
-                                        alt="Hyundai IONIQ 5"></a></a>
-                                <div class="detail-car-widget">
-                                    <p class="title h-bold"><a href="../san-pham/hyundai-ioniq5/index.html">Hyundai IONIQ
-                                            5</a></p>
-                                    <p class="widget-price h-bold">Giá xe 1300 Triệu</p>
-                                </div>
-
-                                <div class="clearfix"></div </li>
+                                    <div class="clearfix"></div>
+                                </li>
+                            @endforeach
                         </ul>
                     </section>
                     <section id="recent-posts-2" class="widget widget_recent_entries">

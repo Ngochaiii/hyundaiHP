@@ -1,23 +1,23 @@
 <div class="grid-container">
-    <a href="#" class="grid-item">
+    <a href="{{ url('tin-tuc/dich-vu-va-cuu-ho') }}" class="grid-item">
         <img src="https://hyundai-api.thanhcong.vn/storage/uploads/home-block/service-hyundai-min.png" alt="Hỗ trợ kỹ thuật">
         <div class="overlay">
             <h2>Hỗ trợ kỹ thuật</h2>
         </div>
     </a>
-    <a href="#" class="grid-item">
+    <a href="{{ url('tin-tuc/chuong-trinh-dich-vu') }}" class="grid-item">
         <img src="https://hyundai-api.thanhcong.vn/storage/uploads/home-block/Rectangle 425.png" alt="Chương trình dịch vụ">
         <div class="overlay">
             <h2>Chương trình dịch vụ</h2>
         </div>
     </a>
-    <a href="#" class="grid-item">
+    <a href="{{ url('tin-tuc/ung-dung-hyundai-me') }}" class="grid-item">
         <img src="https://hyundai-api.thanhcong.vn/storage/uploads/home-block/backgroud-min.png" alt="Hyundai me">
         <div class="overlay">
             <h2>Hyundai me</h2>
         </div>
     </a>
-    <a href="#" class="grid-item">
+    <a href="{{ url('tin-tuc/phu-tung-chinh-hieu') }}" class="grid-item">
         <img src="https://hyundai-api.thanhcong.vn/storage/uploads/home-block/z3023987469278_3d71f91da66353942e532219a5d4bbc6-min.jpeg" alt="Phụ tùng phụ kiện">
         <div class="overlay">
             <h2>Phụ tùng phụ kiện</h2>
