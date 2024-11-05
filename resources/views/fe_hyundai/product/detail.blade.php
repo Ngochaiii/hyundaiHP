@@ -1,7 +1,8 @@
 @extends('layouts.default_template_hyundai')
-
+@section('title', $product->title)
 @section('content')
 <div class="hyundai-product-wrapper">
+
     <!-- Full width background for video and 360 viewer -->
     <div class="viewer-360-section">
         @if($product->youtube_link != null)
@@ -32,38 +33,39 @@
         </div>
         @endif
     </div>
-<!-- Product Detail Section -->
-<div class="sticky-header-wrapper">
-    <div class="hyundai-main-title-bar">
-        <div class="hyundai-main-title-container">
-            <h2 class="hyundai-main-title">Chi tiết sản phẩm {{ $product->title }}</h2>
-        </div>
-    </div>
 
-    <!-- Tab Navigation -->
-    <div class="hyundai-tab-header">
-        <div class="hyundai-tabs-wrapper">
-            <ul class="hyundai-tabs">
-                <li class="hyundai-tab active" data-target="info">
-                    {{-- <span class="tab-icon">📋</span> --}}
-                    Thông tin cơ bản
-                </li>
-                <li class="hyundai-tab" data-target="content">
-                    {{-- <span class="tab-icon">📝</span> --}}
-                    Nội dung
-                </li>
-                <li class="hyundai-tab" data-target="specifications">
-                    {{-- <span class="tab-icon">🔧</span> --}}
-                    Thông số kỹ thuật
-                </li>
-                <li class="hyundai-tab" data-target="product_sugget">
-                    {{-- <span class="tab-icon">🚗</span> --}}
-                    Sản phẩm liên quan
-                </li>
-            </ul>
+    <!-- Product Detail Section -->
+    <div class="sticky-header-wrapper">
+        <div class="hyundai-main-title-bar">
+            <div class="hyundai-main-title-container">
+                <h2 class="hyundai-main-title">Chi tiết sản phẩm {{ $product->title }}</h2>
+            </div>
+        </div>
+
+        <!-- Tab Navigation -->
+        <div class="hyundai-tab-header">
+            <div class="hyundai-tabs-wrapper">
+                <ul class="hyundai-tabs">
+                    <li class="hyundai-tab active" data-target="info">
+                        {{-- <span class="tab-icon">📋</span> --}}
+                        Thông tin cơ bản
+                    </li>
+                    <li class="hyundai-tab" data-target="content">
+                        {{-- <span class="tab-icon">📝</span> --}}
+                        Nội dung
+                    </li>
+                    <li class="hyundai-tab" data-target="specifications">
+                        {{-- <span class="tab-icon">🔧</span> --}}
+                        Thông số kỹ thuật
+                    </li>
+                    <li class="hyundai-tab" data-target="product_sugget">
+                        {{-- <span class="tab-icon">🚗</span> --}}
+                        Sản phẩm liên quan
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
     <!-- Tab Content -->
     <div class="hyundai-tab-container">
@@ -76,58 +78,6 @@
             </div>
         </div>
     </div>
-    {{-- <div class="hyundai-tab-container">
-        <div class="hyundai-tab-content-outer">
-            <!-- Tab content: Nổi bật -->
-            <div class="hyundai-tab-content active" id="product-highlight">
-                <div class="content-wrapper">
-                    {!! $product->content !!}
-                </div>
-            </div>
-
-            <!-- Tab content: Ngoại thất -->
-            <div class="hyundai-tab-content" id="product-exterior">
-                <div class="content-wrapper">
-                    {!! $product->exterior !!}
-                </div>
-            </div>
-
-            <!-- Tab content: Nội thất -->
-            <div class="hyundai-tab-content" id="product-interior">
-                <div class="content-wrapper">
-                    {!! $product->interior !!}
-                </div>
-            </div>
-
-            <!-- Tab content: Vận hành -->
-            <div class="hyundai-tab-content" id="product-performance">
-                <div class="content-wrapper">
-                    {!! $product->performance !!}
-                </div>
-            </div>
-
-            <!-- Tab content: An toàn -->
-            <div class="hyundai-tab-content" id="product-safety">
-                <div class="content-wrapper">
-                    {!! $product->safety !!}
-                </div>
-            </div>
-
-            <!-- Tab content: Tiện nghi -->
-            <div class="hyundai-tab-content" id="product-convenience">
-                <div class="content-wrapper">
-                    {!! $product->convenience !!}
-                </div>
-            </div>
-
-            <!-- Tab content: Thông số xe -->
-            <div class="hyundai-tab-content" id="product-specs">
-                <div class="content-wrapper">
-                    {!! $product->specifications !!}
-                </div>
-            </div>
-        </div>
-    </div> --}}
 </div>
 <style>
 

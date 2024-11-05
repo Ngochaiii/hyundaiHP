@@ -181,7 +181,7 @@
                                 <div class="form-group row">
                                     <label class="col-md-2 col-form-label text-right">Đánh giá chi tiết </label>
                                     <div class="col-md-12">
-                                        <textarea class="form-control ckeditor" id="content" name="content">{!!is_null(old('content'))?$record->content:old('content')!!}</textarea>
+                                        <textarea class="form-control ckeditor" id="content" name="content">{!!$record->content!!}</textarea>
                                     </div>
                                 </div>
 
@@ -442,11 +442,12 @@
       filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
       filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='
     };
-    CKEDITOR.replace('content-product', options);
-    CKEDITOR.replace('exterior_content', options);
-    CKEDITOR.replace('interior_content', options);
-    CKEDITOR.replace('operate_content', options);
-    CKEDITOR.replace('slide_content', options);
+    CKEDITOR.config.allowedContent=true;
+    CKEDITOR.replace('content', options);
+    // CKEDITOR.replace('exterior_content', options);
+    // CKEDITOR.replace('interior_content', options);
+    // CKEDITOR.replace('operate_content', options);
+    // CKEDITOR.replace('slide_content', options);
 
   </script>
 

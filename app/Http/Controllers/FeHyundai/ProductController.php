@@ -11,12 +11,23 @@ class ProductController extends Controller
     public function detail(string $alias) {
 
         $products_detail = Product::where('alias', $alias)->first();
-        $products = Product::where('status', true)->orderBy('ordering', 'desc')->get();
-        $compacts = [
-            'product' => $products_detail,
-            'products' => $products
-        ];
+        if($products_detail){
+            $products = Product::where('status', true)->orderBy('ordering', 'desc')->get();
 
-        return view('fe_hyundai.product.detail',$compacts);
+            $breadcrumbs = [
+                ['title' => 'Sản Phẩm', 'url' => route('home.index')],
+                ['title' => $products_detail->title, 'url' => '']
+            ];
+
+            $compacts = [
+                'product' => $products_detail,
+                'products' => $products,
+                'breadcrumbs' => $breadcrumbs,
+            ];
+
+            return view('fe_hyundai.product.detail',$compacts, );
+        }
+        return view('fe_hyundai.404');
+
     }
 }
