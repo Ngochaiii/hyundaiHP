@@ -27,7 +27,6 @@ class ProductController extends Controller
                 'meta_description' => $products_detail->meta_description,
                 'meta_title' => $products_detail->meta_title
             ];
-dd($compacts);
             return view('fe_hyundai.product.detail', $compacts,);
         }
         return view('fe_hyundai.404');
