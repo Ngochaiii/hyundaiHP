@@ -24,7 +24,7 @@ Route::post('/thi-cong/cap-nhat-tai-khoan/{alias}', ['as' => 'construction.updat
 /* Dự án */
 Route::get('/du-an/{alias}', ['as' => 'project.detail', 'uses' => 'Frontend\ProjectController@detail']);
 /* Tin tuc */
-Route::get('/tin-tuc', ['as' => 'news.index', 'uses' => 'Fe_Hyundai\BlogCobntroller@index']);
+Route::get('/tin-tuc', ['as' => 'news.index', 'uses' => 'Fe_Hyundai\BlogController@index']);
 Route::get('/danh-muc-tin/{alias}', ['as' => 'news_category.index', 'uses' => 'Frontend\NewsController@index']);
 Route::get('/tin-tuc/{alias}', ['as' => 'news.detail', 'uses' => 'Frontend\NewsController@detail']);
 /* Video */

@@ -30,7 +30,11 @@ class NewsController extends Controller {
         $products = Product::where('status', true)->orderBy('ordering', 'desc')->get();
         $category_arr = $this->categoryRepo->readHomeNewsCategory();
         $featured_news = $this->newsRepo->readFeaturedNews($limit = 5);
-        return view('fe_hyundai/news/list', compact('records', 'category_arr', 'featured_news', 'category_name', 'products'));
+        $breadcrumbs = [
+                ['title' => $category_name, 'url' => route('news.list', $alias)],
+                // ['title' => $products_detail->title, 'url' => '']
+            ];
+        return view('fe_hyundai/news/list', compact('breadcrumbs','records', 'category_arr', 'featured_news', 'category_name', 'products'));
     }
 
     public function detail($alias) {
@@ -46,8 +50,12 @@ class NewsController extends Controller {
         $related_news = $this->newsRepo->readRelatedNews($record->id, $news_ids);
         // $config = $this->newsRepo->getConfig($record->id);
         $blog = $record;
+        $breadcrumbs = [
+                // ['title' => "Tin tức", 'url' => route('news.list', $alias)],
+                ['title' => $blog->title, 'url' => '']
+            ];
         //$url = \Illuminate\Support\Facades\Request::url();
-        return view('fe_hyundai/news/detail', compact('record', 'blog', 'products', 'related_news','featured_news'));
+        return view('fe_hyundai/news/detail', compact('breadcrumbs', 'record', 'blog', 'products', 'related_news','featured_news'));
     }
 
 }
