@@ -81,7 +81,7 @@
 
     .hyundai-news-grid .news-description {
         color: var(--text-gray);
-        font-size: 0.875rem;
+        font-size: 1.3rem;
         line-height: 1.5;
         margin-bottom: 0;
         display: -webkit-box;

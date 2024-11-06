@@ -7,8 +7,9 @@
         <div class="showroom-info">
             <div class="location-card">
                 <div class="showroom-image">
-                    <img src="wp-content/themes/hyundaihaiphong/cad854f4c6ab63f53aba.jpg"
-                    alt="Showroom 1S">
+                    <img src="wp-content/themes/hyundaihaiphong/e0d28a2b1f74ba2ae365.jpg"
+                    alt="Showroom 3S"
+                    class="showroom-img">
                 </div>
                 <h3 class="title">Hyundai Thành Công - Showroom 3S</h3>
                 <div class="info-box">

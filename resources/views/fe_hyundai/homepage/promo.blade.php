@@ -1,27 +1,26 @@
-<!-- Banner quảng cáo -->
 <div class="ad-banner">
     <div class="sliding-images">
         <div class="image-track">
             <!-- Lặp lại các ảnh để tạo hiệu ứng vô tận -->
             <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/2000x599 (1).jpg" alt="Khuyến mãi hấp dẫn"
                 class="ad-image"
-                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/2000x599 (1).jpg', 'Khuyễn mãi vô cùng hấp dẫn')">
+                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/2000x599 (1).jpg', 'Khuyến mãi vô cùng hấp dẫn')">
             <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide-palisade.jpg" alt="Khuyến mãi hấp dẫn"
                 class="ad-image"
-                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide-palisade.jpg', 'Khuyễn mãi vô cùng hấp dẫn')">
+                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide-palisade.jpg', 'Khuyến mãi vô cùng hấp dẫn')">
             <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide website banner.jpg"
                 alt="Khuyến mãi 3" class="ad-image"
-                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide website banner.jpg', 'Khuyễn mãi vô cùng hấp dẫn')">
+                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide website banner.jpg', 'Khuyến mãi vô cùng hấp dẫn')">
             <!-- Lặp lại ảnh -->
             <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/2000x599 (1).jpg" alt="Khuyến mãi hấp dẫn"
                 class="ad-image"
-                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/2000x599 (1).jpg', 'Khuyễn mãi vô cùng hấp dẫn')">
+                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/2000x599 (1).jpg', 'Khuyến mãi vô cùng hấp dẫn')">
             <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide-palisade.jpg" alt="Khuyến mãi hấp dẫn"
                 class="ad-image"
-                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide-palisade.jpg', 'Khuyễn mãi vô cùng hấp dẫn')">
+                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide-palisade.jpg', 'Khuyến mãi vô cùng hấp dẫn')">
             <img src="https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide website banner.jpg"
                 alt="Khuyến mãi 3" class="ad-image"
-                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide website banner.jpg', 'Khuyễn mãi vô cùng hấp dẫn')">
+                onclick="openPopup('https://hyundai-api.thanhcong.vn/storage/uploads/slider/slide website banner.jpg', 'Khuyến mãi vô cùng hấp dẫn')">
         </div>
     </div>
 </div>
@@ -46,9 +45,7 @@
                     <li>Bảo hành chính hãng 5 năm</li>
                 </ul>
                 <div class="contact-info">
-                    <span><i class="fas fa-phone"></i> Hotline: <a style="text-align: center;
-    padding-top: 10px;"
-                            href="tel:0906026299">0906026299</a></span>
+                    <span><i class="fas fa-phone"></i> Hotline: <a href="tel:0906026299">0906026299</a></span>
                     <p><i class="fas fa-map-marker-alt"></i> Địa chỉ showroom:</p>
                     <ul class="showroom-list">
                         <li>742 Nguyễn Văn Linh, Niệm Nghĩa, Lê Chân, Hải Phòng</li>
@@ -65,11 +62,13 @@
     /* Banner styles */
     .ad-banner {
         width: 100%;
-        height: 350px;
+        height: 400px; /* Điều chỉnh chiều cao để phù hợp với tỷ lệ 2:5 */
         overflow: hidden;
         position: relative;
         background: #f5f7fa;
         margin: 40px 0;
+        display: flex;
+        align-items: center; /* Căn giữa theo chiều dọc */
     }
 
     .sliding-images {
@@ -82,19 +81,20 @@
         display: flex;
         width: fit-content;
         animation: scroll 20s linear infinite;
-    }
-
-    .image-track:hover {
-        animation-play-state: paused;
+        height: 100%;
     }
 
     .ad-image {
         height: 100%;
+        width: 1000px; /* Chiều rộng theo tỷ lệ 2:5 (400px * 2.5) */
         object-fit: cover;
-        /* margin-right: 20px;
-        border-radius: 15px; */
+        object-position: center; /* Căn giữa nội dung ảnh */
         cursor: pointer;
         transition: transform 0.3s ease;
+    }
+
+    .image-track:hover {
+        animation-play-state: paused;
     }
 
     .ad-image:hover {
@@ -107,11 +107,11 @@
         }
 
         100% {
-            transform: translateX(calc(-450px * 3 - 60px));
+            transform: translateX(calc(-1000px * 3)); /* Điều chỉnh theo chiều rộng mới của ảnh */
         }
     }
 
-    /* Popup styles */
+    /* Popup styles giữ nguyên */
     .popup-container {
         display: none;
         position: fixed;
@@ -258,7 +258,7 @@
 
         .ad-image {
             height: 200px;
-            width: 300px;
+            width: 500px; /* Giữ tỷ lệ 2:5 cho mobile */
         }
 
         .popup-content {
