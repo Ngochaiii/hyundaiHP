@@ -22,6 +22,7 @@ class Frontend {
         //     }
         // }
         // @dd($menus);
+
         \View::share(['share_config' => $config]);
         // \View::share(['count_cart' => $count]);
         \View::share(['menus' => $menus]);
