@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\FeHyundai;
 
 use App\Http\Controllers\Controller;
+use App\Mail\ContactMail;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -57,6 +59,7 @@ class ContactController extends Controller
 
         try {
             Contact::create($contactData);
+            Mail::to('hoapn04@gmail.com')->send(new ContactMail($contactData));
             if ($request->ajax()) {
                 return response()->json(['success' => true]);
             }

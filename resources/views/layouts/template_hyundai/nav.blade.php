@@ -43,7 +43,7 @@
                                         @foreach($menu->children as $child)
                                             @if(!empty($child->image))
                                                 <li id="menu-item-{{ $child->id }}"
-                                                    class="menu-product col-md-2 col-sm-2 col-xs-12 menu-item menu-item-type-post_type menu-item-object-san-pham">
+                                                    class="col-md-2 col-sm-2 col-xs-12 menu-item menu-item-type-post_type menu-item-object-san-pham">
                                                     <a href="{{ $child->link }}">
                                                         <img class="loading lazy" src="{{ $child->image }}" alt="{{ $child->title }}">
                                                         <span class="menu-prd-name">{{ $child->title }}</span>
