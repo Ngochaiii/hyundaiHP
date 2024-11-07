@@ -38,6 +38,7 @@
         position: relative;
         aspect-ratio: 16/9;
         overflow: hidden;
+        border-radius: 3%;
         display: block;
     }
 
