@@ -17,7 +17,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="info">
                             <p>742 Nguyễn Văn Linh, Niệm Nghĩa, Lê Chân, Hải Phòng</p>
-                            <p><i class="fas fa-phone"></i> Hotline: <a href="tel:0123456789">0123456789</a></p>
+                            <p><i class="fas fa-phone"></i> Hotline: <a href="tel:0906026299">0906026299</a></p>
                         </div>
                     </div>
                     <a href="https://www.google.com/maps/place/742+Nguy%E1%BB%85n+V%C4%83n+Linh,+Ni%E1%BB%87m+Ngh%C4%A9a,+L%C3%AA+Ch%C3%A2n,+H%E1%BA%A3i+Ph%C3%B2ng/"
@@ -44,7 +44,7 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div class="info">
                             <p>9 10b, 10b Đ. Lê Hồng Phong, Đằng Hải, Hải An, Hải Phòng</p>
-                            <p><i class="fas fa-phone"></i> Hotline: <a href="tel:0123456789">0123456789</a></p>
+                            <p><i class="fas fa-phone"></i> Hotline: <a href="tel:0906026299">0906026299</a></p>
                         </div>
                     </div>
                     <a href="https://www.google.com/maps/place/Hyundai+L%C3%AA+H%E1%BB%93ng+Phong/@20.8406957,106.7121753,125m/"
